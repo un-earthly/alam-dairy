@@ -1,0 +1,78 @@
+{
+  "nav": {
+    "shop": "দোকান",
+    "farm": "খামার সরবরাহ",
+    "cart": "কার্ট",
+    "account": "অ্যাকাউন্ট",
+    "login": "লগইন",
+    "logout": "লগআউট"
+  },
+  "landing": {
+    "hero_title": "আলম ডেইরি ফার্ম",
+    "hero_subtitle": "খাঁটি দুধ থেকে শুরু করে গরু পর্যন্ত — সবই এক জায়গায়",
+    "consumer_title": "দুগ্ধজাত পণ্য",
+    "consumer_desc": "তাজা দুধ, দই, ঘি ও মিষ্টি — সরাসরি আপনার দরজায়",
+    "consumer_cta": "পণ্য দেখুন",
+    "farmer_title": "খামার সরবরাহ",
+    "farmer_desc": "গরু, পশু খাদ্য, ভেটেরিনারি সামগ্রী ও যন্ত্রপাতি",
+    "farmer_cta": "সরবরাহ দেখুন",
+    "trust_title": "কেন আলম ডেইরি?",
+    "trust_halal": "হালাল সার্টিফাইড",
+    "trust_fresh": "প্রতিদিন তাজা",
+    "trust_delivery": "ঢাকায় হোম ডেলিভারি",
+    "trust_vet": "ভেট পরীক্ষিত গরু"
+  },
+  "shop": {
+    "title": "দুগ্ধজাত পণ্য",
+    "filter_all": "সব",
+    "filter_milk": "দুধ",
+    "filter_yogurt": "দই",
+    "filter_ghee": "ঘি ও মাখন",
+    "filter_sweets": "মিষ্টি",
+    "add_to_cart": "কার্টে যোগ করুন",
+    "out_of_stock": "স্টক নেই",
+    "per_unit": "প্রতি",
+    "subscribe": "সাবস্ক্রাইব করুন"
+  },
+  "farm": {
+    "title": "খামার সরবরাহ",
+    "filter_all": "সব",
+    "filter_cattle": "গরু",
+    "filter_feed": "পশু খাদ্য",
+    "filter_vet": "ভেটেরিনারি",
+    "filter_equipment": "যন্ত্রপাতি",
+    "add_to_cart": "কার্টে যোগ করুন",
+    "request_quote": "কোটেশন চাই",
+    "view_details": "বিস্তারিত দেখুন"
+  },
+  "cart": {
+    "title": "আপনার কার্ট",
+    "empty": "কার্ট খালি",
+    "empty_desc": "কিছু পণ্য যোগ করুন",
+    "subtotal": "মোট",
+    "checkout": "চেকআউট",
+    "continue_shopping": "কেনাকাটা চালিয়ে যান",
+    "remove": "সরান"
+  },
+  "checkout": {
+    "title": "অর্ডার নিশ্চিত করুন",
+    "name": "পুরো নাম",
+    "phone": "মোবাইল নম্বর",
+    "address": "ঠিকানা",
+    "area": "এলাকা",
+    "payment_method": "পেমেন্ট পদ্ধতি",
+    "bkash": "বিকাশ",
+    "nagad": "নগদ",
+    "cod": "ক্যাশ অন ডেলিভারি",
+    "place_order": "অর্ডার দিন",
+    "notes": "বিশেষ নির্দেশনা (ঐচ্ছিক)"
+  },
+  "common": {
+    "taka": "৳",
+    "loading": "লোড হচ্ছে...",
+    "error": "কিছু একটা ভুল হয়েছে",
+    "retry": "আবার চেষ্টা করুন",
+    "see_all": "সব দেখুন",
+    "search": "খুঁজুন"
+  }
+}

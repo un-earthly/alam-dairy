@@ -1,0 +1,78 @@
+{
+  "nav": {
+    "shop": "Shop",
+    "farm": "Farm Supplies",
+    "cart": "Cart",
+    "account": "Account",
+    "login": "Login",
+    "logout": "Logout"
+  },
+  "landing": {
+    "hero_title": "Alam Dairy Firm",
+    "hero_subtitle": "From fresh milk to farm-ready cattle — all in one place",
+    "consumer_title": "Dairy Products",
+    "consumer_desc": "Fresh milk, yogurt, ghee and sweets delivered to your door",
+    "consumer_cta": "Shop Now",
+    "farmer_title": "Farm Supplies",
+    "farmer_desc": "Cattle, animal feed, veterinary supplies and equipment",
+    "farmer_cta": "Browse Supplies",
+    "trust_title": "Why Alam Dairy?",
+    "trust_halal": "Halal Certified",
+    "trust_fresh": "Fresh Daily",
+    "trust_delivery": "Dhaka Home Delivery",
+    "trust_vet": "Vet-Inspected Cattle"
+  },
+  "shop": {
+    "title": "Dairy Products",
+    "filter_all": "All",
+    "filter_milk": "Milk",
+    "filter_yogurt": "Yogurt",
+    "filter_ghee": "Ghee & Butter",
+    "filter_sweets": "Sweets",
+    "add_to_cart": "Add to Cart",
+    "out_of_stock": "Out of Stock",
+    "per_unit": "per",
+    "subscribe": "Subscribe"
+  },
+  "farm": {
+    "title": "Farm Supplies",
+    "filter_all": "All",
+    "filter_cattle": "Cattle",
+    "filter_feed": "Animal Feed",
+    "filter_vet": "Veterinary",
+    "filter_equipment": "Equipment",
+    "add_to_cart": "Add to Cart",
+    "request_quote": "Request Quote",
+    "view_details": "View Details"
+  },
+  "cart": {
+    "title": "Your Cart",
+    "empty": "Your cart is empty",
+    "empty_desc": "Add some products to get started",
+    "subtotal": "Subtotal",
+    "checkout": "Checkout",
+    "continue_shopping": "Continue Shopping",
+    "remove": "Remove"
+  },
+  "checkout": {
+    "title": "Confirm Order",
+    "name": "Full Name",
+    "phone": "Mobile Number",
+    "address": "Address",
+    "area": "Area",
+    "payment_method": "Payment Method",
+    "bkash": "bKash",
+    "nagad": "Nagad",
+    "cod": "Cash on Delivery",
+    "place_order": "Place Order",
+    "notes": "Special Instructions (optional)"
+  },
+  "common": {
+    "taka": "৳",
+    "loading": "Loading...",
+    "error": "Something went wrong",
+    "retry": "Try again",
+    "see_all": "See All",
+    "search": "Search"
+  }
+}
