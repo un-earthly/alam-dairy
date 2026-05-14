@@ -18,7 +18,6 @@ export default async function ShopPage({ params, searchParams }: Props) {
     .from('products')
     .select('*')
     .eq('is_active', true)
-    .in('type', ['dairy'])
     .order('created_at', { ascending: false })
 
   if (type && type !== 'all') {
