@@ -38,9 +38,9 @@ export default function ProductCard({ product, basePath }: { product: Product; b
   }
 
   return (
-    <div className="group relative flex flex-col overflow-hidden rounded-xl border bg-white shadow-sm hover:shadow-md transition-shadow">
+    <div className="group relative flex flex-col overflow-hidden rounded-xl border bg-card shadow-sm hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200">
       {/* Image */}
-      <Link href={`${basePath}/${product.slug}`} className="block aspect-square overflow-hidden bg-gray-100">
+      <Link href={`${basePath}/${product.slug}`} className="block aspect-square overflow-hidden bg-muted">
         {product.images[0] ? (
           <Image
             src={product.images[0]}
@@ -50,7 +50,7 @@ export default function ProductCard({ product, basePath }: { product: Product; b
             className="h-full w-full object-cover group-hover:scale-105 transition-transform duration-300"
           />
         ) : (
-          <div className="h-full w-full flex items-center justify-center text-gray-200 text-5xl">
+          <div className="h-full w-full flex items-center justify-center text-muted-foreground/20 text-5xl">
             {product.type === 'cattle' ? '🐄' : product.type === 'dairy' ? '🥛' : '🌾'}
           </div>
         )}
@@ -59,7 +59,7 @@ export default function ProductCard({ product, basePath }: { product: Product; b
       {/* Badges */}
       <div className="absolute top-2 left-2 flex flex-col gap-1">
         {isOnSale && (
-          <Badge className="bg-red-500 text-white text-[10px] px-1.5 py-0.5">SALE</Badge>
+          <Badge className="bg-destructive text-destructive-foreground text-[10px] px-1.5 py-0.5">SALE</Badge>
         )}
         {product.stock === 0 && (
           <Badge variant="secondary" className="text-[10px] px-1.5 py-0.5">{t('out_of_stock')}</Badge>
@@ -69,29 +69,29 @@ export default function ProductCard({ product, basePath }: { product: Product; b
       {/* Info */}
       <div className="flex flex-1 flex-col p-3 gap-2">
         <Link href={`${basePath}/${product.slug}`}>
-          <h3 className="text-sm font-semibold text-gray-800 line-clamp-2 leading-snug">{name}</h3>
+          <h3 className="text-sm font-semibold text-foreground line-clamp-2 leading-snug">{name}</h3>
         </Link>
 
         <div className="mt-auto flex items-center justify-between gap-2">
           <div>
-            <span className="text-base font-bold text-green-700">
+            <span className="text-base font-bold text-success">
               {tc('taka')}{price.toLocaleString('bn-BD')}
             </span>
-            <span className="text-xs text-gray-400 ml-1">/{product.unit}</span>
+            <span className="text-xs text-muted-foreground ml-1">/{product.unit}</span>
             {isOnSale && (
-              <span className="ml-2 text-xs text-gray-400 line-through">
+              <span className="ml-2 text-xs text-muted-foreground/50 line-through">
                 {tc('taka')}{product.price.toLocaleString('bn-BD')}
               </span>
             )}
           </div>
           <Button
             size="icon"
-            className="h-8 w-8 rounded-full bg-green-600 hover:bg-green-700 text-white shrink-0"
+            className="h-8 w-8 rounded-full bg-primary hover:bg-primary/90 text-primary-foreground shrink-0 shadow-sm transition-transform duration-150 active:scale-95"
             onClick={handleAdd}
             disabled={product.stock === 0}
             aria-label={t('add_to_cart')}
           >
-            <ShoppingCart className="h-4 w-4" />
+            <ShoppingCart className="h-3.5 w-3.5" />
           </Button>
         </div>
       </div>

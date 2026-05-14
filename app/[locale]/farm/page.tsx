@@ -40,25 +40,47 @@ export default async function FarmPage({ params, searchParams }: Props) {
   }
 
   const { data: products } = await query
-
   const base = `/${locale}/farm`
 
   return (
-    <div className="mx-auto max-w-7xl px-4 py-8">
-      <h1 className="text-2xl font-bold text-gray-900 mb-6">{t('title')}</h1>
-      <ShopFilters locale={locale} activeType={type} mode="farm" />
-      {products && products.length > 0 ? (
-        <div className="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
-          {products.map((p) => (
-            <ProductCard key={p.id} product={p} basePath={base} />
-          ))}
+    <>
+      {/* Page header */}
+      <div className="border-b bg-muted/30">
+        <div className="mx-auto max-w-7xl px-4 py-8 sm:py-12">
+          <h1 className="text-3xl font-extrabold tracking-tight text-foreground sm:text-4xl">
+            {t('title')}
+          </h1>
+          {products && products.length > 0 && (
+            <p className="mt-2 text-sm text-muted-foreground">
+              {products.length} {locale === 'bn' ? 'পণ্য পাওয়া গেছে' : 'items available'}
+            </p>
+          )}
         </div>
-      ) : (
-        <div className="mt-12 text-center text-gray-500 py-16">
-          <p className="text-4xl mb-4">🐄</p>
-          <p className="font-medium">{locale === 'bn' ? 'কোনো পণ্য পাওয়া যায়নি' : 'No products found'}</p>
-        </div>
-      )}
-    </div>
+      </div>
+
+      {/* Content */}
+      <div className="mx-auto max-w-7xl px-4 py-8">
+        <ShopFilters locale={locale} activeType={type} mode="farm" />
+        {products && products.length > 0 ? (
+          <div className="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
+            {products.map((p) => (
+              <ProductCard key={p.id} product={p} basePath={base} />
+            ))}
+          </div>
+        ) : (
+          <div className="mt-12 flex flex-col items-center justify-center gap-4 py-20 text-center">
+            <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-muted">
+              <span className="text-3xl">🐄</span>
+            </div>
+            <p className="font-semibold text-foreground">
+              {locale === 'bn' ? 'কোনো পণ্য পাওয়া যায়নি' : 'No products found'}
+            </p>
+            <p className="text-sm text-muted-foreground">
+              {locale === 'bn' ? 'অন্য ফিল্টার চেষ্টা করুন' : 'Try a different filter'}
+            </p>
+          </div>
+        )}
+      </div>
+    </>
   )
 }

@@ -35,6 +35,7 @@ export default function Header({
   const openCart = useCartDrawer((s) => s.open)
   const [menuOpen, setMenuOpen] = useState(false)
   const [mounted, setMounted] = useState(false)
+  const [scrolled, setScrolled] = useState(false)
   const [user, setUser] = useState<SupabaseUser | null>(initialUser)
   const supabase = createClient()
   const router = useRouter()
@@ -48,6 +49,12 @@ export default function Header({
     return () => subscription.unsubscribe()
   }, [])
 
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 24)
+    window.addEventListener('scroll', onScroll, { passive: true })
+    return () => window.removeEventListener('scroll', onScroll)
+  }, [])
+
   async function signOut() {
     await fetch('/api/auth/signout', { method: 'POST' })
     setUser(null)
@@ -57,37 +64,59 @@ export default function Header({
   const avatarFallback = user?.email?.slice(0, 2).toUpperCase() ?? 'U'
   const avatarUrl = user?.user_metadata?.avatar_url as string | undefined
 
+  const navLinks = [
+    { href: `${base}/shop`, label: t('shop') },
+    { href: `${base}/farm`, label: t('farm') },
+  ]
+
   return (
-    <header className="sticky top-0 z-40 w-full border-b bg-background/95 backdrop-blur supports-backdrop-filter:bg-background/80">
-      <div className="mx-auto flex h-14 max-w-7xl items-center justify-between px-4">
+    <header
+      className={cn(
+        'sticky top-0 z-40 w-full border-b transition-all duration-300',
+        scrolled
+          ? 'bg-background/85 shadow-sm supports-[backdrop-filter]:bg-background/70 backdrop-blur-lg'
+          : 'bg-background/95 supports-[backdrop-filter]:bg-background/80 backdrop-blur-md'
+      )}
+    >
+      <div
+        className={cn(
+          'mx-auto flex max-w-7xl items-center justify-between px-4 transition-all duration-300',
+          scrolled ? 'h-12' : 'h-16'
+        )}
+      >
         {/* Logo */}
-        <Link href={base} className="flex items-center gap-2 font-bold text-primary">
-          <Leaf className="h-5 w-5" />
-          <span className="text-sm leading-tight">
+        <Link href={base} className="flex items-center gap-2.5 group">
+          <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-primary text-primary-foreground shadow-sm transition-transform duration-200 group-hover:scale-105">
+            <Leaf className="h-4 w-4" />
+          </div>
+          <span className="text-sm font-semibold text-foreground leading-tight">
             {locale === 'bn' ? 'আলম ডেইরি' : 'Alam Dairy'}
           </span>
         </Link>
 
         {/* Desktop nav */}
-        <nav className="hidden items-center gap-6 text-sm md:flex">
-          <Link href={`${base}/shop`} className="text-muted-foreground hover:text-foreground transition-colors">
-            {t('shop')}
-          </Link>
-          <Link href={`${base}/farm`} className="text-muted-foreground hover:text-foreground transition-colors">
-            {t('farm')}
-          </Link>
+        <nav className="hidden items-center gap-7 text-sm md:flex">
+          {navLinks.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className="relative text-muted-foreground hover:text-foreground transition-colors duration-200 after:absolute after:-bottom-0.5 after:left-0 after:h-[2px] after:w-0 after:rounded-full after:bg-primary after:transition-[width] after:duration-300 hover:after:w-full"
+            >
+              {link.label}
+            </Link>
+          ))}
         </nav>
 
         {/* Right side */}
-        <div className="flex items-center gap-1">
+        <div className="flex items-center gap-0.5">
           <LocaleSwitcher currentLocale={locale} />
           <ThemeToggle />
 
           {/* Cart */}
           <Button variant="ghost" size="icon" className="relative" onClick={openCart} aria-label={t('cart')}>
-            <ShoppingCart className="h-5 w-5" />
+            <ShoppingCart className="h-4.5 w-4.5" />
             {mounted && count > 0 && (
-              <Badge className="absolute -right-1 -top-1 h-5 min-w-5 rounded-full px-1 text-xs bg-primary text-primary-foreground">
+              <Badge className="absolute -right-1 -top-1 h-5 min-w-5 rounded-full px-1 text-[10px] bg-primary text-primary-foreground animate-in zoom-in-50 duration-200">
                 {count}
               </Badge>
             )}
@@ -96,15 +125,15 @@ export default function Header({
           {/* Auth */}
           {user ? (
             <DropdownMenu>
-              <DropdownMenuTrigger className="rounded-full outline-none focus-visible:ring-2 focus-visible:ring-ring/50">
-                <Avatar className="h-8 w-8 cursor-pointer">
+              <DropdownMenuTrigger className="rounded-full outline-none focus-visible:ring-2 focus-visible:ring-ring/50 ml-1">
+                <Avatar className="h-8 w-8 cursor-pointer ring-2 ring-transparent transition-all duration-200 hover:ring-primary/40">
                   <AvatarImage src={avatarUrl} />
                   <AvatarFallback className="bg-primary/10 text-primary text-xs font-semibold">
                     {avatarFallback}
                   </AvatarFallback>
                 </Avatar>
               </DropdownMenuTrigger>
-              <DropdownMenuContent align="end" className="w-48">
+              <DropdownMenuContent align="end" className="w-48 animate-in slide-in-from-top-2 fade-in-0 duration-150">
                 <div className="px-3 py-2">
                   <p className="text-xs font-medium text-foreground truncate">{user.email}</p>
                 </div>
@@ -125,7 +154,7 @@ export default function Header({
               </DropdownMenuContent>
             </DropdownMenu>
           ) : (
-            <Link href={`${base}/auth`} className={cn(buttonVariants({ size: 'sm' }), 'hidden md:flex')}>
+            <Link href={`${base}/auth`} className={cn(buttonVariants({ size: 'sm' }), 'hidden md:flex ml-1')}>
               {t('login')}
             </Link>
           )}
@@ -134,36 +163,54 @@ export default function Header({
           <Button
             variant="ghost"
             size="icon"
-            className="md:hidden"
+            className="md:hidden ml-0.5"
             onClick={() => setMenuOpen((v) => !v)}
             aria-label="Menu"
           >
-            {menuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+            {menuOpen
+              ? <X className="h-5 w-5 transition-transform duration-150 rotate-0" />
+              : <Menu className="h-5 w-5 transition-transform duration-150 rotate-0" />
+            }
           </Button>
         </div>
       </div>
 
       {/* Mobile menu */}
       {menuOpen && (
-        <div className="border-t bg-background px-4 py-3 md:hidden">
-          <nav className="flex flex-col gap-3 text-sm">
-            <Link href={`${base}/shop`} onClick={() => setMenuOpen(false)} className="py-1">
-              {t('shop')}
-            </Link>
-            <Link href={`${base}/farm`} onClick={() => setMenuOpen(false)} className="py-1">
-              {t('farm')}
-            </Link>
+        <div className="border-t bg-background/95 backdrop-blur-lg px-4 py-3 md:hidden animate-slide-down">
+          <nav className="flex flex-col gap-0.5">
+            {navLinks.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                onClick={() => setMenuOpen(false)}
+                className="flex items-center rounded-lg px-3 py-2.5 text-sm font-medium text-muted-foreground hover:bg-muted hover:text-foreground transition-colors"
+              >
+                {link.label}
+              </Link>
+            ))}
             {user ? (
               <>
-                <Link href={`${base}/account`} onClick={() => setMenuOpen(false)} className="py-1">
+                <Link
+                  href={`${base}/account`}
+                  onClick={() => setMenuOpen(false)}
+                  className="flex items-center rounded-lg px-3 py-2.5 text-sm font-medium text-muted-foreground hover:bg-muted hover:text-foreground transition-colors"
+                >
                   {locale === 'bn' ? 'অ্যাকাউন্ট' : 'Account'}
                 </Link>
-                <button onClick={signOut} className="py-1 text-left text-destructive">
+                <button
+                  onClick={signOut}
+                  className="flex items-center rounded-lg px-3 py-2.5 text-sm font-medium text-destructive hover:bg-destructive/10 transition-colors text-left"
+                >
                   {t('logout')}
                 </button>
               </>
             ) : (
-              <Link href={`${base}/auth`} onClick={() => setMenuOpen(false)} className="py-1 font-medium text-primary">
+              <Link
+                href={`${base}/auth`}
+                onClick={() => setMenuOpen(false)}
+                className="flex items-center rounded-lg px-3 py-2.5 text-sm font-semibold text-primary hover:bg-primary/10 transition-colors"
+              >
                 {t('login')}
               </Link>
             )}

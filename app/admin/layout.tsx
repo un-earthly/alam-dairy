@@ -7,7 +7,7 @@ import {
   ShoppingBag,
   Users,
   BarChart3,
-  Milk,
+  Leaf,
   LogOut,
 } from 'lucide-react'
 
@@ -26,19 +26,21 @@ export default async function AdminLayout({ children }: { children: React.ReactN
   if (!user) redirect('/bn')
 
   return (
-    <div className="flex min-h-screen bg-gray-100">
+    <div className="flex min-h-screen bg-muted/20">
       {/* Sidebar */}
-      <aside className="hidden w-56 flex-col bg-gray-900 text-white md:flex">
-        <div className="flex items-center gap-2 px-4 py-4 border-b border-gray-800">
-          <Milk className="h-5 w-5 text-green-400" />
-          <span className="font-bold text-sm">Alam Dairy Admin</span>
+      <aside className="hidden w-56 flex-col bg-gray-950 text-white md:flex">
+        <div className="flex items-center gap-2.5 px-4 py-4 border-b border-white/10">
+          <div className="flex h-7 w-7 items-center justify-center rounded-md bg-primary">
+            <Leaf className="h-4 w-4 text-primary-foreground" />
+          </div>
+          <span className="font-semibold text-sm">Alam Dairy Admin</span>
         </div>
-        <nav className="flex-1 py-4">
+        <nav className="flex-1 py-3">
           {NAV.map((item) => (
             <Link
               key={item.href}
               href={item.href}
-              className="flex items-center gap-3 px-4 py-2.5 text-sm text-gray-300 hover:text-white hover:bg-gray-800 transition-colors"
+              className="flex items-center gap-3 px-4 py-2.5 text-sm text-white/60 hover:text-white hover:bg-white/8 transition-colors rounded-none"
             >
               <item.icon className="h-4 w-4" />
               {item.label}
@@ -46,7 +48,7 @@ export default async function AdminLayout({ children }: { children: React.ReactN
           ))}
         </nav>
         <form action="/api/auth/signout" method="POST">
-          <button className="flex w-full items-center gap-3 px-4 py-3 text-sm text-gray-400 hover:text-white border-t border-gray-800 hover:bg-gray-800 transition-colors">
+          <button className="flex w-full items-center gap-3 px-4 py-3 text-sm text-white/40 hover:text-white border-t border-white/10 hover:bg-white/8 transition-colors">
             <LogOut className="h-4 w-4" />
             Sign Out
           </button>
@@ -54,9 +56,11 @@ export default async function AdminLayout({ children }: { children: React.ReactN
       </aside>
 
       {/* Mobile top bar */}
-      <div className="fixed top-0 left-0 right-0 z-30 flex items-center gap-3 bg-gray-900 px-4 py-3 md:hidden">
-        <Milk className="h-5 w-5 text-green-400" />
-        <span className="font-bold text-sm text-white">Alam Dairy Admin</span>
+      <div className="fixed top-0 left-0 right-0 z-30 flex items-center gap-3 bg-gray-950 px-4 py-3 md:hidden">
+        <div className="flex h-7 w-7 items-center justify-center rounded-md bg-primary">
+          <Leaf className="h-4 w-4 text-primary-foreground" />
+        </div>
+        <span className="font-semibold text-sm text-white">Alam Dairy Admin</span>
       </div>
 
       {/* Content */}

@@ -54,15 +54,15 @@ export default function ShopFilters({
           key={f.key}
           onClick={() => setFilter(f.key)}
           className={cn(
-            'shrink-0 rounded-full px-4 py-1.5 text-sm font-medium border transition-colors',
+            'shrink-0 rounded-full px-4 py-1.5 text-sm font-medium border transition-all duration-150',
             active === f.key
-              ? 'bg-green-600 text-white border-green-600'
-              : 'bg-white text-gray-600 border-gray-200 hover:border-green-400'
+              ? 'bg-primary text-primary-foreground border-primary shadow-sm'
+              : 'bg-background text-muted-foreground border-border hover:border-primary/50 hover:text-foreground hover:bg-muted/50'
           )}
         >
           {mode === 'shop'
-          ? tShop(f.labelKey as Parameters<typeof tShop>[0])
-          : tFarm(f.labelKey as Parameters<typeof tFarm>[0])}
+            ? tShop(f.labelKey as Parameters<typeof tShop>[0])
+            : tFarm(f.labelKey as Parameters<typeof tFarm>[0])}
         </button>
       ))}
     </div>
