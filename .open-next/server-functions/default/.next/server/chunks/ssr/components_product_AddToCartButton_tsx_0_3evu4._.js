@@ -1,3 +1,0 @@
-module.exports=[20887,a=>{"use strict";var b=a.i(93987),c=a.i(45883),d=a.i(38793),e=a.i(40695),f=a.i(9923);a.i(79808);var g=a.i(50333);a.s(["default",0,function({product:a,locale:h}){let i=(0,c.useTranslations)("shop"),j=(0,f.useCart)(a=>a.addItem),k=(0,g.useCartDrawer)(a=>a.open),l=a.sale_price??a.price,m=0===a.stock;return(0,b.jsxs)(e.Button,{size:"lg",className:"w-full bg-green-600 hover:bg-green-700 text-white gap-2",onClick:function(){j({id:a.id,name_bn:a.name_bn,name_en:a.name_en,price:l,unit:a.unit,quantity:1,image:a.images[0]??null,type:a.type}),k()},disabled:m,children:[(0,b.jsx)(d.ShoppingCart,{className:"h-5 w-5"}),i(m?"out_of_stock":"add_to_cart")]})}])}];
-
-//# sourceMappingURL=components_product_AddToCartButton_tsx_0_3evu4._.js.map
