@@ -1,0 +1,890 @@
+{
+  "agromukam/a2-milk-1l/7111-0.webp": {
+    "publicId": "competitors/agromukam/a2-milk-1l/7111-0",
+    "secureUrl": "https://res.cloudinary.com/oeon1p4w/image/authenticated/s--pGqyxjAd--/v1783711322/competitors/agromukam/a2-milk-1l/7111-0.webp",
+    "width": 1920,
+    "height": 1920,
+    "bytes": 149248,
+    "type": "authenticated"
+  },
+  "agromukam/a2-milk-1l/8537-0.webp": {
+    "publicId": "competitors/agromukam/a2-milk-1l/8537-0",
+    "secureUrl": "https://res.cloudinary.com/oeon1p4w/image/authenticated/s--YaAhUSxF--/v1783711323/competitors/agromukam/a2-milk-1l/8537-0.webp",
+    "width": 1080,
+    "height": 1093,
+    "bytes": 58832,
+    "type": "authenticated"
+  },
+  "agromukam/a2-milk-1l/8540-0.webp": {
+    "publicId": "competitors/agromukam/a2-milk-1l/8540-0",
+    "secureUrl": "https://res.cloudinary.com/oeon1p4w/image/authenticated/s---u0Yh7Id--/v1783711324/competitors/agromukam/a2-milk-1l/8540-0.webp",
+    "width": 1080,
+    "height": 1093,
+    "bytes": 58832,
+    "type": "authenticated"
+  },
+  "agromukam/a2-milk-1l/8540-1.webp": {
+    "publicId": "competitors/agromukam/a2-milk-1l/8540-1",
+    "secureUrl": "https://res.cloudinary.com/oeon1p4w/image/authenticated/s--qEJvUaoW--/v1783711325/competitors/agromukam/a2-milk-1l/8540-1.webp",
+    "width": 1079,
+    "height": 605,
+    "bytes": 60160,
+    "type": "authenticated"
+  },
+  "agromukam/calf-starter-20kg/6396-0.webp": {
+    "publicId": "competitors/agromukam/calf-starter-20kg/6396-0",
+    "secureUrl": "https://res.cloudinary.com/oeon1p4w/image/authenticated/s--musJE4_T--/v1783711326/competitors/agromukam/calf-starter-20kg/6396-0.webp",
+    "width": 1920,
+    "height": 1920,
+    "bytes": 117680,
+    "type": "authenticated"
+  },
+  "agromukam/calf-starter-20kg/6809-0.webp": {
+    "publicId": "competitors/agromukam/calf-starter-20kg/6809-0",
+    "secureUrl": "https://res.cloudinary.com/oeon1p4w/image/authenticated/s--WjFRErIX--/v1783711327/competitors/agromukam/calf-starter-20kg/6809-0.webp",
+    "width": 300,
+    "height": 300,
+    "bytes": 12300,
+    "type": "authenticated"
+  },
+  "agromukam/calf-starter-20kg/7121-0.webp": {
+    "publicId": "competitors/agromukam/calf-starter-20kg/7121-0",
+    "secureUrl": "https://res.cloudinary.com/oeon1p4w/image/authenticated/s--h-vynPmt--/v1783711328/competitors/agromukam/calf-starter-20kg/7121-0.webp",
+    "width": 963,
+    "height": 1280,
+    "bytes": 24318,
+    "type": "authenticated"
+  },
+  "agromukam/calf-starter-20kg/7121-1.webp": {
+    "publicId": "competitors/agromukam/calf-starter-20kg/7121-1",
+    "secureUrl": "https://res.cloudinary.com/oeon1p4w/image/authenticated/s--SVblsUPu--/v1783711328/competitors/agromukam/calf-starter-20kg/7121-1.webp",
+    "width": 963,
+    "height": 1280,
+    "bytes": 20252,
+    "type": "authenticated"
+  },
+  "agromukam/calf-starter-20kg/7121-2.webp": {
+    "publicId": "competitors/agromukam/calf-starter-20kg/7121-2",
+    "secureUrl": "https://res.cloudinary.com/oeon1p4w/image/authenticated/s--3FrWtHxa--/v1783711329/competitors/agromukam/calf-starter-20kg/7121-2.webp",
+    "width": 899,
+    "height": 1599,
+    "bytes": 65394,
+    "type": "authenticated"
+  },
+  "agromukam/cattle-feed-50kg/3089-0.webp": {
+    "publicId": "competitors/agromukam/cattle-feed-50kg/3089-0",
+    "secureUrl": "https://res.cloudinary.com/oeon1p4w/image/authenticated/s--_AqV42PL--/v1783711330/competitors/agromukam/cattle-feed-50kg/3089-0.webp",
+    "width": 496,
+    "height": 352,
+    "bytes": 61416,
+    "type": "authenticated"
+  },
+  "agromukam/cattle-scale/4365-0.webp": {
+    "publicId": "competitors/agromukam/cattle-scale/4365-0",
+    "secureUrl": "https://res.cloudinary.com/oeon1p4w/image/authenticated/s--iuofkasA--/v1783711331/competitors/agromukam/cattle-scale/4365-0.webp",
+    "width": 1000,
+    "height": 1000,
+    "bytes": 60744,
+    "type": "authenticated"
+  },
+  "agromukam/cattle-scale/4392-0.webp": {
+    "publicId": "competitors/agromukam/cattle-scale/4392-0",
+    "secureUrl": "https://res.cloudinary.com/oeon1p4w/image/authenticated/s--_T2NzUUG--/v1783711332/competitors/agromukam/cattle-scale/4392-0.webp",
+    "width": 1165,
+    "height": 1080,
+    "bytes": 76702,
+    "type": "authenticated"
+  },
+  "agromukam/cattle-scale/5516-0.webp": {
+    "publicId": "competitors/agromukam/cattle-scale/5516-0",
+    "secureUrl": "https://res.cloudinary.com/oeon1p4w/image/authenticated/s--vv5NQ2TJ--/v1783711334/competitors/agromukam/cattle-scale/5516-0.webp",
+    "width": 1080,
+    "height": 1080,
+    "bytes": 152948,
+    "type": "authenticated"
+  },
+  "agromukam/cattle-scale/5516-1.webp": {
+    "publicId": "competitors/agromukam/cattle-scale/5516-1",
+    "secureUrl": "https://res.cloudinary.com/oeon1p4w/image/authenticated/s--OdowmZ8Y--/v1783711335/competitors/agromukam/cattle-scale/5516-1.webp",
+    "width": 1156,
+    "height": 520,
+    "bytes": 67594,
+    "type": "authenticated"
+  },
+  "agromukam/cream-separator/7137-0.webp": {
+    "publicId": "competitors/agromukam/cream-separator/7137-0",
+    "secureUrl": "https://res.cloudinary.com/oeon1p4w/image/authenticated/s--IXFKGxqY--/v1783711335/competitors/agromukam/cream-separator/7137-0.webp",
+    "width": 294,
+    "height": 286,
+    "bytes": 4144,
+    "type": "authenticated"
+  },
+  "agromukam/crossbred-heifer/2976-0.webp": {
+    "publicId": "competitors/agromukam/crossbred-heifer/2976-0",
+    "secureUrl": "https://res.cloudinary.com/oeon1p4w/image/authenticated/s--T5IRl1l_--/v1783711336/competitors/agromukam/crossbred-heifer/2976-0.webp",
+    "width": 1280,
+    "height": 960,
+    "bytes": 152174,
+    "type": "authenticated"
+  },
+  "agromukam/dairy-concentrate-25kg/2986-0.webp": {
+    "publicId": "competitors/agromukam/dairy-concentrate-25kg/2986-0",
+    "secureUrl": "https://res.cloudinary.com/oeon1p4w/image/authenticated/s--CpcdvJw7--/v1783711337/competitors/agromukam/dairy-concentrate-25kg/2986-0.webp",
+    "width": 1280,
+    "height": 960,
+    "bytes": 174340,
+    "type": "authenticated"
+  },
+  "agromukam/dairy-concentrate-25kg/2987-0.webp": {
+    "publicId": "competitors/agromukam/dairy-concentrate-25kg/2987-0",
+    "secureUrl": "https://res.cloudinary.com/oeon1p4w/image/authenticated/s--43q1JLlJ--/v1783711338/competitors/agromukam/dairy-concentrate-25kg/2987-0.webp",
+    "width": 1280,
+    "height": 960,
+    "bytes": 179424,
+    "type": "authenticated"
+  },
+  "agromukam/drenching-gun/8579-0.webp": {
+    "publicId": "competitors/agromukam/drenching-gun/8579-0",
+    "secureUrl": "https://res.cloudinary.com/oeon1p4w/image/authenticated/s--krdDKSl7--/v1783711339/competitors/agromukam/drenching-gun/8579-0.webp",
+    "width": 433,
+    "height": 577,
+    "bytes": 10410,
+    "type": "authenticated"
+  },
+  "agromukam/drenching-gun/8579-1.webp": {
+    "publicId": "competitors/agromukam/drenching-gun/8579-1",
+    "secureUrl": "https://res.cloudinary.com/oeon1p4w/image/authenticated/s--kHeyJNGJ--/v1783711340/competitors/agromukam/drenching-gun/8579-1.webp",
+    "width": 1280,
+    "height": 588,
+    "bytes": 17314,
+    "type": "authenticated"
+  },
+  "agromukam/drenching-gun/8580-0.webp": {
+    "publicId": "competitors/agromukam/drenching-gun/8580-0",
+    "secureUrl": "https://res.cloudinary.com/oeon1p4w/image/authenticated/s--C_KbieJO--/v1783711341/competitors/agromukam/drenching-gun/8580-0.webp",
+    "width": 433,
+    "height": 577,
+    "bytes": 10410,
+    "type": "authenticated"
+  },
+  "agromukam/drenching-gun/8580-1.webp": {
+    "publicId": "competitors/agromukam/drenching-gun/8580-1",
+    "secureUrl": "https://res.cloudinary.com/oeon1p4w/image/authenticated/s--qhgn6FbB--/v1783711341/competitors/agromukam/drenching-gun/8580-1.webp",
+    "width": 1280,
+    "height": 588,
+    "bytes": 17314,
+    "type": "authenticated"
+  },
+  "agromukam/ear-tag-set-100/8575-0.webp": {
+    "publicId": "competitors/agromukam/ear-tag-set-100/8575-0",
+    "secureUrl": "https://res.cloudinary.com/oeon1p4w/image/authenticated/s--Z1ms4i20--/v1783711343/competitors/agromukam/ear-tag-set-100/8575-0.webp",
+    "width": 1406,
+    "height": 1600,
+    "bytes": 123172,
+    "type": "authenticated"
+  },
+  "agromukam/ear-tag-set-100/8576-0.webp": {
+    "publicId": "competitors/agromukam/ear-tag-set-100/8576-0",
+    "secureUrl": "https://res.cloudinary.com/oeon1p4w/image/authenticated/s--x9TOjqXs--/v1783711344/competitors/agromukam/ear-tag-set-100/8576-0.webp",
+    "width": 918,
+    "height": 1355,
+    "bytes": 145120,
+    "type": "authenticated"
+  },
+  "agromukam/ear-tag-set-100/9076-0.webp": {
+    "publicId": "competitors/agromukam/ear-tag-set-100/9076-0",
+    "secureUrl": "https://res.cloudinary.com/oeon1p4w/image/authenticated/s--Wi-vkvvh--/v1783711345/competitors/agromukam/ear-tag-set-100/9076-0.webp",
+    "width": 999,
+    "height": 1600,
+    "bytes": 35732,
+    "type": "authenticated"
+  },
+  "agromukam/ear-tag-set-100/9076-1.webp": {
+    "publicId": "competitors/agromukam/ear-tag-set-100/9076-1",
+    "secureUrl": "https://res.cloudinary.com/oeon1p4w/image/authenticated/s--9wyn7QJQ--/v1783711346/competitors/agromukam/ear-tag-set-100/9076-1.webp",
+    "width": 1440,
+    "height": 1080,
+    "bytes": 21286,
+    "type": "authenticated"
+  },
+  "agromukam/ear-tag-set-100/9076-2.webp": {
+    "publicId": "competitors/agromukam/ear-tag-set-100/9076-2",
+    "secureUrl": "https://res.cloudinary.com/oeon1p4w/image/authenticated/s--Z1U0nFw5--/v1783711347/competitors/agromukam/ear-tag-set-100/9076-2.webp",
+    "width": 1080,
+    "height": 1080,
+    "bytes": 28292,
+    "type": "authenticated"
+  },
+  "agromukam/fish-meal-25kg/3714-0.webp": {
+    "publicId": "competitors/agromukam/fish-meal-25kg/3714-0",
+    "secureUrl": "https://res.cloudinary.com/oeon1p4w/image/authenticated/s--OEc3F7RP--/v1783711348/competitors/agromukam/fish-meal-25kg/3714-0.webp",
+    "width": 433,
+    "height": 577,
+    "bytes": 47496,
+    "type": "authenticated"
+  },
+  "agromukam/fish-meal-25kg/3714-1.webp": {
+    "publicId": "competitors/agromukam/fish-meal-25kg/3714-1",
+    "secureUrl": "https://res.cloudinary.com/oeon1p4w/image/authenticated/s--DvbZvieI--/v1783711349/competitors/agromukam/fish-meal-25kg/3714-1.webp",
+    "width": 960,
+    "height": 1280,
+    "bytes": 302826,
+    "type": "authenticated"
+  },
+  "agromukam/fish-meal-25kg/3716-0.webp": {
+    "publicId": "competitors/agromukam/fish-meal-25kg/3716-0",
+    "secureUrl": "https://res.cloudinary.com/oeon1p4w/image/authenticated/s--JEtDU9PH--/v1783711350/competitors/agromukam/fish-meal-25kg/3716-0.webp",
+    "width": 1440,
+    "height": 1920,
+    "bytes": 164032,
+    "type": "authenticated"
+  },
+  "agromukam/fish-meal-25kg/7785-0.webp": {
+    "publicId": "competitors/agromukam/fish-meal-25kg/7785-0",
+    "secureUrl": "https://res.cloudinary.com/oeon1p4w/image/authenticated/s--v4ikU919--/v1783711351/competitors/agromukam/fish-meal-25kg/7785-0.webp",
+    "width": 864,
+    "height": 1152,
+    "bytes": 95224,
+    "type": "authenticated"
+  },
+  "agromukam/fish-meal-25kg/7785-1.webp": {
+    "publicId": "competitors/agromukam/fish-meal-25kg/7785-1",
+    "secureUrl": "https://res.cloudinary.com/oeon1p4w/image/authenticated/s--n22TlQfk--/v1783711352/competitors/agromukam/fish-meal-25kg/7785-1.webp",
+    "width": 864,
+    "height": 1152,
+    "bytes": 105838,
+    "type": "authenticated"
+  },
+  "agromukam/green-grass-bundle/8561-0.webp": {
+    "publicId": "competitors/agromukam/green-grass-bundle/8561-0",
+    "secureUrl": "https://res.cloudinary.com/oeon1p4w/image/authenticated/s--WtvjDE0s--/v1783711353/competitors/agromukam/green-grass-bundle/8561-0.webp",
+    "width": 1000,
+    "height": 666,
+    "bytes": 248388,
+    "type": "authenticated"
+  },
+  "agromukam/milk-can-10l-al/8092-0.webp": {
+    "publicId": "competitors/agromukam/milk-can-10l-al/8092-0",
+    "secureUrl": "https://res.cloudinary.com/oeon1p4w/image/authenticated/s--ftBLknbq--/v1783711356/competitors/agromukam/milk-can-10l-al/8092-0.webp",
+    "width": 960,
+    "height": 1280,
+    "bytes": 77082,
+    "type": "authenticated"
+  },
+  "agromukam/milk-can-20l-ss/8092-0.webp": {
+    "publicId": "competitors/agromukam/milk-can-20l-ss/8092-0",
+    "secureUrl": "https://res.cloudinary.com/oeon1p4w/image/authenticated/s--6CDaWM4R--/v1783711357/competitors/agromukam/milk-can-20l-ss/8092-0.webp",
+    "width": 960,
+    "height": 1280,
+    "bytes": 77082,
+    "type": "authenticated"
+  },
+  "agromukam/milking-bucket-20l/4426-0.webp": {
+    "publicId": "competitors/agromukam/milking-bucket-20l/4426-0",
+    "secureUrl": "https://res.cloudinary.com/oeon1p4w/image/authenticated/s--UIrFvdjb--/v1783711358/competitors/agromukam/milking-bucket-20l/4426-0.webp",
+    "width": 1080,
+    "height": 1080,
+    "bytes": 53214,
+    "type": "authenticated"
+  },
+  "agromukam/milking-bucket-20l/8073-0.webp": {
+    "publicId": "competitors/agromukam/milking-bucket-20l/8073-0",
+    "secureUrl": "https://res.cloudinary.com/oeon1p4w/image/authenticated/s--zN6TYAdU--/v1783711359/competitors/agromukam/milking-bucket-20l/8073-0.webp",
+    "width": 216,
+    "height": 234,
+    "bytes": 9768,
+    "type": "authenticated"
+  },
+  "agromukam/milking-machine-single/4426-0.webp": {
+    "publicId": "competitors/agromukam/milking-machine-single/4426-0",
+    "secureUrl": "https://res.cloudinary.com/oeon1p4w/image/authenticated/s--nS6_as9S--/v1783711360/competitors/agromukam/milking-machine-single/4426-0.webp",
+    "width": 1080,
+    "height": 1080,
+    "bytes": 53214,
+    "type": "authenticated"
+  },
+  "agromukam/milking-machine-single/8073-0.webp": {
+    "publicId": "competitors/agromukam/milking-machine-single/8073-0",
+    "secureUrl": "https://res.cloudinary.com/oeon1p4w/image/authenticated/s--sHAFUlgC--/v1783711361/competitors/agromukam/milking-machine-single/8073-0.webp",
+    "width": 216,
+    "height": 234,
+    "bytes": 9768,
+    "type": "authenticated"
+  },
+  "agromukam/mineral-mix-10kg/8336-0.webp": {
+    "publicId": "competitors/agromukam/mineral-mix-10kg/8336-0",
+    "secureUrl": "https://res.cloudinary.com/oeon1p4w/image/authenticated/s--AW6KmhKt--/v1783711365/competitors/agromukam/mineral-mix-10kg/8336-0.webp",
+    "width": 1200,
+    "height": 1200,
+    "bytes": 111012,
+    "type": "authenticated"
+  },
+  "agromukam/mineral-mix-10kg/8337-0.webp": {
+    "publicId": "competitors/agromukam/mineral-mix-10kg/8337-0",
+    "secureUrl": "https://res.cloudinary.com/oeon1p4w/image/authenticated/s--xMjaem92--/v1783711366/competitors/agromukam/mineral-mix-10kg/8337-0.webp",
+    "width": 1920,
+    "height": 1914,
+    "bytes": 151284,
+    "type": "authenticated"
+  },
+  "agromukam/mineral-mix-10kg/8379-0.webp": {
+    "publicId": "competitors/agromukam/mineral-mix-10kg/8379-0",
+    "secureUrl": "https://res.cloudinary.com/oeon1p4w/image/authenticated/s--FbTrCcN9--/v1783711367/competitors/agromukam/mineral-mix-10kg/8379-0.webp",
+    "width": 1920,
+    "height": 1901,
+    "bytes": 209568,
+    "type": "authenticated"
+  },
+  "agromukam/molasses-20l/5276-0.webp": {
+    "publicId": "competitors/agromukam/molasses-20l/5276-0",
+    "secureUrl": "https://res.cloudinary.com/oeon1p4w/image/authenticated/s--bhktFFPr--/v1783711368/competitors/agromukam/molasses-20l/5276-0.webp",
+    "width": 413,
+    "height": 489,
+    "bytes": 30724,
+    "type": "authenticated"
+  },
+  "agromukam/molasses-20l/5276-1.webp": {
+    "publicId": "competitors/agromukam/molasses-20l/5276-1",
+    "secureUrl": "https://res.cloudinary.com/oeon1p4w/image/authenticated/s--8h-PlP9e--/v1783711369/competitors/agromukam/molasses-20l/5276-1.webp",
+    "width": 1039,
+    "height": 1599,
+    "bytes": 85518,
+    "type": "authenticated"
+  },
+  "agromukam/molasses-20l/8584-0.webp": {
+    "publicId": "competitors/agromukam/molasses-20l/8584-0",
+    "secureUrl": "https://res.cloudinary.com/oeon1p4w/image/authenticated/s--A1An1Fo2--/v1783711369/competitors/agromukam/molasses-20l/8584-0.webp",
+    "width": 225,
+    "height": 300,
+    "bytes": 8030,
+    "type": "authenticated"
+  },
+  "agromukam/molasses-20l/8584-1.webp": {
+    "publicId": "competitors/agromukam/molasses-20l/8584-1",
+    "secureUrl": "https://res.cloudinary.com/oeon1p4w/image/authenticated/s--BhrO-sub--/v1783711370/competitors/agromukam/molasses-20l/8584-1.webp",
+    "width": 210,
+    "height": 300,
+    "bytes": 10998,
+    "type": "authenticated"
+  },
+  "agromukam/molasses-20l/8585-0.webp": {
+    "publicId": "competitors/agromukam/molasses-20l/8585-0",
+    "secureUrl": "https://res.cloudinary.com/oeon1p4w/image/authenticated/s--7RldQ9vB--/v1783711372/competitors/agromukam/molasses-20l/8585-0.webp",
+    "width": 853,
+    "height": 1280,
+    "bytes": 45630,
+    "type": "authenticated"
+  },
+  "agromukam/molasses-20l/8585-1.webp": {
+    "publicId": "competitors/agromukam/molasses-20l/8585-1",
+    "secureUrl": "https://res.cloudinary.com/oeon1p4w/image/authenticated/s--yKhf_W2E--/v1783711373/competitors/agromukam/molasses-20l/8585-1.webp",
+    "width": 720,
+    "height": 1025,
+    "bytes": 66970,
+    "type": "authenticated"
+  },
+  "agromukam/murrah-buffalo/4365-0.webp": {
+    "publicId": "competitors/agromukam/murrah-buffalo/4365-0",
+    "secureUrl": "https://res.cloudinary.com/oeon1p4w/image/authenticated/s--G40YiGpr--/v1783711374/competitors/agromukam/murrah-buffalo/4365-0.webp",
+    "width": 1000,
+    "height": 1000,
+    "bytes": 60744,
+    "type": "authenticated"
+  },
+  "agromukam/murrah-buffalo/4392-0.webp": {
+    "publicId": "competitors/agromukam/murrah-buffalo/4392-0",
+    "secureUrl": "https://res.cloudinary.com/oeon1p4w/image/authenticated/s--hgFOwhrs--/v1783711375/competitors/agromukam/murrah-buffalo/4392-0.webp",
+    "width": 1165,
+    "height": 1080,
+    "bytes": 76702,
+    "type": "authenticated"
+  },
+  "agromukam/nili-ravi-buffalo/4365-0.webp": {
+    "publicId": "competitors/agromukam/nili-ravi-buffalo/4365-0",
+    "secureUrl": "https://res.cloudinary.com/oeon1p4w/image/authenticated/s--CkBsQ7HC--/v1783711376/competitors/agromukam/nili-ravi-buffalo/4365-0.webp",
+    "width": 1000,
+    "height": 1000,
+    "bytes": 60744,
+    "type": "authenticated"
+  },
+  "agromukam/nili-ravi-buffalo/4392-0.webp": {
+    "publicId": "competitors/agromukam/nili-ravi-buffalo/4392-0",
+    "secureUrl": "https://res.cloudinary.com/oeon1p4w/image/authenticated/s--CRmSKeYG--/v1783711377/competitors/agromukam/nili-ravi-buffalo/4392-0.webp",
+    "width": 1165,
+    "height": 1080,
+    "bytes": 76702,
+    "type": "authenticated"
+  },
+  "agromukam/pasteurizer-50l/6192-0.webp": {
+    "publicId": "competitors/agromukam/pasteurizer-50l/6192-0",
+    "secureUrl": "https://res.cloudinary.com/oeon1p4w/image/authenticated/s--86UgBftV--/v1783711378/competitors/agromukam/pasteurizer-50l/6192-0.webp",
+    "width": 330,
+    "height": 467,
+    "bytes": 5170,
+    "type": "authenticated"
+  },
+  "agromukam/pasteurizer-50l/6192-1.webp": {
+    "publicId": "competitors/agromukam/pasteurizer-50l/6192-1",
+    "secureUrl": "https://res.cloudinary.com/oeon1p4w/image/authenticated/s--WMMM-mpG--/v1783711379/competitors/agromukam/pasteurizer-50l/6192-1.webp",
+    "width": 1000,
+    "height": 1314,
+    "bytes": 12528,
+    "type": "authenticated"
+  },
+  "agromukam/pasteurizer-50l/6397-0.webp": {
+    "publicId": "competitors/agromukam/pasteurizer-50l/6397-0",
+    "secureUrl": "https://res.cloudinary.com/oeon1p4w/image/authenticated/s--Cvr5CuAS--/v1783711380/competitors/agromukam/pasteurizer-50l/6397-0.webp",
+    "width": 1080,
+    "height": 1370,
+    "bytes": 87794,
+    "type": "authenticated"
+  },
+  "agromukam/pasteurizer-50l/7111-0.webp": {
+    "publicId": "competitors/agromukam/pasteurizer-50l/7111-0",
+    "secureUrl": "https://res.cloudinary.com/oeon1p4w/image/authenticated/s--5J561RQD--/v1783711381/competitors/agromukam/pasteurizer-50l/7111-0.webp",
+    "width": 1920,
+    "height": 1920,
+    "bytes": 149248,
+    "type": "authenticated"
+  },
+  "agromukam/rice-straw-bale/3295-0.webp": {
+    "publicId": "competitors/agromukam/rice-straw-bale/3295-0",
+    "secureUrl": "https://res.cloudinary.com/oeon1p4w/image/authenticated/s--W0W8KOYT--/v1783711382/competitors/agromukam/rice-straw-bale/3295-0.webp",
+    "width": 250,
+    "height": 188,
+    "bytes": 11972,
+    "type": "authenticated"
+  },
+  "agromukam/salt-block-2kg/6088-0.webp": {
+    "publicId": "competitors/agromukam/salt-block-2kg/6088-0",
+    "secureUrl": "https://res.cloudinary.com/oeon1p4w/image/authenticated/s--BIWNVRiq--/v1783711383/competitors/agromukam/salt-block-2kg/6088-0.webp",
+    "width": 1280,
+    "height": 1197,
+    "bytes": 128786,
+    "type": "authenticated"
+  },
+  "agromukam/salt-block-2kg/6089-0.webp": {
+    "publicId": "competitors/agromukam/salt-block-2kg/6089-0",
+    "secureUrl": "https://res.cloudinary.com/oeon1p4w/image/authenticated/s--5fYOQYb7--/v1783711384/competitors/agromukam/salt-block-2kg/6089-0.webp",
+    "width": 1280,
+    "height": 1197,
+    "bytes": 128786,
+    "type": "authenticated"
+  },
+  "agromukam/salt-block-2kg/6520-0.webp": {
+    "publicId": "competitors/agromukam/salt-block-2kg/6520-0",
+    "secureUrl": "https://res.cloudinary.com/oeon1p4w/image/authenticated/s--Yw48hqKB--/v1783711385/competitors/agromukam/salt-block-2kg/6520-0.webp",
+    "width": 758,
+    "height": 1280,
+    "bytes": 67736,
+    "type": "authenticated"
+  },
+  "agromukam/salt-block-2kg/6520-1.webp": {
+    "publicId": "competitors/agromukam/salt-block-2kg/6520-1",
+    "secureUrl": "https://res.cloudinary.com/oeon1p4w/image/authenticated/s--2c25170c--/v1783711385/competitors/agromukam/salt-block-2kg/6520-1.webp",
+    "width": 577,
+    "height": 647,
+    "bytes": 40410,
+    "type": "authenticated"
+  },
+  "agromukam/salt-block-2kg/6520-2.webp": {
+    "publicId": "competitors/agromukam/salt-block-2kg/6520-2",
+    "secureUrl": "https://res.cloudinary.com/oeon1p4w/image/authenticated/s--m83HnZES--/v1783711386/competitors/agromukam/salt-block-2kg/6520-2.webp",
+    "width": 577,
+    "height": 995,
+    "bytes": 57774,
+    "type": "authenticated"
+  },
+  "agromukam/soybean-meal-50kg/3289-0.webp": {
+    "publicId": "competitors/agromukam/soybean-meal-50kg/3289-0",
+    "secureUrl": "https://res.cloudinary.com/oeon1p4w/image/authenticated/s--dEXa5_ea--/v1783711388/competitors/agromukam/soybean-meal-50kg/3289-0.webp",
+    "width": 678,
+    "height": 474,
+    "bytes": 106204,
+    "type": "authenticated"
+  },
+  "agromukam/tmr-feed-50kg/2977-0.webp": {
+    "publicId": "competitors/agromukam/tmr-feed-50kg/2977-0",
+    "secureUrl": "https://res.cloudinary.com/oeon1p4w/image/authenticated/s--rVnZ2ANJ--/v1783711388/competitors/agromukam/tmr-feed-50kg/2977-0.webp",
+    "width": 1280,
+    "height": 960,
+    "bytes": 160038,
+    "type": "authenticated"
+  },
+  "agromukam/tmr-feed-50kg/2979-0.webp": {
+    "publicId": "competitors/agromukam/tmr-feed-50kg/2979-0",
+    "secureUrl": "https://res.cloudinary.com/oeon1p4w/image/authenticated/s--ruXoXyEB--/v1783711390/competitors/agromukam/tmr-feed-50kg/2979-0.webp",
+    "width": 1280,
+    "height": 960,
+    "bytes": 137804,
+    "type": "authenticated"
+  },
+  "agromukam/wheat-bran-50kg/3286-0.webp": {
+    "publicId": "competitors/agromukam/wheat-bran-50kg/3286-0",
+    "secureUrl": "https://res.cloudinary.com/oeon1p4w/image/authenticated/s--_-i27yK9--/v1783711390/competitors/agromukam/wheat-bran-50kg/3286-0.webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 23444,
+    "type": "authenticated"
+  },
+  "onaturalbd/curd-sweet-double-fat-yogurt-onatural/0.webp": {
+    "publicId": "competitors/onaturalbd/curd-sweet-double-fat-yogurt-onatural/0",
+    "secureUrl": "https://res.cloudinary.com/oeon1p4w/image/authenticated/s--hCfw_tiz--/v1783711391/competitors/onaturalbd/curd-sweet-double-fat-yogurt-onatural/0.webp",
+    "width": 1000,
+    "height": 1000,
+    "bytes": 16116,
+    "type": "authenticated"
+  },
+  "onaturalbd/curd-sweet-double-fat-yogurt-onatural/1.png": {
+    "publicId": "competitors/onaturalbd/curd-sweet-double-fat-yogurt-onatural/1",
+    "secureUrl": "https://res.cloudinary.com/oeon1p4w/image/authenticated/s--dTgjpIF---/v1783711392/competitors/onaturalbd/curd-sweet-double-fat-yogurt-onatural/1.png",
+    "width": 310,
+    "height": 98,
+    "bytes": 4302,
+    "type": "authenticated"
+  },
+  "onaturalbd/curd-sweet-double-fat-yogurt-onatural/2.jpg": {
+    "publicId": "competitors/onaturalbd/curd-sweet-double-fat-yogurt-onatural/2",
+    "secureUrl": "https://res.cloudinary.com/oeon1p4w/image/authenticated/s--d-UXgG39--/v1783711393/competitors/onaturalbd/curd-sweet-double-fat-yogurt-onatural/2.jpg",
+    "width": 1000,
+    "height": 1000,
+    "bytes": 30725,
+    "type": "authenticated"
+  },
+  "onaturalbd/curd-sweet-double-fat-yogurt-onatural/3.jpg": {
+    "publicId": "competitors/onaturalbd/curd-sweet-double-fat-yogurt-onatural/3",
+    "secureUrl": "https://res.cloudinary.com/oeon1p4w/image/authenticated/s--qnzFM36C--/v1783711394/competitors/onaturalbd/curd-sweet-double-fat-yogurt-onatural/3.jpg",
+    "width": 1000,
+    "height": 1000,
+    "bytes": 53666,
+    "type": "authenticated"
+  },
+  "onaturalbd/ghee/0.webp": {
+    "publicId": "competitors/onaturalbd/ghee/0",
+    "secureUrl": "https://res.cloudinary.com/oeon1p4w/image/authenticated/s--bTHIYXL9--/v1783711395/competitors/onaturalbd/ghee/0.webp",
+    "width": 1000,
+    "height": 1000,
+    "bytes": 31700,
+    "type": "authenticated"
+  },
+  "onaturalbd/ghee/1.png": {
+    "publicId": "competitors/onaturalbd/ghee/1",
+    "secureUrl": "https://res.cloudinary.com/oeon1p4w/image/authenticated/s--Z1_AxQhv--/v1783711395/competitors/onaturalbd/ghee/1.png",
+    "width": 310,
+    "height": 98,
+    "bytes": 4302,
+    "type": "authenticated"
+  },
+  "onaturalbd/ghee/2.webp": {
+    "publicId": "competitors/onaturalbd/ghee/2",
+    "secureUrl": "https://res.cloudinary.com/oeon1p4w/image/authenticated/s--38q8oBTb--/v1783711396/competitors/onaturalbd/ghee/2.webp",
+    "width": 1000,
+    "height": 1000,
+    "bytes": 11772,
+    "type": "authenticated"
+  },
+  "onaturalbd/ghee/3.jpg": {
+    "publicId": "competitors/onaturalbd/ghee/3",
+    "secureUrl": "https://res.cloudinary.com/oeon1p4w/image/authenticated/s--SuaCZ9s2--/v1783711398/competitors/onaturalbd/ghee/3.jpg",
+    "width": 1000,
+    "height": 1000,
+    "bytes": 52697,
+    "type": "authenticated"
+  },
+  "onaturalbd/local-duck-egg/0.webp": {
+    "publicId": "competitors/onaturalbd/local-duck-egg/0",
+    "secureUrl": "https://res.cloudinary.com/oeon1p4w/image/authenticated/s--m8NX6Le6--/v1783711398/competitors/onaturalbd/local-duck-egg/0.webp",
+    "width": 1000,
+    "height": 1000,
+    "bytes": 8880,
+    "type": "authenticated"
+  },
+  "onaturalbd/local-duck-egg/1.png": {
+    "publicId": "competitors/onaturalbd/local-duck-egg/1",
+    "secureUrl": "https://res.cloudinary.com/oeon1p4w/image/authenticated/s--meGH3mxR--/v1783711399/competitors/onaturalbd/local-duck-egg/1.png",
+    "width": 310,
+    "height": 98,
+    "bytes": 4302,
+    "type": "authenticated"
+  },
+  "onaturalbd/local-duck-egg/2.webp": {
+    "publicId": "competitors/onaturalbd/local-duck-egg/2",
+    "secureUrl": "https://res.cloudinary.com/oeon1p4w/image/authenticated/s--0A1esWNL--/v1783711400/competitors/onaturalbd/local-duck-egg/2.webp",
+    "width": 1000,
+    "height": 1000,
+    "bytes": 16116,
+    "type": "authenticated"
+  },
+  "onaturalbd/local-duck-egg/3.jpg": {
+    "publicId": "competitors/onaturalbd/local-duck-egg/3",
+    "secureUrl": "https://res.cloudinary.com/oeon1p4w/image/authenticated/s--a-qmXyff--/v1783711402/competitors/onaturalbd/local-duck-egg/3.jpg",
+    "width": 1000,
+    "height": 1000,
+    "bytes": 52697,
+    "type": "authenticated"
+  },
+  "onaturalbd/mango-yogurt-আম-দই-onatural/0.jpg": {
+    "publicId": "competitors/onaturalbd/mango-yogurt-আম-দই-onatural/0",
+    "secureUrl": "https://res.cloudinary.com/oeon1p4w/image/authenticated/s--GczcM4sL--/v1783711402/competitors/onaturalbd/mango-yogurt-%E0%A6%86%E0%A6%AE-%E0%A6%A6%E0%A6%87-onatural/0.jpg",
+    "width": 1000,
+    "height": 1000,
+    "bytes": 52697,
+    "type": "authenticated"
+  },
+  "onaturalbd/mango-yogurt-আম-দই-onatural/1.png": {
+    "publicId": "competitors/onaturalbd/mango-yogurt-আম-দই-onatural/1",
+    "secureUrl": "https://res.cloudinary.com/oeon1p4w/image/authenticated/s--7bIcQGXy--/v1783711403/competitors/onaturalbd/mango-yogurt-%E0%A6%86%E0%A6%AE-%E0%A6%A6%E0%A6%87-onatural/1.png",
+    "width": 310,
+    "height": 98,
+    "bytes": 4302,
+    "type": "authenticated"
+  },
+  "onaturalbd/mango-yogurt-আম-দই-onatural/2.webp": {
+    "publicId": "competitors/onaturalbd/mango-yogurt-আম-দই-onatural/2",
+    "secureUrl": "https://res.cloudinary.com/oeon1p4w/image/authenticated/s--AMI6T_e---/v1783711404/competitors/onaturalbd/mango-yogurt-%E0%A6%86%E0%A6%AE-%E0%A6%A6%E0%A6%87-onatural/2.webp",
+    "width": 1000,
+    "height": 1000,
+    "bytes": 18392,
+    "type": "authenticated"
+  },
+  "onaturalbd/mango-yogurt-আম-দই-onatural/3.webp": {
+    "publicId": "competitors/onaturalbd/mango-yogurt-আম-দই-onatural/3",
+    "secureUrl": "https://res.cloudinary.com/oeon1p4w/image/authenticated/s--VyXpbx6L--/v1783711405/competitors/onaturalbd/mango-yogurt-%E0%A6%86%E0%A6%AE-%E0%A6%A6%E0%A6%87-onatural/3.webp",
+    "width": 1000,
+    "height": 1000,
+    "bytes": 14890,
+    "type": "authenticated"
+  },
+  "onaturalbd/organic-chicken-egg/0.webp": {
+    "publicId": "competitors/onaturalbd/organic-chicken-egg/0",
+    "secureUrl": "https://res.cloudinary.com/oeon1p4w/image/authenticated/s--g-0t4eXg--/v1783711406/competitors/onaturalbd/organic-chicken-egg/0.webp",
+    "width": 1000,
+    "height": 1000,
+    "bytes": 19798,
+    "type": "authenticated"
+  },
+  "onaturalbd/organic-chicken-egg/1.png": {
+    "publicId": "competitors/onaturalbd/organic-chicken-egg/1",
+    "secureUrl": "https://res.cloudinary.com/oeon1p4w/image/authenticated/s--bFZt7y3O--/v1783711407/competitors/onaturalbd/organic-chicken-egg/1.png",
+    "width": 310,
+    "height": 98,
+    "bytes": 4302,
+    "type": "authenticated"
+  },
+  "onaturalbd/organic-chicken-egg/2.jpg": {
+    "publicId": "competitors/onaturalbd/organic-chicken-egg/2",
+    "secureUrl": "https://res.cloudinary.com/oeon1p4w/image/authenticated/s--HHrJ9vkI--/v1783711408/competitors/onaturalbd/organic-chicken-egg/2.jpg",
+    "width": 1000,
+    "height": 1000,
+    "bytes": 44156,
+    "type": "authenticated"
+  },
+  "onaturalbd/organic-chicken-egg/3.webp": {
+    "publicId": "competitors/onaturalbd/organic-chicken-egg/3",
+    "secureUrl": "https://res.cloudinary.com/oeon1p4w/image/authenticated/s--F0tQ_0pw--/v1783711409/competitors/onaturalbd/organic-chicken-egg/3.webp",
+    "width": 1000,
+    "height": 1000,
+    "bytes": 6148,
+    "type": "authenticated"
+  },
+  "onaturalbd/pure-deshi-cow-milk-onatural/0.webp": {
+    "publicId": "competitors/onaturalbd/pure-deshi-cow-milk-onatural/0",
+    "secureUrl": "https://res.cloudinary.com/oeon1p4w/image/authenticated/s--Hmaf_HzH--/v1783711409/competitors/onaturalbd/pure-deshi-cow-milk-onatural/0.webp",
+    "width": 1000,
+    "height": 1000,
+    "bytes": 6148,
+    "type": "authenticated"
+  },
+  "onaturalbd/pure-deshi-cow-milk-onatural/1.png": {
+    "publicId": "competitors/onaturalbd/pure-deshi-cow-milk-onatural/1",
+    "secureUrl": "https://res.cloudinary.com/oeon1p4w/image/authenticated/s--THadivHG--/v1783711410/competitors/onaturalbd/pure-deshi-cow-milk-onatural/1.png",
+    "width": 310,
+    "height": 98,
+    "bytes": 4302,
+    "type": "authenticated"
+  },
+  "onaturalbd/pure-deshi-cow-milk-onatural/2.jpg": {
+    "publicId": "competitors/onaturalbd/pure-deshi-cow-milk-onatural/2",
+    "secureUrl": "https://res.cloudinary.com/oeon1p4w/image/authenticated/s--qoNhFkil--/v1783711411/competitors/onaturalbd/pure-deshi-cow-milk-onatural/2.jpg",
+    "width": 1000,
+    "height": 1000,
+    "bytes": 48684,
+    "type": "authenticated"
+  },
+  "onaturalbd/pure-deshi-cow-milk-onatural/3.jpg": {
+    "publicId": "competitors/onaturalbd/pure-deshi-cow-milk-onatural/3",
+    "secureUrl": "https://res.cloudinary.com/oeon1p4w/image/authenticated/s--pCKA2g0Z--/v1783711412/competitors/onaturalbd/pure-deshi-cow-milk-onatural/3.jpg",
+    "width": 1000,
+    "height": 1000,
+    "bytes": 44156,
+    "type": "authenticated"
+  },
+  "onaturalbd/sour-cup-curd-onatural/0.webp": {
+    "publicId": "competitors/onaturalbd/sour-cup-curd-onatural/0",
+    "secureUrl": "https://res.cloudinary.com/oeon1p4w/image/authenticated/s--syQlLPnD--/v1783711413/competitors/onaturalbd/sour-cup-curd-onatural/0.webp",
+    "width": 1000,
+    "height": 1000,
+    "bytes": 11772,
+    "type": "authenticated"
+  },
+  "onaturalbd/sour-cup-curd-onatural/1.png": {
+    "publicId": "competitors/onaturalbd/sour-cup-curd-onatural/1",
+    "secureUrl": "https://res.cloudinary.com/oeon1p4w/image/authenticated/s--wq9fmSb2--/v1783711414/competitors/onaturalbd/sour-cup-curd-onatural/1.png",
+    "width": 310,
+    "height": 98,
+    "bytes": 4302,
+    "type": "authenticated"
+  },
+  "onaturalbd/sour-cup-curd-onatural/2.webp": {
+    "publicId": "competitors/onaturalbd/sour-cup-curd-onatural/2",
+    "secureUrl": "https://res.cloudinary.com/oeon1p4w/image/authenticated/s--ClS4Z7Pi--/v1783711415/competitors/onaturalbd/sour-cup-curd-onatural/2.webp",
+    "width": 1000,
+    "height": 1000,
+    "bytes": 18392,
+    "type": "authenticated"
+  },
+  "onaturalbd/sour-cup-curd-onatural/3.jpg": {
+    "publicId": "competitors/onaturalbd/sour-cup-curd-onatural/3",
+    "secureUrl": "https://res.cloudinary.com/oeon1p4w/image/authenticated/s--qYv6f-Mc--/v1783711416/competitors/onaturalbd/sour-cup-curd-onatural/3.jpg",
+    "width": 1000,
+    "height": 1000,
+    "bytes": 50886,
+    "type": "authenticated"
+  },
+  "onaturalbd/sour-curd-tok-doi-yogurt-onatural-kg/0.webp": {
+    "publicId": "competitors/onaturalbd/sour-curd-tok-doi-yogurt-onatural-kg/0",
+    "secureUrl": "https://res.cloudinary.com/oeon1p4w/image/authenticated/s--pGEvhgOy--/v1783711417/competitors/onaturalbd/sour-curd-tok-doi-yogurt-onatural-kg/0.webp",
+    "width": 1000,
+    "height": 1000,
+    "bytes": 14890,
+    "type": "authenticated"
+  },
+  "onaturalbd/sour-curd-tok-doi-yogurt-onatural-kg/1.png": {
+    "publicId": "competitors/onaturalbd/sour-curd-tok-doi-yogurt-onatural-kg/1",
+    "secureUrl": "https://res.cloudinary.com/oeon1p4w/image/authenticated/s--JRwankUG--/v1783711419/competitors/onaturalbd/sour-curd-tok-doi-yogurt-onatural-kg/1.png",
+    "width": 310,
+    "height": 98,
+    "bytes": 4302,
+    "type": "authenticated"
+  },
+  "onaturalbd/sour-curd-tok-doi-yogurt-onatural-kg/2.jpg": {
+    "publicId": "competitors/onaturalbd/sour-curd-tok-doi-yogurt-onatural-kg/2",
+    "secureUrl": "https://res.cloudinary.com/oeon1p4w/image/authenticated/s--YHCbMzwX--/v1783711420/competitors/onaturalbd/sour-curd-tok-doi-yogurt-onatural-kg/2.jpg",
+    "width": 1000,
+    "height": 1000,
+    "bytes": 52697,
+    "type": "authenticated"
+  },
+  "onaturalbd/sour-curd-tok-doi-yogurt-onatural-kg/3.jpg": {
+    "publicId": "competitors/onaturalbd/sour-curd-tok-doi-yogurt-onatural-kg/3",
+    "secureUrl": "https://res.cloudinary.com/oeon1p4w/image/authenticated/s--Qij8TQh8--/v1783711421/competitors/onaturalbd/sour-curd-tok-doi-yogurt-onatural-kg/3.jpg",
+    "width": 1000,
+    "height": 1000,
+    "bytes": 33418,
+    "type": "authenticated"
+  },
+  "onaturalbd/sweet-cup-curdcup-doionatural/0.webp": {
+    "publicId": "competitors/onaturalbd/sweet-cup-curdcup-doionatural/0",
+    "secureUrl": "https://res.cloudinary.com/oeon1p4w/image/authenticated/s--O6QTO2xt--/v1783711422/competitors/onaturalbd/sweet-cup-curdcup-doionatural/0.webp",
+    "width": 1000,
+    "height": 1000,
+    "bytes": 11772,
+    "type": "authenticated"
+  },
+  "onaturalbd/sweet-cup-curdcup-doionatural/1.png": {
+    "publicId": "competitors/onaturalbd/sweet-cup-curdcup-doionatural/1",
+    "secureUrl": "https://res.cloudinary.com/oeon1p4w/image/authenticated/s--Ij3rV9rt--/v1783711422/competitors/onaturalbd/sweet-cup-curdcup-doionatural/1.png",
+    "width": 310,
+    "height": 98,
+    "bytes": 4302,
+    "type": "authenticated"
+  },
+  "onaturalbd/sweet-cup-curdcup-doionatural/2.jpg": {
+    "publicId": "competitors/onaturalbd/sweet-cup-curdcup-doionatural/2",
+    "secureUrl": "https://res.cloudinary.com/oeon1p4w/image/authenticated/s--T-BEhhGR--/v1783711423/competitors/onaturalbd/sweet-cup-curdcup-doionatural/2.jpg",
+    "width": 1000,
+    "height": 1000,
+    "bytes": 38846,
+    "type": "authenticated"
+  },
+  "onaturalbd/sweet-cup-curdcup-doionatural/3.jpg": {
+    "publicId": "competitors/onaturalbd/sweet-cup-curdcup-doionatural/3",
+    "secureUrl": "https://res.cloudinary.com/oeon1p4w/image/authenticated/s--ojarRBpR--/v1783711424/competitors/onaturalbd/sweet-cup-curdcup-doionatural/3.jpg",
+    "width": 1000,
+    "height": 1000,
+    "bytes": 50886,
+    "type": "authenticated"
+  },
+  "agromukam/local-breed-cow/7000-0.webp": {
+    "publicId": "competitors/agromukam/local-breed-cow/7000-0",
+    "secureUrl": "https://res.cloudinary.com/oeon1p4w/image/authenticated/s--JCgnFy6O--/v1783711919/competitors/agromukam/local-breed-cow/7000-0.webp",
+    "width": 1280,
+    "height": 960,
+    "bytes": 86102,
+    "type": "authenticated"
+  },
+  "agromukam/local-breed-cow/7025-0.webp": {
+    "publicId": "competitors/agromukam/local-breed-cow/7025-0",
+    "secureUrl": "https://res.cloudinary.com/oeon1p4w/image/authenticated/s--R-ACD-Xx--/v1783711920/competitors/agromukam/local-breed-cow/7025-0.webp",
+    "width": 1280,
+    "height": 960,
+    "bytes": 92094,
+    "type": "authenticated"
+  },
+  "agromukam/local-breed-cow/7035-0.webp": {
+    "publicId": "competitors/agromukam/local-breed-cow/7035-0",
+    "secureUrl": "https://res.cloudinary.com/oeon1p4w/image/authenticated/s--njnWPVnL--/v1783711921/competitors/agromukam/local-breed-cow/7035-0.webp",
+    "width": 1280,
+    "height": 960,
+    "bytes": 99644,
+    "type": "authenticated"
+  },
+  "agromukam/sahiwal-cow/7045-0.webp": {
+    "publicId": "competitors/agromukam/sahiwal-cow/7045-0",
+    "secureUrl": "https://res.cloudinary.com/oeon1p4w/image/authenticated/s--fXNNi0bU--/v1783711922/competitors/agromukam/sahiwal-cow/7045-0.webp",
+    "width": 1280,
+    "height": 960,
+    "bytes": 96234,
+    "type": "authenticated"
+  },
+  "agromukam/sahiwal-cow/7048-0.webp": {
+    "publicId": "competitors/agromukam/sahiwal-cow/7048-0",
+    "secureUrl": "https://res.cloudinary.com/oeon1p4w/image/authenticated/s--pZXGTyEK--/v1783711923/competitors/agromukam/sahiwal-cow/7048-0.webp",
+    "width": 1280,
+    "height": 960,
+    "bytes": 78726,
+    "type": "authenticated"
+  },
+  "agromukam/sahiwal-cow/7055-0.webp": {
+    "publicId": "competitors/agromukam/sahiwal-cow/7055-0",
+    "secureUrl": "https://res.cloudinary.com/oeon1p4w/image/authenticated/s--UsbdCUM4--/v1783711924/competitors/agromukam/sahiwal-cow/7055-0.webp",
+    "width": 1280,
+    "height": 960,
+    "bytes": 85428,
+    "type": "authenticated"
+  },
+  "agromukam/ear-tag-set-100/8094-0.webp": {
+    "publicId": "competitors/agromukam/ear-tag-set-100/8094-0",
+    "secureUrl": "https://res.cloudinary.com/oeon1p4w/image/authenticated/s--mLb7jwYf--/v1783712035/competitors/agromukam/ear-tag-set-100/8094-0.webp",
+    "width": 523,
+    "height": 523,
+    "bytes": 19384,
+    "type": "authenticated"
+  },
+  "agromukam/lactometer/7120-0.webp": {
+    "publicId": "competitors/agromukam/lactometer/7120-0",
+    "secureUrl": "https://res.cloudinary.com/oeon1p4w/image/authenticated/s--882ErcQB--/v1783712036/competitors/agromukam/lactometer/7120-0.webp",
+    "width": 500,
+    "height": 500,
+    "bytes": 16144,
+    "type": "authenticated"
+  },
+  "agromukam/lactometer/7120-1.webp": {
+    "publicId": "competitors/agromukam/lactometer/7120-1",
+    "secureUrl": "https://res.cloudinary.com/oeon1p4w/image/authenticated/s--vjFTVaqJ--/v1783712037/competitors/agromukam/lactometer/7120-1.webp",
+    "width": 500,
+    "height": 481,
+    "bytes": 34462,
+    "type": "authenticated"
+  }
+}

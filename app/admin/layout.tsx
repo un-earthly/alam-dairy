@@ -8,6 +8,8 @@ import {
   Users,
   BarChart3,
   LogOut,
+  Search,
+  Import,
 } from 'lucide-react'
 import Logo from '@/components/layout/Logo'
 
@@ -17,6 +19,8 @@ const NAV = [
   { href: '/admin/orders', label: 'Orders', icon: ShoppingBag },
   { href: '/admin/customers', label: 'Customers', icon: Users },
   { href: '/admin/inventory', label: 'Inventory', icon: BarChart3 },
+  { href: '/admin/competitor-import', label: 'Competitor Import', icon: Search },
+  { href: '/admin/imported-products', label: 'Imported Products', icon: Import },
 ]
 
 export default async function AdminLayout({ children }: { children: React.ReactNode }) {

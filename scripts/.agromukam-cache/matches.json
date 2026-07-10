@@ -1,0 +1,1165 @@
+{
+  "fresh-milk-1l": {
+    "query": "Fresh Milk",
+    "found": []
+  },
+  "fresh-milk-500ml": {
+    "query": "Fresh Milk",
+    "found": []
+  },
+  "fresh-milk-2l": {
+    "query": "Fresh Milk",
+    "found": []
+  },
+  "a2-milk-1l": {
+    "query": "A2 Milk",
+    "found": [
+      {
+        "score": 1,
+        "productId": 8540,
+        "name": "Taipet Premium Chicken, Milk & Fish Dry Cat Food for Kitten 1kg",
+        "nameBn": "Taipet Premium Chicken, Milk & Fish Dry Cat Food for Kitten 1kg",
+        "price": 400,
+        "oldPrice": 550,
+        "stockStatus": "In Stock",
+        "category": "Pets & Birds > Cats",
+        "vendor": "Mitali  Veterinary ",
+        "url": "https://agromukam.com/taipet-premium-chicken-milk-fish-dry-cat-food-for-kitten-1kg",
+        "images": [
+          "/competitors/agromukam/a2-milk-1l/8540-0.webp",
+          "/competitors/agromukam/a2-milk-1l/8540-1.webp"
+        ]
+      },
+      {
+        "score": 1,
+        "productId": 8537,
+        "name": "Taipet Premium Chicken, Milk & Fish Dry Cat Food for Kitten 400g",
+        "nameBn": "Taipet Premium Chicken, Milk & Fish Dry Cat Food for Kitten 400g",
+        "price": 200,
+        "oldPrice": 300,
+        "stockStatus": "In Stock",
+        "category": "Pets & Birds > Cats",
+        "vendor": "Mitali  Veterinary ",
+        "url": "https://agromukam.com/taipet-premium-chicken-milk-fish-dry-cat-food-for-kitten-400g",
+        "images": [
+          "/competitors/agromukam/a2-milk-1l/8537-0.webp"
+        ]
+      },
+      {
+        "score": 1,
+        "productId": 7111,
+        "name": "Ready Milk ( Milk replacer)  500gm",
+        "nameBn": "Ready Milk ( Milk replacer)  500gm",
+        "price": 300,
+        "oldPrice": 365,
+        "stockStatus": "In Stock",
+        "category": "Cattle > Cattle Nutrition",
+        "vendor": "Mitali  Veterinary ",
+        "url": "https://agromukam.com/ready-milk-milk-replacer-500gm",
+        "images": [
+          "/competitors/agromukam/a2-milk-1l/7111-0.webp"
+        ]
+      }
+    ]
+  },
+  "buffalo-milk-1l": {
+    "query": "Buffalo Milk",
+    "found": []
+  },
+  "mishti-doi-500g": {
+    "query": "Mishti Doi",
+    "found": []
+  },
+  "mishti-doi-1kg": {
+    "query": "Mishti Doi",
+    "found": []
+  },
+  "plain-yogurt-500g": {
+    "query": "Plain Yogurt",
+    "found": []
+  },
+  "pure-ghee-250g": {
+    "query": "Pure Ghee",
+    "found": []
+  },
+  "pure-ghee-500g": {
+    "query": "Pure Ghee",
+    "found": []
+  },
+  "pure-ghee-1kg": {
+    "query": "Pure Ghee",
+    "found": []
+  },
+  "butter-200g": {
+    "query": "Butter",
+    "found": []
+  },
+  "butter-500g": {
+    "query": "Butter",
+    "found": []
+  },
+  "paneer-250g": {
+    "query": "Paneer",
+    "found": []
+  },
+  "paneer-500g": {
+    "query": "Paneer",
+    "found": []
+  },
+  "fresh-cream-200ml": {
+    "query": "Fresh Cream",
+    "found": []
+  },
+  "lassi-sweet-500ml": {
+    "query": "Sweet Lassi",
+    "found": []
+  },
+  "lassi-salty-500ml": {
+    "query": "Salty Lassi",
+    "found": []
+  },
+  "milk-powder-500g": {
+    "query": "Milk Powder",
+    "found": []
+  },
+  "milk-powder-1kg": {
+    "query": "Milk Powder",
+    "found": []
+  },
+  "chhana-500g": {
+    "query": "Chhana",
+    "found": []
+  },
+  "khoya-200g": {
+    "query": "Khoya",
+    "found": []
+  },
+  "sour-cream-200g": {
+    "query": "Sour Cream",
+    "found": []
+  },
+  "colostrum-200ml": {
+    "query": "Colostrum",
+    "found": []
+  },
+  "mozzarella-250g": {
+    "query": "Mozzarella Cheese",
+    "found": []
+  },
+  "condensed-milk-400g": {
+    "query": "Condensed Milk",
+    "found": []
+  },
+  "whey-protein-1kg": {
+    "query": "Whey Protein",
+    "found": []
+  },
+  "kefir-500ml": {
+    "query": "Kefir",
+    "found": []
+  },
+  "skimmed-milk-1l": {
+    "query": "Skimmed Milk",
+    "found": []
+  },
+  "butter-milk-500ml": {
+    "query": "Buttermilk",
+    "found": []
+  },
+  "cattle-feed-50kg": {
+    "query": "Cattle Feed",
+    "found": [
+      {
+        "score": 1,
+        "productId": 3089,
+        "name": "Yellow Corn Cattle feed (per ton)",
+        "nameBn": "ইয়েলো কর্ন ক্যাটল ফিড ১ টন",
+        "price": 36000,
+        "oldPrice": 0,
+        "stockStatus": "In Stock",
+        "category": "Cattle > Cattle Feed Ingredients",
+        "vendor": "Texaco Trade Impex",
+        "url": "https://agromukam.com/yellow-corn-cattle-feed-per-kg",
+        "images": [
+          "/competitors/agromukam/cattle-feed-50kg/3089-0.webp"
+        ]
+      }
+    ]
+  },
+  "dairy-concentrate-25kg": {
+    "query": "Dairy Cow Concentrate",
+    "found": [
+      {
+        "score": 1,
+        "productId": 2987,
+        "name": "Dairy High Concentrate (per 50kg bag)",
+        "nameBn": "ডেইরি হাই দানাদার (৫০ কেজি ব্যাগ)",
+        "price": 2100,
+        "oldPrice": 0,
+        "stockStatus": "In Stock",
+        "category": "Cattle > Cattle Ready Feed",
+        "shortDescription": "Tk 42 per kg",
+        "vendor": "Silopac Cattle Feed",
+        "url": "https://agromukam.com/dairy-high-concentrate",
+        "images": [
+          "/competitors/agromukam/dairy-concentrate-25kg/2987-0.webp"
+        ]
+      },
+      {
+        "score": 1,
+        "productId": 2986,
+        "name": "Dairy low (Concentrate) ( Per 50kg bag )",
+        "nameBn": "ডেইরি লো দানাদার (৫০কেজি ব্যাগ)",
+        "price": 2000,
+        "oldPrice": 0,
+        "stockStatus": "In Stock",
+        "category": "Cattle > Cattle Ready Feed",
+        "shortDescription": "Tk 40 per Kg",
+        "vendor": "Silopac Cattle Feed",
+        "url": "https://agromukam.com/dairy-low-concentrate",
+        "images": [
+          "/competitors/agromukam/dairy-concentrate-25kg/2986-0.webp"
+        ]
+      }
+    ]
+  },
+  "calf-starter-20kg": {
+    "query": "Calf Starter Feed",
+    "found": [
+      {
+        "score": 1,
+        "productId": 6809,
+        "name": "CALF CARE 100gm",
+        "nameBn": "ক্যাফ কেয়ার ১০০গ্রাম",
+        "price": 378,
+        "oldPrice": 440,
+        "stockStatus": "In Stock",
+        "category": "Cattle > Cattle Nutrition",
+        "vendor": "Doctor's Agro-Vet Limited",
+        "url": "https://agromukam.com/calf-care-100gm",
+        "images": [
+          "/competitors/agromukam/calf-starter-20kg/6809-0.webp"
+        ]
+      },
+      {
+        "score": 1,
+        "productId": 7121,
+        "name": "NIPPLE FOR CALF FEEDER -Per Piece",
+        "nameBn": "বাছুর ফিডারের জন্য সিলিকন নিপল -প্রতি পিস",
+        "price": 120,
+        "oldPrice": 200,
+        "stockStatus": "In Stock",
+        "category": "Cattle > Equipments, Tools & Medical Supplies",
+        "vendor": "Quality Trade Solution",
+        "url": "https://agromukam.com/silicon-nipple-for-calf-feeder-per-piece",
+        "images": [
+          "/competitors/agromukam/calf-starter-20kg/7121-0.webp",
+          "/competitors/agromukam/calf-starter-20kg/7121-1.webp",
+          "/competitors/agromukam/calf-starter-20kg/7121-2.webp"
+        ]
+      },
+      {
+        "score": 1,
+        "productId": 6396,
+        "name": "Calf Feeder and Milk",
+        "nameBn": "বাছুরের ফিডার ও দুধ",
+        "price": 825,
+        "oldPrice": 975,
+        "stockStatus": "In Stock",
+        "category": "Cattle > Equipments, Tools & Medical Supplies",
+        "vendor": "Mitali  Veterinary ",
+        "url": "https://agromukam.com/বছররও-ফডর-ও-দধ",
+        "images": [
+          "/competitors/agromukam/calf-starter-20kg/6396-0.webp"
+        ]
+      }
+    ]
+  },
+  "wheat-bran-50kg": {
+    "query": "Wheat Bran",
+    "found": [
+      {
+        "score": 1.25,
+        "productId": 3286,
+        "name": "Wheat Bran Tanzanian (Per kg)",
+        "nameBn": "গমের ভুষি (প্রতি কেজি) তানজানিয়ান",
+        "price": 44.5,
+        "oldPrice": 48.5,
+        "stockStatus": "In Stock",
+        "category": "Feedmill > Feedmill Ingredients",
+        "vendor": "MADINA TRADING CORPORATION",
+        "url": "https://agromukam.com/wheat-bran-per-kg",
+        "images": [
+          "/competitors/agromukam/wheat-bran-50kg/3286-0.webp"
+        ]
+      }
+    ]
+  },
+  "rice-straw-bale": {
+    "query": "Rice Straw Bale",
+    "found": [
+      {
+        "score": 0.75,
+        "productId": 3295,
+        "name": "De Oiled Rice Bran (DORB) ( 7 star/Mojumder/Alal) per kg",
+        "nameBn": "ডি অয়েলড রাইস ব্রান (DORB) (7 স্টার/মজুমদার/আলাল) প্রতি কেজি",
+        "price": 31.5,
+        "oldPrice": 0,
+        "stockStatus": "In Stock",
+        "category": "Feedmill > Feedmill Ingredients",
+        "vendor": "MADINA TRADING CORPORATION",
+        "url": "https://agromukam.com/de-oiled-rice-bran-dorb-7-starmojumder-per-kg",
+        "images": [
+          "/competitors/agromukam/rice-straw-bale/3295-0.webp"
+        ]
+      }
+    ]
+  },
+  "maize-silage-25kg": {
+    "query": "Maize Silage",
+    "found": []
+  },
+  "soybean-meal-50kg": {
+    "query": "Soybean Meal",
+    "found": [
+      {
+        "score": 0.75,
+        "productId": 3289,
+        "name": "Soyabean Meal Cake ( City and Fresh ) per kg",
+        "nameBn": "সয়াবিন মিল কেক (City এবং Fresh) – প্রতি কেজি",
+        "price": 66,
+        "oldPrice": 0,
+        "stockStatus": "In Stock",
+        "category": "Feedmill > Feedmill Ingredients",
+        "vendor": "MADINA TRADING CORPORATION",
+        "url": "https://agromukam.com/soyabean-meal-cake-city-and-fresh-per-kg",
+        "images": [
+          "/competitors/agromukam/soybean-meal-50kg/3289-0.webp"
+        ]
+      }
+    ]
+  },
+  "cotton-cake-50kg": {
+    "query": "Cotton Seed Cake",
+    "found": []
+  },
+  "molasses-20l": {
+    "query": "Molasses",
+    "found": [
+      {
+        "score": 1,
+        "productId": 8585,
+        "name": "Dried Molasses Powder 25kg",
+        "nameBn": "চিটাগুড় পাউডার ২৫কেজি",
+        "price": 3618,
+        "oldPrice": 3850,
+        "stockStatus": "In Stock",
+        "category": "Cattle > Cattle Feed Ingredients",
+        "vendor": "Everest Agrogenics Ltd.",
+        "url": "https://agromukam.com/dried-molasses-powder-25kg",
+        "images": [
+          "/competitors/agromukam/molasses-20l/8585-0.webp",
+          "/competitors/agromukam/molasses-20l/8585-1.webp"
+        ]
+      },
+      {
+        "score": 1,
+        "productId": 8584,
+        "name": "Dried Molasses Powder 1kg",
+        "nameBn": "চিটাগুড় পাউডার ১কেজি",
+        "price": 173,
+        "oldPrice": 190,
+        "stockStatus": "In Stock",
+        "category": "Cattle > Cattle Feed Ingredients",
+        "vendor": "Everest Agrogenics Ltd.",
+        "url": "https://agromukam.com/dried-molasses-powder-1kg",
+        "images": [
+          "/competitors/agromukam/molasses-20l/8584-0.webp",
+          "/competitors/agromukam/molasses-20l/8584-1.webp"
+        ]
+      },
+      {
+        "score": 1,
+        "productId": 5276,
+        "name": "Phossure 12 (Molasses +Calcium+Trace  Mineral)- 25KG",
+        "nameBn": "ফসার 12 (মোলাসেস+ ক্যালসিয়াম + ট্রেস মিনারেল)- ২৫ কেজি",
+        "price": 6250,
+        "oldPrice": 0,
+        "stockStatus": "In Stock",
+        "category": "Cattle > Cattle Feed Ingredients",
+        "shortDescription": "Tk 250 per kg",
+        "vendor": "AGRO TRADE SOLUTION",
+        "url": "https://agromukam.com/phossure-12-molasses-calciumtrace-mineral-25kg",
+        "images": [
+          "/competitors/agromukam/molasses-20l/5276-0.webp",
+          "/competitors/agromukam/molasses-20l/5276-1.webp"
+        ]
+      }
+    ]
+  },
+  "urea-block-5kg": {
+    "query": "Urea Block",
+    "found": []
+  },
+  "bypass-fat-25kg": {
+    "query": "Bypass Fat",
+    "found": []
+  },
+  "tmr-feed-50kg": {
+    "query": "TMR Feed Mix",
+    "found": [
+      {
+        "score": 1,
+        "productId": 2979,
+        "name": "Dairy Milk Low TMR (per 50kg bag)",
+        "nameBn": "ডেইরি মিল্ক লো টিএমআর (৫০ কেজি ব্যাগ)",
+        "price": 1500,
+        "oldPrice": 0,
+        "stockStatus": "In Stock",
+        "category": "Cattle > Cattle Ready Feed",
+        "shortDescription": "Tk 30 per Kg",
+        "vendor": "Silopac Cattle Feed",
+        "url": "https://agromukam.com/dairy-milk-low",
+        "images": [
+          "/competitors/agromukam/tmr-feed-50kg/2979-0.webp"
+        ]
+      },
+      {
+        "score": 1,
+        "productId": 2977,
+        "name": "Beef Grower TMR (per 50kg bag)",
+        "nameBn": "বিফ গ্রোয়ার টিএমআর (৫০ কেজি ব্যাগ)",
+        "price": 1500,
+        "oldPrice": 0,
+        "stockStatus": "In Stock",
+        "category": "Cattle > Cattle Ready Feed",
+        "shortDescription": "Tk 30 per Kg",
+        "vendor": "Silopac Cattle Feed",
+        "url": "https://agromukam.com/beef-grower",
+        "images": [
+          "/competitors/agromukam/tmr-feed-50kg/2977-0.webp"
+        ]
+      }
+    ]
+  },
+  "mineral-mix-10kg": {
+    "query": "Mineral Mixture",
+    "found": [
+      {
+        "score": 1,
+        "productId": 8379,
+        "name": "Calci Boost (Birds Calcium & Mineral block)",
+        "nameBn": "Calci Boost (Birds Calcium & Mineral block)",
+        "price": 80,
+        "oldPrice": 170,
+        "stockStatus": "In Stock",
+        "category": "Gardening > Seeds & Plants",
+        "vendor": "Baraqah Agro & Pet Care",
+        "url": "https://agromukam.com/calci-boost-birds-calcium-mineral-block",
+        "images": [
+          "/competitors/agromukam/mineral-mix-10kg/8379-0.webp"
+        ]
+      },
+      {
+        "score": 1,
+        "productId": 8337,
+        "name": "Mineral Boost (Birds Calcium & Mineral block) 1pc",
+        "nameBn": "Mineral Boost (Birds Calcium & Mineral block) 1pc",
+        "price": 80,
+        "oldPrice": 170,
+        "stockStatus": "In Stock",
+        "category": "Gardening > Seeds & Plants",
+        "vendor": "Baraqah Agro & Pet Care",
+        "url": "https://agromukam.com/mineral-boost-birds-calcium-mineral-block-1pc",
+        "images": [
+          "/competitors/agromukam/mineral-mix-10kg/8337-0.webp"
+        ]
+      },
+      {
+        "score": 1,
+        "productId": 8336,
+        "name": "Mineral Boost (Birds Calcium & Mineral block) 2pc Pack",
+        "nameBn": "Mineral Boost (Birds Calcium & Mineral block) 2pc Pack",
+        "price": 80,
+        "oldPrice": 170,
+        "stockStatus": "In Stock",
+        "category": "Gardening > Seeds & Plants",
+        "vendor": "Baraqah Agro & Pet Care",
+        "url": "https://agromukam.com/mineral-boost-birds-calcium-mineral-block-2pc-pack",
+        "images": [
+          "/competitors/agromukam/mineral-mix-10kg/8336-0.webp"
+        ]
+      }
+    ]
+  },
+  "salt-block-2kg": {
+    "query": "Salt Block",
+    "found": [
+      {
+        "score": 1,
+        "productId": 6520,
+        "name": "Pink Salt Block 6 Block (1 Box)",
+        "nameBn": "পিংক সল্ট ৬ ব্লক (রেগুলার) (১ বক্স )",
+        "price": 4700,
+        "oldPrice": 5000,
+        "stockStatus": "In Stock",
+        "category": "Cattle > Cattle Nutrition",
+        "shortDescription": "Himalayan PINK-MINERAL Animal Lick Block / Rock Salt.\r\nWeight: 19-20 Kg.",
+        "vendor": "Quality Trade Solution",
+        "url": "https://agromukam.com/pink-salt-block-6-block-1-box-copy",
+        "images": [
+          "/competitors/agromukam/salt-block-2kg/6520-0.webp",
+          "/competitors/agromukam/salt-block-2kg/6520-1.webp",
+          "/competitors/agromukam/salt-block-2kg/6520-2.webp"
+        ]
+      },
+      {
+        "score": 1,
+        "productId": 6089,
+        "name": "Himalayan Pink Salt Block (6 Block)",
+        "nameBn": "হিমালয়ান পিংক সল্ট ব্লক (৬টি ব্লক)",
+        "price": 4500,
+        "oldPrice": 6450,
+        "stockStatus": "In Stock",
+        "category": "Cattle > Cattle Feed Ingredients",
+        "shortDescription": "Per Block = 3-3.5 kg\r\nTotal = 18-19 kg",
+        "vendor": "J B LIVESTOCK ",
+        "url": "https://agromukam.com/himalayan-pink-salt-block-6-block",
+        "images": [
+          "/competitors/agromukam/salt-block-2kg/6089-0.webp"
+        ]
+      },
+      {
+        "score": 1,
+        "productId": 6088,
+        "name": "Himalayan Pink Salt Block (3-3.5 kg)",
+        "nameBn": "হিমালয়ান পিংক সল্ট ব্লক (৩-৩.৫ কেজি)",
+        "price": 1000,
+        "oldPrice": 1410,
+        "stockStatus": "In Stock",
+        "category": "Cattle > Cattle Feed Ingredients",
+        "vendor": "J B LIVESTOCK ",
+        "url": "https://agromukam.com/himalayan-pink-salt-block-3-35-kg",
+        "images": [
+          "/competitors/agromukam/salt-block-2kg/6088-0.webp"
+        ]
+      }
+    ]
+  },
+  "hay-bale": {
+    "query": "Hay Bale",
+    "found": []
+  },
+  "fish-meal-25kg": {
+    "query": "Fish Meal",
+    "found": [
+      {
+        "score": 1,
+        "productId": 7785,
+        "name": "Fish Meal (60% Protin) -25 Kg",
+        "nameBn": "ফিশ মিল (৬০% প্রোটিন) -৫০ কেজি ব্যাগ",
+        "price": 2450,
+        "oldPrice": 3250,
+        "stockStatus": "In Stock",
+        "category": "Cattle > Cattle Feed Ingredients",
+        "vendor": "Quality Trade Solution",
+        "url": "https://agromukam.com/fish-meal-30-protin-50-kg",
+        "images": [
+          "/competitors/agromukam/fish-meal-25kg/7785-0.webp",
+          "/competitors/agromukam/fish-meal-25kg/7785-1.webp"
+        ]
+      },
+      {
+        "score": 1,
+        "productId": 3716,
+        "name": "Fish Meal (Per kg)",
+        "nameBn": "ফিশমিল (প্রতি কেজি)",
+        "price": 36,
+        "oldPrice": 39,
+        "stockStatus": "In Stock",
+        "category": "Fish > Fish Ready Feed",
+        "vendor": "Rijbi Fish food",
+        "url": "https://agromukam.com/ফশমল-পরত-কজ",
+        "images": [
+          "/competitors/agromukam/fish-meal-25kg/3716-0.webp"
+        ]
+      },
+      {
+        "score": 1,
+        "productId": 3714,
+        "name": "Fish Meal (60% protein)  / Shutki'r gura (Per kg)",
+        "nameBn": "ফিশমিল (৬০% প্রোটিন) বা শুটকির গুড়া (প্রতি কেজি)",
+        "price": 85,
+        "oldPrice": 88,
+        "stockStatus": "In Stock",
+        "category": "Fish > Aqua Nutrition",
+        "vendor": "Rijbi Fish food",
+        "url": "https://agromukam.com/ফশমল-ব-শটকর-গড়-পরত-কজ",
+        "images": [
+          "/competitors/agromukam/fish-meal-25kg/3714-0.webp",
+          "/competitors/agromukam/fish-meal-25kg/3714-1.webp"
+        ]
+      }
+    ]
+  },
+  "palm-kernel-50kg": {
+    "query": "Palm Kernel Cake",
+    "found": []
+  },
+  "sunflower-meal-25kg": {
+    "query": "Sunflower Meal",
+    "found": []
+  },
+  "green-grass-bundle": {
+    "query": "Green Grass Bundle",
+    "found": [
+      {
+        "score": 1,
+        "productId": 8561,
+        "name": "Premium Lawn Grass Seeds – For a Lush, Green & Durable Lawn 250 gm",
+        "nameBn": "Premium Lawn Grass Seeds – For a Lush, Green & Durable Lawn 250 gm",
+        "price": 3550,
+        "oldPrice": 6900,
+        "stockStatus": "In Stock",
+        "category": "Gardening > Seeds & Plants",
+        "shortDescription": "Transform your garden, rooftop, or outdoor space with premium Lawn Grass Seeds designed for fast germination, dense growth, and long-lasting greenery. Ideal for Bangladesh’s climate, these seeds create a soft, carpet-like lawn with minimal maintenance.",
+        "vendor": "Baraqah Agro & Pet Care",
+        "url": "https://agromukam.com/premium-lawn-grass-seeds-for-a-lush-green-durable-lawn-250-gm",
+        "images": [
+          "/competitors/agromukam/green-grass-bundle/8561-0.webp"
+        ]
+      }
+    ]
+  },
+  "sugarcane-bagasse-50kg": {
+    "query": "Sugarcane Bagasse",
+    "found": []
+  },
+  "milking-machine-single": {
+    "query": "Single Cluster Milking Machine",
+    "found": [
+      {
+        "score": 1.25,
+        "productId": 8073,
+        "name": "Single Milking Machine (TEY-1AK)",
+        "nameBn": "Single Milking Machine (TEY-1AK)",
+        "price": 62000,
+        "oldPrice": 0,
+        "stockStatus": "In Stock",
+        "category": "Cattle > Equipments, Tools & Medical Supplies",
+        "vendor": "Trade Global Ltd",
+        "url": "https://agromukam.com/single-milking-machine-tey-1ak",
+        "images": [
+          "/competitors/agromukam/milking-machine-single/8073-0.webp"
+        ]
+      },
+      {
+        "score": 1.25,
+        "productId": 4426,
+        "name": "Single Milking Machine (Single Bucket)-Model: TY-1AK",
+        "nameBn": "সিঙ্গেল মিল্কিং মেশিন (সিঙ্গেল বাকেট)-মডেলঃTY-1AK",
+        "price": 70000,
+        "oldPrice": 72000,
+        "stockStatus": "In Stock",
+        "category": "Cattle > Equipments, Tools & Medical Supplies",
+        "shortDescription": "Single Milking Machine (Single Bucket)\r\n(Foodgrade Certified)\r\nModel: TY-1AK\r\nMotor Capacity: 0.76 horse.\r\nVoltage: 220 volts.\r\nVacuum Tank: 18 liters\r\nBucket Capacity: 1 30 liter aluminum can\r\nMilking Capacity: Per hour 8-10 cows.\r\nMade in: Türkiye.",
+        "vendor": "Trade Global Ltd",
+        "url": "https://agromukam.com/single-milking-machine-single-bucket-model-ty-1ak",
+        "images": [
+          "/competitors/agromukam/milking-machine-single/4426-0.webp"
+        ]
+      }
+    ]
+  },
+  "milking-machine-double": {
+    "query": "Double Cluster Milking Machine",
+    "found": []
+  },
+  "milk-tank-100l": {
+    "query": "Milk Chilling Tank",
+    "found": []
+  },
+  "milk-tank-500l": {
+    "query": "Milk Chilling Tank",
+    "found": []
+  },
+  "milk-can-20l-ss": {
+    "query": "Milk Can Stainless Steel",
+    "found": [
+      {
+        "score": 0.75,
+        "productId": 8092,
+        "name": "40 Ltr Aluminium Milk Transport Can – Bimal Brand (Truly International Quality)",
+        "nameBn": "৪০ লিটার অ্যালুমিনিয়াম দুধ পরিবহন ক্যান – বিমল ব্র্যান্ড (ট্রুলি ইন্টারন্যাশনাল কোয়ালিটি)",
+        "price": 9500,
+        "oldPrice": 10000,
+        "stockStatus": "In Stock",
+        "category": "Cattle > Equipments, Tools & Medical Supplies",
+        "vendor": "Quality Trade Solution",
+        "url": "https://agromukam.com/40-ltr-aluminium-milk-transport-can-bimal-brand-truly-international-quality",
+        "images": [
+          "/competitors/agromukam/milk-can-20l-ss/8092-0.webp"
+        ]
+      }
+    ]
+  },
+  "milk-can-10l-al": {
+    "query": "Milk Can Aluminium",
+    "found": [
+      {
+        "score": 1.25,
+        "productId": 8092,
+        "name": "40 Ltr Aluminium Milk Transport Can – Bimal Brand (Truly International Quality)",
+        "nameBn": "৪০ লিটার অ্যালুমিনিয়াম দুধ পরিবহন ক্যান – বিমল ব্র্যান্ড (ট্রুলি ইন্টারন্যাশনাল কোয়ালিটি)",
+        "price": 9500,
+        "oldPrice": 10000,
+        "stockStatus": "In Stock",
+        "category": "Cattle > Equipments, Tools & Medical Supplies",
+        "vendor": "Quality Trade Solution",
+        "url": "https://agromukam.com/40-ltr-aluminium-milk-transport-can-bimal-brand-truly-international-quality",
+        "images": [
+          "/competitors/agromukam/milk-can-10l-al/8092-0.webp"
+        ]
+      }
+    ]
+  },
+  "fat-tester-gerber": {
+    "query": "Fat Tester Gerber Method",
+    "found": []
+  },
+  "pasteurizer-50l": {
+    "query": "Milk Pasteurizer",
+    "found": [
+      {
+        "score": 0.75,
+        "productId": 7111,
+        "name": "Ready Milk ( Milk replacer)  500gm",
+        "nameBn": "Ready Milk ( Milk replacer)  500gm",
+        "price": 300,
+        "oldPrice": 365,
+        "stockStatus": "In Stock",
+        "category": "Cattle > Cattle Nutrition",
+        "vendor": "Mitali  Veterinary ",
+        "url": "https://agromukam.com/ready-milk-milk-replacer-500gm",
+        "images": [
+          "/competitors/agromukam/pasteurizer-50l/7111-0.webp"
+        ]
+      },
+      {
+        "score": 0.75,
+        "productId": 6397,
+        "name": "Ekolac ( milk Replacer for Calf)500gm",
+        "nameBn": "Ekolac ( milk Replacer for Calf)500gm",
+        "price": 325,
+        "oldPrice": 350,
+        "stockStatus": "In Stock",
+        "category": "Cattle > Equipments, Tools & Medical Supplies",
+        "vendor": "Mitali  Veterinary ",
+        "url": "https://agromukam.com/ekolac-milk-replacer-for-calf500gm",
+        "images": [
+          "/competitors/agromukam/pasteurizer-50l/6397-0.webp"
+        ]
+      },
+      {
+        "score": 0.75,
+        "productId": 6192,
+        "name": "milk saifan  ( teat)",
+        "nameBn": "milk saifan  ( teat)",
+        "price": 125,
+        "oldPrice": 200,
+        "stockStatus": "In Stock",
+        "category": "Cattle > Equipments, Tools & Medical Supplies",
+        "vendor": "Mitali  Veterinary ",
+        "url": "https://agromukam.com/milk-saifan",
+        "images": [
+          "/competitors/agromukam/pasteurizer-50l/6192-0.webp",
+          "/competitors/agromukam/pasteurizer-50l/6192-1.webp"
+        ]
+      }
+    ]
+  },
+  "cream-separator": {
+    "query": "Cream Separator",
+    "found": [
+      {
+        "score": 1.25,
+        "productId": 7137,
+        "name": "CREAM SEPARATOR MACHINE (CHINA) -100 ltr",
+        "nameBn": "ক্রিম সেপারেটর মেশিন – ১০০ লিটার – চায়না",
+        "price": 32500,
+        "oldPrice": 33500,
+        "stockStatus": "In Stock",
+        "category": "Cattle > Equipments, Tools & Medical Supplies",
+        "vendor": "Quality Trade Solution",
+        "url": "https://agromukam.com/cream-separator-machine-china-100-ltr",
+        "images": [
+          "/competitors/agromukam/cream-separator/7137-0.webp"
+        ]
+      }
+    ]
+  },
+  "butter-churn": {
+    "query": "Butter Churn",
+    "found": []
+  },
+  "yogurt-incubator": {
+    "query": "Yogurt Incubator",
+    "found": []
+  },
+  "feeding-trough": {
+    "query": "Galvanized Feeding Trough",
+    "found": []
+  },
+  "water-trough-100l": {
+    "query": "Water Trough",
+    "found": []
+  },
+  "cattle-scale": {
+    "query": "Cattle Weighing Scale 2T",
+    "found": [
+      {
+        "score": 0.9166666666666666,
+        "productId": 4392,
+        "name": "Cattle Weight Scale (Buffalo – Cow – Bull)-1Ton",
+        "nameBn": "Cattle Weight Scale (Buffalo – Cow – Bull)-1Ton",
+        "price": 55000,
+        "oldPrice": 60000,
+        "stockStatus": "In Stock",
+        "category": "Cattle > Equipments, Tools & Medical Supplies",
+        "shortDescription": "Width = 4′ feet\r\nLength = 8′ feet\r\nHeight = 4’ feet\r\n3mm checker plate\r\n# 1.75” Pipe\r\n4 Weight Sell\r\nDigital Display",
+        "vendor": "Trade Global Ltd",
+        "url": "https://agromukam.com/cattle-weight-scale-buffalo-cow-bull-1ton",
+        "images": [
+          "/competitors/agromukam/cattle-scale/4392-0.webp"
+        ]
+      },
+      {
+        "score": 0.9166666666666666,
+        "productId": 4365,
+        "name": "Cattle Weight Scale (Buffalo – Cow – Bull)-2 Ton",
+        "nameBn": "গবাদি পশুর ওজন স্কেল (মহিষ - গরু - ষাঁড়)-২ টন",
+        "price": 60000,
+        "oldPrice": 65000,
+        "stockStatus": "In Stock",
+        "category": "Cattle > Equipments, Tools & Medical Supplies",
+        "shortDescription": "Width = 4′ feet\r\nLength = 8′ feet\r\nHeight = 4’ feet\r\n3mm checker plate\r\n# 1.75” Pipe\r\n4 Weight Sell\r\nDigital Display",
+        "vendor": "Trade Global Ltd",
+        "url": "https://agromukam.com/cattle-weight-scale-buffalo-cow-bull-2-ton",
+        "images": [
+          "/competitors/agromukam/cattle-scale/4365-0.webp"
+        ]
+      },
+      {
+        "score": 0.9166666666666666,
+        "productId": 5516,
+        "name": "Digital Cattle Weight Scale (4ft height 2side boundary and 2side gate, 2ton, 8' x 4')",
+        "nameBn": "ডিজিটাল গবাদি পশুর ওজন স্কেল (৪ ফুট উচ্চতা, ২ পাশের সীমানা এবং ২ পাশের গেট, ২ টন, ৮' x ৪')",
+        "price": 55000,
+        "oldPrice": 0,
+        "stockStatus": "In Stock",
+        "category": "Cattle > Equipments, Tools & Medical Supplies",
+        "vendor": "AGRO TRADE SOLUTION",
+        "url": "https://agromukam.com/special-quality-digital-weight-scale-without-boundary-7-feet-by-3-feet-2ton-capacity-copy",
+        "images": [
+          "/competitors/agromukam/cattle-scale/5516-0.webp",
+          "/competitors/agromukam/cattle-scale/5516-1.webp"
+        ]
+      }
+    ]
+  },
+  "drenching-gun": {
+    "query": "Drenching Gun",
+    "found": [
+      {
+        "score": 0.75,
+        "productId": 8580,
+        "name": "Livestock Drenching Syringe with Stainless Steel Nozzle 50ml",
+        "nameBn": "ভ্যাকসিন ও ওষুধ দেওয়ার সিরিঞ্জ ৫০ মিলি",
+        "price": 800,
+        "oldPrice": 0,
+        "stockStatus": "In Stock",
+        "category": "Cattle > Equipments, Tools & Medical Supplies",
+        "vendor": "Quality Trade Solution",
+        "url": "https://agromukam.com/livestock-drenching-syringe-with-stainless-steel-nozzle-50ml",
+        "images": [
+          "/competitors/agromukam/drenching-gun/8580-0.webp",
+          "/competitors/agromukam/drenching-gun/8580-1.webp"
+        ]
+      },
+      {
+        "score": 0.75,
+        "productId": 8579,
+        "name": "Livestock Drenching Syringe with Stainless Steel Nozzle 100ml",
+        "nameBn": "ভ্যাকসিন ও ওষুধ দেওয়ার সিরিঞ্জ ১০০ মিলি",
+        "price": 820,
+        "oldPrice": 0,
+        "stockStatus": "In Stock",
+        "category": "Cattle > Equipments, Tools & Medical Supplies",
+        "vendor": "Quality Trade Solution",
+        "url": "https://agromukam.com/livestock-drenching-syringe-with-stainless-steel-nozzle-100ml",
+        "images": [
+          "/competitors/agromukam/drenching-gun/8579-0.webp",
+          "/competitors/agromukam/drenching-gun/8579-1.webp"
+        ]
+      }
+    ]
+  },
+  "teat-dip-cup": {
+    "query": "Teat Dip Cup",
+    "found": []
+  },
+  "milking-bucket-20l": {
+    "query": "Milking Bucket SS",
+    "found": [
+      {
+        "score": 1.25,
+        "productId": 4426,
+        "name": "Single Milking Machine (Single Bucket)-Model: TY-1AK",
+        "nameBn": "সিঙ্গেল মিল্কিং মেশিন (সিঙ্গেল বাকেট)-মডেলঃTY-1AK",
+        "price": 70000,
+        "oldPrice": 72000,
+        "stockStatus": "In Stock",
+        "category": "Cattle > Equipments, Tools & Medical Supplies",
+        "shortDescription": "Single Milking Machine (Single Bucket)\r\n(Foodgrade Certified)\r\nModel: TY-1AK\r\nMotor Capacity: 0.76 horse.\r\nVoltage: 220 volts.\r\nVacuum Tank: 18 liters\r\nBucket Capacity: 1 30 liter aluminum can\r\nMilking Capacity: Per hour 8-10 cows.\r\nMade in: Türkiye.",
+        "vendor": "Trade Global Ltd",
+        "url": "https://agromukam.com/single-milking-machine-single-bucket-model-ty-1ak",
+        "images": [
+          "/competitors/agromukam/milking-bucket-20l/4426-0.webp"
+        ]
+      },
+      {
+        "score": 0.75,
+        "productId": 8073,
+        "name": "Single Milking Machine (TEY-1AK)",
+        "nameBn": "Single Milking Machine (TEY-1AK)",
+        "price": 62000,
+        "oldPrice": 0,
+        "stockStatus": "In Stock",
+        "category": "Cattle > Equipments, Tools & Medical Supplies",
+        "vendor": "Trade Global Ltd",
+        "url": "https://agromukam.com/single-milking-machine-tey-1ak",
+        "images": [
+          "/competitors/agromukam/milking-bucket-20l/8073-0.webp"
+        ]
+      }
+    ]
+  },
+  "barn-cleaner-set": {
+    "query": "Barn Cleaning Equipment Set",
+    "found": []
+  },
+  "holstein-calf-f": {
+    "query": "HaatBazar (no matching breed listed)",
+    "found": []
+  },
+  "holstein-cow": {
+    "query": "HaatBazar (no matching breed listed)",
+    "found": []
+  },
+  "sahiwal-cow": {
+    "query": "HaatBazar breed match (16 listed)",
+    "found": [
+      {
+        "score": 1,
+        "productId": 7055,
+        "name": "Deshi Shahiwal: Red (Tag: 25-041)",
+        "nameBn": "দেশি শাহীওয়ালঃ লাল (ট্যাগ নংঃ ২৫-০৪১)",
+        "price": 112750,
+        "oldPrice": 0,
+        "stockStatus": "Out of Stock",
+        "category": "Cattle > Cattle Haat",
+        "shortDescription": "Tentative Live weight: 200-210 kg (Tape Measurement)",
+        "vendor": "Sadeeq Agro",
+        "url": "https://agromukam.com/deshi-shahiwal-red-tag-25-041",
+        "images": [
+          "/competitors/agromukam/sahiwal-cow/7055-0.webp"
+        ]
+      },
+      {
+        "score": 1,
+        "productId": 7045,
+        "name": "Deshi Shahiwal: Red (Tag: 25-036)",
+        "nameBn": "দেশি শাহীওয়ালঃ লাল (ট্যাগ নংঃ ২৫-০৩৬)",
+        "price": 149100,
+        "oldPrice": 0,
+        "stockStatus": "Out of Stock",
+        "category": "Cattle > Cattle Haat",
+        "shortDescription": "Tentative Live weight: 284Kg\r\nPrice Per kg (Live weight): 525Tk",
+        "vendor": "Sadeeq Agro",
+        "url": "https://agromukam.com/deshi-shahiwal-red-tag-25-036",
+        "images": [
+          "/competitors/agromukam/sahiwal-cow/7045-0.webp"
+        ]
+      },
+      {
+        "score": 1,
+        "productId": 7048,
+        "name": "Deshi Shahiwal: Red (Tag: 25-037)",
+        "nameBn": "দেশি শাহীওয়ালঃ লাল (ট্যাগ নংঃ ২৫-০৩৭)",
+        "price": 184800,
+        "oldPrice": 0,
+        "stockStatus": "Out of Stock",
+        "category": "Cattle > Cattle Haat",
+        "shortDescription": "Tentative Live weight: 330-340 kg (Tape Measurement)",
+        "vendor": "Sadeeq Agro",
+        "url": "https://agromukam.com/deshi-shahiwal-red-tag-25-037",
+        "images": [
+          "/competitors/agromukam/sahiwal-cow/7048-0.webp"
+        ]
+      }
+    ]
+  },
+  "crossbred-heifer": {
+    "query": "HaatBazar (no matching breed listed)",
+    "found": []
+  },
+  "jersey-cow": {
+    "query": "HaatBazar (no matching breed listed)",
+    "found": []
+  },
+  "breeding-bull": {
+    "query": "HaatBazar (no matching breed listed)",
+    "found": []
+  },
+  "murrah-buffalo": {
+    "query": "HaatBazar (no matching breed listed)",
+    "found": []
+  },
+  "local-breed-cow": {
+    "query": "HaatBazar breed match (30 listed)",
+    "found": [
+      {
+        "score": 1,
+        "productId": 7000,
+        "name": "Deshi: Black (Tag No-1140)",
+        "nameBn": "দেশিঃ কালো (ট্যাগ নং - ১১৪০)",
+        "price": 108000,
+        "oldPrice": 0,
+        "stockStatus": "Out of Stock",
+        "category": "Cattle > Cattle Haat",
+        "shortDescription": "Tentative Live weight: 185 - 195kg (Tape Measurement)",
+        "vendor": "Sadeeq Agro",
+        "url": "https://agromukam.com/deshi-black-tag-no-1140",
+        "images": [
+          "/competitors/agromukam/local-breed-cow/7000-0.webp"
+        ]
+      },
+      {
+        "score": 1,
+        "productId": 7035,
+        "name": "Deshi: Red (Tag No- 25-006)",
+        "nameBn": "দেশিঃ লাল (ট্যাগ নং -২৫-০০৬)",
+        "price": 136500,
+        "oldPrice": 0,
+        "stockStatus": "Out of Stock",
+        "category": "Cattle > Cattle Haat",
+        "shortDescription": "Tentative Live weight: 260kg\r\nPrice Per kg (Live weight): 525Tk",
+        "vendor": "Sadeeq Agro",
+        "url": "https://agromukam.com/deshi-red-tag-no-25-006",
+        "images": [
+          "/competitors/agromukam/local-breed-cow/7035-0.webp"
+        ]
+      },
+      {
+        "score": 1,
+        "productId": 7025,
+        "name": "Deshi: Reddish white (Tag No- 25-001)",
+        "nameBn": "দেশিঃ লালচে সাদা (ট্যাগ নং -২৫-০০১)",
+        "price": 189000,
+        "oldPrice": 0,
+        "stockStatus": "Out of Stock",
+        "category": "Cattle > Cattle Haat",
+        "shortDescription": "Tentative Live weight: 360\r\nPrice Per kg (Live weight): 525Tk",
+        "vendor": "Sadeeq Agro",
+        "url": "https://agromukam.com/deshi-red-tag-no-25-001",
+        "images": [
+          "/competitors/agromukam/local-breed-cow/7025-0.webp"
+        ]
+      }
+    ]
+  },
+  "pregnant-heifer": {
+    "query": "HaatBazar (no matching breed listed)",
+    "found": []
+  },
+  "high-yield-cow": {
+    "query": "HaatBazar (no matching breed listed)",
+    "found": []
+  },
+  "calf-male-3mo": {
+    "query": "HaatBazar (no matching breed listed)",
+    "found": []
+  },
+  "nili-ravi-buffalo": {
+    "query": "HaatBazar (no matching breed listed)",
+    "found": []
+  },
+  "young-heifer-6mo": {
+    "query": "HaatBazar (no matching breed listed)",
+    "found": []
+  },
+  "beef-bull": {
+    "query": "HaatBazar (no matching breed listed)",
+    "found": []
+  },
+  "crossbred-bull-calf": {
+    "query": "HaatBazar (no matching breed listed)",
+    "found": []
+  },
+  "lactometer": {
+    "query": "manual category-facet match",
+    "found": [
+      {
+        "score": 1,
+        "productId": 7120,
+        "name": "Lactometer Set - Bangladeshi",
+        "nameBn": "ল্যাক্টোমিটার সেট – কাউবেল",
+        "price": 300,
+        "oldPrice": 450,
+        "stockStatus": "In Stock",
+        "category": "Cattle > Equipments, Tools & Medical Supplies",
+        "vendor": "Quality Trade Solution",
+        "url": "https://agromukam.com/lactometer-set-cowbell-india",
+        "images": [
+          "/competitors/agromukam/lactometer/7120-0.webp",
+          "/competitors/agromukam/lactometer/7120-1.webp"
+        ]
+      }
+    ]
+  },
+  "ear-tag-set-100": {
+    "query": "manual category-facet match",
+    "found": [
+      {
+        "score": 1,
+        "productId": 8094,
+        "name": "Ear Tag Durable Laser Engraved Livestock Identification Tag",
+        "nameBn": "গরু/ছাগল শনাক্তকরণ কান ট্যাগ – টেকসই লেজার খোদাই করা আইডি ট্যাগ",
+        "price": 45,
+        "oldPrice": 50,
+        "stockStatus": "In Stock",
+        "category": "Cattle > Equipments, Tools & Medical Supplies",
+        "vendor": "Quality Trade Solution",
+        "url": "https://agromukam.com/cattle-ear-tag-durable-laser-engraved-livestock-identification-tag",
+        "images": [
+          "/competitors/agromukam/ear-tag-set-100/8094-0.webp"
+        ]
+      },
+      {
+        "score": 1,
+        "productId": 8576,
+        "name": "Goat Small Ear Tag (1 side printed)- Per Piece",
+        "nameBn": "Goat Small Ear Tag (1 side printed)- Per Piece",
+        "price": 30,
+        "oldPrice": 32,
+        "stockStatus": "In Stock",
+        "category": "Cattle > Equipments, Tools & Medical Supplies",
+        "vendor": "Trade Global Ltd",
+        "url": "https://agromukam.com/goat-small-ear-tag-1-side-printed-perpiece",
+        "images": [
+          "/competitors/agromukam/ear-tag-set-100/8576-0.webp"
+        ]
+      }
+    ]
+  }
+}
