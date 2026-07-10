@@ -6,7 +6,7 @@ import OrderStatusSelect from '@/components/admin/OrderStatusSelect'
 const STATUS_COLORS: Record<string, string> = {
   pending: 'bg-yellow-100 text-yellow-800',
   confirmed: 'bg-blue-100 text-blue-800',
-  processing: 'bg-purple-100 text-purple-800',
+  processing: 'bg-teal-100 text-teal-800',
   dispatched: 'bg-orange-100 text-orange-800',
   delivered: 'bg-green-100 text-green-800',
   cancelled: 'bg-red-100 text-red-800',
@@ -23,7 +23,7 @@ export default async function AdminOrdersPage() {
   const supabase = await createClient()
   const { data: orders } = await supabase
     .from('orders')
-    .select('id, status, total, payment_method, payment_status, address, created_at, notes')
+    .select('id, order_number, status, total, payment_method, payment_status, address, contact_phone, created_at, notes')
     .order('created_at', { ascending: false })
 
   return (
@@ -49,14 +49,14 @@ export default async function AdminOrdersPage() {
                   return (
                     <tr key={order.id} className="hover:bg-gray-50 transition-colors">
                       <td className="px-4 py-3">
-                        <p className="font-mono text-xs text-gray-500">{order.id.slice(0, 8).toUpperCase()}</p>
+                        <p className="font-mono text-xs text-gray-500">{order.order_number ?? order.id.slice(0, 8).toUpperCase()}</p>
                         <p className="text-xs text-gray-400 mt-0.5">
                           {new Date(order.created_at).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' })}
                         </p>
                       </td>
                       <td className="px-4 py-3">
                         <p className="font-medium text-gray-800">{address?.name ?? 'Guest'}</p>
-                        <p className="text-xs text-gray-400">{address?.phone}</p>
+                        <p className="text-xs text-gray-400">{order.contact_phone ?? address?.phone}</p>
                         <p className="text-xs text-gray-400">{address?.area}</p>
                       </td>
                       <td className="px-4 py-3">

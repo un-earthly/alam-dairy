@@ -9,7 +9,7 @@ interface Props {
   searchParams: Promise<{ type?: string; q?: string }>
 }
 
-const FARM_TYPES: ProductType[] = ['cattle', 'feed', 'equipment', 'vet_supply']
+const FARM_TYPES: ProductType[] = ['cattle', 'feed', 'equipment']
 
 export default async function FarmPage({ params, searchParams }: Props) {
   const { locale } = await params
@@ -28,7 +28,6 @@ export default async function FarmPage({ params, searchParams }: Props) {
     const typeMap: Record<string, ProductType> = {
       cattle: 'cattle',
       feed: 'feed',
-      vet: 'vet_supply',
       equipment: 'equipment',
     }
     const mappedType = typeMap[type]

@@ -1,5 +1,5 @@
 -- =============================================================
--- Alam Dairy Firm — Seed Data
+-- Alam Dairy — Seed Data
 -- Run via: supabase db seed  (or apply manually in Supabase SQL editor)
 -- =============================================================
 

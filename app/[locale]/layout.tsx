@@ -3,9 +3,8 @@ import { getMessages } from 'next-intl/server'
 import { notFound } from 'next/navigation'
 import { routing } from '@/i18n/routing'
 import { createClient } from '@/lib/supabase/server'
-import Header from '@/components/layout/Header'
-import Footer from '@/components/layout/Footer'
-import CartDrawer from '@/components/cart/CartDrawer'
+import SmoothScroll from '@/components/landing/SmoothScroll'
+import LocaleShell from '@/components/layout/LocaleShell'
 
 export default async function LocaleLayout({
   children,
@@ -24,12 +23,10 @@ export default async function LocaleLayout({
 
   return (
     <NextIntlClientProvider messages={messages}>
-      <div className="flex min-h-screen flex-col">
-        <Header locale={locale} initialUser={user} />
-        <main className="flex-1">{children}</main>
-        <Footer locale={locale} />
-        <CartDrawer />
-      </div>
+      <SmoothScroll />
+      <LocaleShell locale={locale} initialUser={user}>
+        {children}
+      </LocaleShell>
     </NextIntlClientProvider>
   )
 }

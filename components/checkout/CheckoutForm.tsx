@@ -1,10 +1,9 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useTransition } from 'react'
 import { useTranslations } from 'next-intl'
-import { useRouter } from 'next/navigation'
 import { useCart } from '@/lib/store/cart'
-import { createClient } from '@/lib/supabase/client'
+import { placeOrder } from '@/app/[locale]/checkout/actions'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
@@ -14,80 +13,59 @@ import { Loader2 } from 'lucide-react'
 const AREAS_BN = ['মিরপুর', 'ধানমন্ডি', 'মোহাম্মদপুর', 'উত্তরা', 'বনানী', 'গুলশান', 'মালিবাগ', 'রামপুরা']
 const AREAS_EN = ['Mirpur', 'Dhanmondi', 'Mohammadpur', 'Uttara', 'Banani', 'Gulshan', 'Malibag', 'Rampura']
 
+const FIELD_KEYS = ['name', 'phone', 'email', 'address', 'area'] as const
+
 export default function CheckoutForm({ locale }: { locale: string }) {
   const t = useTranslations('checkout')
   const tc = useTranslations('common')
   const tCart = useTranslations('cart')
-  const { items, total, clearCart } = useCart()
-  const router = useRouter()
+  const { items, total } = useCart()
   const isBn = locale === 'bn'
 
   const [form, setForm] = useState({
     name: '',
     phone: '',
+    email: '',
     address: '',
     area: '',
-    payment_method: 'cod' as 'bkash' | 'nagad' | 'cod',
     notes: '',
   })
-  const [loading, setLoading] = useState(false)
+  const [pending, startTransition] = useTransition()
   const [error, setError] = useState('')
+  const [fieldErrors, setFieldErrors] = useState<Partial<Record<string, string>>>({})
 
   const areas = isBn ? AREAS_BN : AREAS_EN
 
   function set(field: string, value: string) {
     setForm((f) => ({ ...f, [field]: value }))
+    setFieldErrors((fe) => ({ ...fe, [field]: undefined }))
   }
 
-  async function handleSubmit(e: React.FormEvent) {
+  function handleSubmit(e: React.FormEvent) {
     e.preventDefault()
-    if (!form.name || !form.phone || !form.address || !form.area) return
-    if (items.length === 0) return
+    if (items.length === 0 || pending) return
 
-    setLoading(true)
     setError('')
+    setFieldErrors({})
 
-    try {
-      const supabase = createClient()
+    startTransition(async () => {
+      const result = await placeOrder(locale, {
+        ...form,
+        payment_method: 'cod',
+        items: items.map((item) => ({ id: item.id, quantity: item.quantity })),
+      })
+      // On success the action redirects and never returns
+      if (result?.ok === false) {
+        if (result.fieldErrors) setFieldErrors(result.fieldErrors)
+        if (result.error === 'insufficient_stock') setError(t('errors.insufficient_stock'))
+        else if (result.error) setError(tc('error'))
+      }
+    })
+  }
 
-      const { data: order, error: orderErr } = await supabase
-        .from('orders')
-        .insert({
-          status: 'pending',
-          total: total(),
-          payment_method: form.payment_method,
-          payment_status: 'pending',
-          address: {
-            name: form.name,
-            phone: form.phone,
-            address: form.address,
-            area: form.area,
-          },
-          notes: form.notes || null,
-        })
-        .select('id')
-        .single()
-
-      if (orderErr || !order) throw orderErr ?? new Error('Order failed')
-
-      const orderItems = items.map((item) => ({
-        order_id: order.id,
-        product_id: item.id,
-        quantity: item.quantity,
-        unit_price: item.price,
-        total: item.price * item.quantity,
-      }))
-
-      const { error: itemsErr } = await supabase.from('order_items').insert(orderItems)
-      if (itemsErr) throw itemsErr
-
-      clearCart()
-      router.push(`/${locale}/account/orders?success=${order.id}`)
-    } catch {
-      setError(tc('error'))
-    } finally {
-      setLoading(false)
-    }
+  function fieldError(field: (typeof FIELD_KEYS)[number]) {
+    if (!fieldErrors[field]) return null
+    return <p className="text-xs text-red-600 mt-1">{t(`errors.${field}`)}</p>
   }
 
   if (items.length === 0) {
@@ -133,6 +111,7 @@ export default function CheckoutForm({ locale }: { locale: string }) {
               required
               placeholder={isBn ? 'আপনার নাম' : 'Your name'}
             />
+            {fieldError('name')}
           </div>
           <div className="space-y-1.5">
             <Label htmlFor="phone">{t('phone')}</Label>
@@ -144,7 +123,20 @@ export default function CheckoutForm({ locale }: { locale: string }) {
               required
               placeholder="01XXXXXXXXX"
             />
+            {fieldError('phone')}
           </div>
+        </div>
+
+        <div className="space-y-1.5">
+          <Label htmlFor="email">{t('email')}</Label>
+          <Input
+            id="email"
+            type="email"
+            value={form.email}
+            onChange={(e) => set('email', e.target.value)}
+            placeholder={isBn ? 'ইমেইল (ঐচ্ছিক)' : 'Email (optional)'}
+          />
+          {fieldError('email')}
         </div>
 
         <div className="space-y-1.5">
@@ -156,6 +148,7 @@ export default function CheckoutForm({ locale }: { locale: string }) {
             required
             placeholder={isBn ? 'বাড়ি নম্বর, রাস্তা, এলাকা' : 'House, road, area'}
           />
+          {fieldError('address')}
         </div>
 
         <div className="space-y-1.5">
@@ -176,6 +169,7 @@ export default function CheckoutForm({ locale }: { locale: string }) {
               </button>
             ))}
           </div>
+          {fieldError('area')}
         </div>
       </div>
 
@@ -183,24 +177,20 @@ export default function CheckoutForm({ locale }: { locale: string }) {
       <div className="space-y-3">
         <Label>{t('payment_method')}</Label>
         <div className="grid grid-cols-3 gap-3">
-          {(['bkash', 'nagad', 'cod'] as const).map((method) => (
-            <button
-              type="button"
+          <div className="rounded-xl border-2 border-green-600 bg-green-50 p-3 text-sm font-medium text-green-700 text-center">
+            💵 {t('cod')}
+          </div>
+          {(['bkash', 'nagad'] as const).map((method) => (
+            <div
               key={method}
-              onClick={() => set('payment_method', method)}
-              className={`rounded-xl border p-3 text-sm font-medium transition-colors ${
-                form.payment_method === method
-                  ? 'border-green-600 bg-green-50 text-green-700'
-                  : 'border-gray-200 hover:border-green-400'
-              }`}
+              className="rounded-xl border border-gray-200 p-3 text-sm text-gray-400 text-center cursor-not-allowed"
             >
-              {method === 'bkash' && '💳 '}
-              {method === 'nagad' && '💳 '}
-              {method === 'cod' && '💵 '}
-              {t(method)}
-            </button>
+              💳 {t(method)}
+              <span className="block text-[10px] mt-0.5">{t('coming_soon')}</span>
+            </div>
           ))}
         </div>
+        <p className="text-xs text-gray-500">{t('cod_note')}</p>
       </div>
 
       {/* Notes */}
@@ -219,10 +209,10 @@ export default function CheckoutForm({ locale }: { locale: string }) {
       <Button
         type="submit"
         size="lg"
-        disabled={loading}
+        disabled={pending}
         className="w-full bg-green-600 hover:bg-green-700 text-white"
       >
-        {loading ? (
+        {pending ? (
           <><Loader2 className="h-4 w-4 animate-spin mr-2" />{tc('loading')}</>
         ) : t('place_order')}
       </Button>

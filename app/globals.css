@@ -7,9 +7,15 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-sans);
-  --font-mono: var(--font-geist-mono);
-  --font-heading: var(--font-sans);
+  --color-cream: var(--cream);
+  --color-pasture: var(--pasture);
+  --color-forest: var(--forest);
+  --color-butter: var(--butter);
+  --font-sans: var(--font-inter), var(--font-bangla), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
+  --font-heading: var(--font-fraunces), var(--font-bangla), serif;
+  --font-display: var(--font-fraunces), var(--font-bangla), serif;
+  --font-accent: var(--font-galada), var(--font-bangla), cursive;
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
@@ -50,79 +56,91 @@
   --radius-4xl: calc(var(--radius) * 2.6);
 }
 
-/* ── Light mode — royal purple-blue ─────────────────────── */
+/* ── Light mode — milk cream & pasture green ─────────────────
+   Brand tokens: cream #FAF6EC, pasture #6B8F5E, forest #2C3F26,
+   butter #D9A441. Organic, warm, not corporate. */
 :root {
-  --background: oklch(0.99 0.004 285);
-  --foreground: oklch(0.13 0.025 285);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.13 0.025 285);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.13 0.025 285);
-  --primary: oklch(0.50 0.22 285);
-  --primary-foreground: oklch(0.99 0 0);
-  --secondary: oklch(0.96 0.012 285);
-  --secondary-foreground: oklch(0.32 0.04 285);
-  --muted: oklch(0.96 0.008 285);
-  --muted-foreground: oklch(0.52 0.025 285);
-  --accent: oklch(0.94 0.04 265);
-  --accent-foreground: oklch(0.35 0.12 265);
+  --cream: #faf6ec;
+  --pasture: #6b8f5e;
+  --forest: #2c3f26;
+  --butter: #d9a441;
+
+  --background: #faf6ec;
+  --foreground: #2c3f26;
+  --card: #fffdf7;
+  --card-foreground: #2c3f26;
+  --popover: #fffdf7;
+  --popover-foreground: #2c3f26;
+  --primary: #6b8f5e;
+  --primary-foreground: #faf6ec;
+  --secondary: #f0ead9;
+  --secondary-foreground: #2c3f26;
+  --muted: #f1ecdd;
+  --muted-foreground: #5d6d55;
+  --accent: #d9a441;
+  --accent-foreground: #2c3f26;
   --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.91 0.010 285);
-  --input: oklch(0.91 0.010 285);
-  --ring: oklch(0.50 0.22 285);
+  --border: #e3dcc6;
+  --input: #e3dcc6;
+  --ring: #6b8f5e;
   --radius: 0.75rem;
-  --success: oklch(0.52 0.16 145);
-  --success-foreground: oklch(0.99 0 0);
-  --chart-1: oklch(0.50 0.22 285);
-  --chart-2: oklch(0.55 0.22 255);
-  --chart-3: oklch(0.65 0.18 270);
-  --chart-4: oklch(0.75 0.15 285);
-  --chart-5: oklch(0.70 0.18 27);
-  --sidebar: oklch(0.97 0.008 285);
-  --sidebar-foreground: oklch(0.13 0.025 285);
-  --sidebar-primary: oklch(0.50 0.22 285);
-  --sidebar-primary-foreground: oklch(0.99 0 0);
-  --sidebar-accent: oklch(0.93 0.02 285);
-  --sidebar-accent-foreground: oklch(0.32 0.04 285);
-  --sidebar-border: oklch(0.91 0.010 285);
-  --sidebar-ring: oklch(0.50 0.22 285);
+  --success: #6b8f5e;
+  --success-foreground: #faf6ec;
+  --chart-1: #6b8f5e;
+  --chart-2: #d9a441;
+  --chart-3: #2c3f26;
+  --chart-4: #94ac82;
+  --chart-5: #b57e2c;
+  --sidebar: #f4efe1;
+  --sidebar-foreground: #2c3f26;
+  --sidebar-primary: #6b8f5e;
+  --sidebar-primary-foreground: #faf6ec;
+  --sidebar-accent: #eae3cf;
+  --sidebar-accent-foreground: #2c3f26;
+  --sidebar-border: #e3dcc6;
+  --sidebar-ring: #6b8f5e;
 }
 
-/* ── Dark mode — midnight royal ──────────────────────────────── */
+/* ── Dark mode — night pasture (secondary; brand is light-first) ── */
 .dark {
-  --background: oklch(0.10 0.026 285);
-  --foreground: oklch(0.95 0.010 280);
-  --card: oklch(0.15 0.022 285);
-  --card-foreground: oklch(0.95 0.010 280);
-  --popover: oklch(0.15 0.022 285);
-  --popover-foreground: oklch(0.95 0.010 280);
-  --primary: oklch(0.72 0.20 280);
-  --primary-foreground: oklch(0.10 0.026 285);
-  --secondary: oklch(0.20 0.020 285);
-  --secondary-foreground: oklch(0.95 0.010 280);
-  --muted: oklch(0.20 0.018 285);
-  --muted-foreground: oklch(0.60 0.025 280);
-  --accent: oklch(0.25 0.022 285);
-  --accent-foreground: oklch(0.95 0.010 280);
+  --cream: #faf6ec;
+  --pasture: #87a978;
+  --forest: #2c3f26;
+  --butter: #dfb060;
+
+  --background: #171f13;
+  --foreground: #ede9db;
+  --card: #212b1c;
+  --card-foreground: #ede9db;
+  --popover: #212b1c;
+  --popover-foreground: #ede9db;
+  --primary: #87a978;
+  --primary-foreground: #171f13;
+  --secondary: #2a3524;
+  --secondary-foreground: #ede9db;
+  --muted: #28321f;
+  --muted-foreground: #a8b39c;
+  --accent: #dfb060;
+  --accent-foreground: #171f13;
   --destructive: oklch(0.704 0.191 22.216);
-  --border: oklch(1 0 0 / 9%);
-  --input: oklch(1 0 0 / 12%);
-  --ring: oklch(0.72 0.20 280);
-  --success: oklch(0.65 0.17 145);
-  --success-foreground: oklch(0.10 0.02 145);
-  --chart-1: oklch(0.72 0.20 280);
-  --chart-2: oklch(0.60 0.18 265);
-  --chart-3: oklch(0.50 0.15 285);
-  --chart-4: oklch(0.75 0.14 80);
-  --chart-5: oklch(0.70 0.19 27);
-  --sidebar: oklch(0.12 0.022 285);
-  --sidebar-foreground: oklch(0.95 0.010 280);
-  --sidebar-primary: oklch(0.72 0.20 280);
-  --sidebar-primary-foreground: oklch(0.10 0.026 285);
-  --sidebar-accent: oklch(0.20 0.020 285);
-  --sidebar-accent-foreground: oklch(0.95 0.010 280);
-  --sidebar-border: oklch(1 0 0 / 9%);
-  --sidebar-ring: oklch(0.72 0.20 280);
+  --border: rgba(255, 255, 255, 0.09);
+  --input: rgba(255, 255, 255, 0.12);
+  --ring: #87a978;
+  --success: #87a978;
+  --success-foreground: #171f13;
+  --chart-1: #87a978;
+  --chart-2: #dfb060;
+  --chart-3: #b6c9a9;
+  --chart-4: #5c7a4e;
+  --chart-5: #b57e2c;
+  --sidebar: #1b2416;
+  --sidebar-foreground: #ede9db;
+  --sidebar-primary: #87a978;
+  --sidebar-primary-foreground: #171f13;
+  --sidebar-accent: #2a3524;
+  --sidebar-accent-foreground: #ede9db;
+  --sidebar-border: rgba(255, 255, 255, 0.09);
+  --sidebar-ring: #87a978;
 }
 
 /* ── Keyframes ─────────────────────────────────────────────── */
@@ -146,6 +164,11 @@
   to   { opacity: 1; transform: translateY(0); }
 }
 
+@keyframes fade-in-left {
+  from { opacity: 0; transform: translateX(24px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
 /* ── Custom animation utilities ────────────────────────────── */
 @utility animate-fade-in-up {
   animation: fade-in-up 0.55s cubic-bezier(0.16, 1, 0.3, 1) both;
@@ -161,6 +184,96 @@
 
 @utility animate-slide-down {
   animation: slide-down 0.18s ease-out both;
+}
+
+@utility animate-fade-in-left {
+  animation: fade-in-left 0.55s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+/* ── Brand utilities ───────────────────────────────────────── */
+
+/* Glass panel: white 35%, 20px blur, hairline white border */
+@utility glass-panel {
+  background: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+/* Organic blob mask shapes for gallery images */
+@utility blob-1 {
+  border-radius: 58% 42% 55% 45% / 52% 48% 52% 48%;
+}
+@utility blob-2 {
+  border-radius: 42% 58% 48% 52% / 55% 42% 58% 45%;
+}
+@utility blob-3 {
+  border-radius: 52% 48% 60% 40% / 45% 58% 42% 55%;
+}
+
+@keyframes liquid-pour {
+  0%, 100% { d: path("M0,64 C240,96 480,32 720,56 C960,80 1200,40 1440,64 L1440,120 L0,120 Z"); }
+  50%      { d: path("M0,56 C240,32 480,88 720,64 C960,40 1200,88 1440,56 L1440,120 L0,120 Z"); }
+}
+
+@keyframes sway {
+  0%, 100% { transform: rotate(-2deg); }
+  50%      { transform: rotate(2deg); }
+}
+
+@utility animate-sway {
+  animation: sway 5s ease-in-out infinite;
+  transform-origin: bottom center;
+}
+
+@keyframes badge-spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+@utility animate-badge-spin {
+  animation: badge-spin 40s linear infinite;
+}
+
+/* Liquid wave divider: a 2x-wide wave strip drifting horizontally */
+@keyframes wave-drift {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+@utility animate-wave-drift {
+  animation: wave-drift 14s linear infinite;
+}
+
+/* Grass-sprig micro animation for product card hovers */
+@keyframes sprout {
+  from { transform: scaleY(0.2); opacity: 0; }
+  to   { transform: scaleY(1); opacity: 1; }
+}
+
+@utility animate-sprout {
+  animation: sprout 0.45s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+  transform-origin: bottom center;
+}
+
+/* Respect prefers-reduced-motion: neutralize decorative motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-fade-in-up,
+  .animate-fade-in-left,
+  .animate-float,
+  .animate-float-slow,
+  .animate-slide-down,
+  .animate-sway,
+  .animate-badge-spin,
+  .animate-wave-drift,
+  .animate-sprout {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+  html {
+    scroll-behavior: auto !important;
+  }
 }
 
 @layer base {

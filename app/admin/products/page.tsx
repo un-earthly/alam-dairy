@@ -18,7 +18,7 @@ const TYPE_COLORS: Record<string, string> = {
   cattle: 'bg-green-100 text-green-800',
   feed: 'bg-lime-100 text-lime-800',
   equipment: 'bg-blue-100 text-blue-800',
-  vet_supply: 'bg-purple-100 text-purple-800',
+  vet_supply: 'bg-teal-100 text-teal-800',
 }
 
 export default async function AdminProductsPage() {

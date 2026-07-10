@@ -1,15 +1,14 @@
 'use client'
 
-import { useState } from 'react'
-import { createClient } from '@/lib/supabase/client'
-import { useRouter } from 'next/navigation'
+import { useState, useTransition } from 'react'
+import { updateOrderStatus } from '@/app/admin/orders/actions'
 
 const STATUSES = ['pending', 'confirmed', 'processing', 'dispatched', 'delivered', 'cancelled']
 
 const STATUS_COLORS: Record<string, string> = {
   pending: 'bg-yellow-100 text-yellow-800',
   confirmed: 'bg-blue-100 text-blue-800',
-  processing: 'bg-purple-100 text-purple-800',
+  processing: 'bg-teal-100 text-teal-800',
   dispatched: 'bg-orange-100 text-orange-800',
   delivered: 'bg-green-100 text-green-800',
   cancelled: 'bg-red-100 text-red-800',
@@ -23,23 +22,22 @@ export default function OrderStatusSelect({
   currentStatus: string
 }) {
   const [status, setStatus] = useState(currentStatus)
-  const [saving, setSaving] = useState(false)
-  const router = useRouter()
+  const [pending, startTransition] = useTransition()
 
-  async function handleChange(newStatus: string) {
-    setSaving(true)
-    const supabase = createClient()
-    await supabase.from('orders').update({ status: newStatus }).eq('id', orderId)
+  function handleChange(newStatus: string) {
+    const previous = status
     setStatus(newStatus)
-    setSaving(false)
-    router.refresh()
+    startTransition(async () => {
+      const result = await updateOrderStatus({ orderId, status: newStatus })
+      if (!result.ok) setStatus(previous)
+    })
   }
 
   return (
     <select
       value={status}
       onChange={(e) => handleChange(e.target.value)}
-      disabled={saving}
+      disabled={pending}
       className={`rounded-full px-2.5 py-1 text-xs font-medium border-0 cursor-pointer focus:outline-none focus:ring-2 focus:ring-green-400 ${STATUS_COLORS[status] ?? 'bg-gray-100 text-gray-700'}`}
     >
       {STATUSES.map((s) => (

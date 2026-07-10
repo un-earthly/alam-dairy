@@ -72,7 +72,7 @@ export default async function FarmProductDetailPage({ params }: Props) {
             <div className="flex items-center gap-2 mb-2">
               <Badge variant="secondary" className="text-xs capitalize">{product.type.replace('_', ' ')}</Badge>
               {isCattle && (
-                <Badge className="bg-blue-100 text-blue-800 border-blue-200 text-xs gap-1">
+                <Badge className="bg-pasture/15 text-forest border-pasture/30 text-xs gap-1 dark:text-foreground">
                   <ShieldCheck className="h-3 w-3" />
                   {isBn ? 'ভেট পরীক্ষিত' : 'Vet Inspected'}
                 </Badge>

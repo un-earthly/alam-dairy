@@ -7,9 +7,9 @@ import {
   ShoppingBag,
   Users,
   BarChart3,
-  Leaf,
   LogOut,
 } from 'lucide-react'
+import Logo from '@/components/layout/Logo'
 
 const NAV = [
   { href: '/admin', label: 'Dashboard', icon: LayoutDashboard },
@@ -25,14 +25,20 @@ export default async function AdminLayout({ children }: { children: React.ReactN
 
   if (!user) redirect('/bn')
 
+  const { data: profile } = await supabase
+    .from('profiles')
+    .select('role')
+    .eq('id', user.id)
+    .single()
+
+  if (!profile || !['admin', 'staff'].includes(profile.role)) redirect('/bn')
+
   return (
     <div className="flex min-h-screen bg-muted/20">
       {/* Sidebar */}
       <aside className="hidden w-56 flex-col bg-gray-950 text-white md:flex">
         <div className="flex items-center gap-2.5 px-4 py-4 border-b border-white/10">
-          <div className="flex h-7 w-7 items-center justify-center rounded-md bg-primary">
-            <Leaf className="h-4 w-4 text-primary-foreground" />
-          </div>
+          <Logo height={28} className="shrink-0 brightness-0 invert" />
           <span className="font-semibold text-sm">Alam Dairy Admin</span>
         </div>
         <nav className="flex-1 py-3">
@@ -57,9 +63,7 @@ export default async function AdminLayout({ children }: { children: React.ReactN
 
       {/* Mobile top bar */}
       <div className="fixed top-0 left-0 right-0 z-30 flex items-center gap-3 bg-gray-950 px-4 py-3 md:hidden">
-        <div className="flex h-7 w-7 items-center justify-center rounded-md bg-primary">
-          <Leaf className="h-4 w-4 text-primary-foreground" />
-        </div>
+        <Logo height={28} className="shrink-0 brightness-0 invert" />
         <span className="font-semibold text-sm text-white">Alam Dairy Admin</span>
       </div>
 

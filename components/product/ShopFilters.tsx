@@ -16,7 +16,6 @@ const FARM_FILTERS = [
   { key: 'all', labelKey: 'filter_all' },
   { key: 'cattle', labelKey: 'filter_cattle' },
   { key: 'feed', labelKey: 'filter_feed' },
-  { key: 'vet', labelKey: 'filter_vet' },
   { key: 'equipment', labelKey: 'filter_equipment' },
 ] as const
 

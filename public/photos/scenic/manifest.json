@@ -1,0 +1,156 @@
+{
+  "crop-field": {
+    "files": {
+      "960": "/photos/scenic/crop-field-960.webp",
+      "main": "/photos/scenic/crop-field.webp"
+    },
+    "sourceId": "pexels-32113764",
+    "source": "pexels",
+    "credit": "Lipot Repaszky",
+    "creditUrl": "https://www.pexels.com/photo/vast-green-field-under-a-clear-blue-sky-32113764/",
+    "query": "green wheat crop field wide landscape"
+  },
+  "cow-herd": {
+    "files": {
+      "960": "/photos/scenic/cow-herd-960.webp",
+      "main": "/photos/scenic/cow-herd.webp"
+    },
+    "sourceId": "pexels-7512293",
+    "source": "pexels",
+    "credit": "Karol Czinege",
+    "creditUrl": "https://www.pexels.com/photo/hers-of-cattles-in-a-pasture-land-7512293/",
+    "query": "cow herd grazing pasture wide"
+  },
+  "barn": {
+    "files": {
+      "960": "/photos/scenic/barn-960.webp",
+      "main": "/photos/scenic/barn.webp"
+    },
+    "sourceId": "pexels-12184709",
+    "source": "pexels",
+    "credit": "Ali Kazal",
+    "creditUrl": "https://www.pexels.com/photo/red-and-white-barn-house-near-green-trees-12184709/",
+    "query": "red barn farm countryside"
+  },
+  "farm-landscape": {
+    "files": {
+      "960": "/photos/scenic/farm-landscape-960.webp",
+      "main": "/photos/scenic/farm-landscape.webp"
+    },
+    "sourceId": "pexels-13588735",
+    "source": "pexels",
+    "credit": "S. von Hoerst",
+    "creditUrl": "https://www.pexels.com/photo/view-of-fields-at-sunrise-13588735/",
+    "query": "farm landscape rolling hills sunrise"
+  },
+  "tractor": {
+    "files": {
+      "960": "/photos/scenic/tractor-960.webp",
+      "main": "/photos/scenic/tractor.webp"
+    },
+    "sourceId": "pexels-8586455",
+    "source": "pexels",
+    "credit": "Ofir Eliav",
+    "creditUrl": "https://www.pexels.com/photo/man-driving-a-tractor-on-hay-field-8586455/",
+    "query": "tractor working green field"
+  },
+  "rural-road": {
+    "files": {
+      "960": "/photos/scenic/rural-road-960.webp",
+      "main": "/photos/scenic/rural-road.webp"
+    },
+    "sourceId": "pexels-995304",
+    "source": "pexels",
+    "credit": "Josh Sorenson",
+    "creditUrl": "https://www.pexels.com/photo/green-leafed-trees-995304/",
+    "query": "rural countryside road trees"
+  },
+  "dairy-farm": {
+    "files": {
+      "960": "/photos/scenic/dairy-farm-960.webp",
+      "main": "/photos/scenic/dairy-farm.webp"
+    },
+    "sourceId": "pexels-10041350",
+    "source": "pexels",
+    "credit": "Los Muertos Crew",
+    "creditUrl": "https://www.pexels.com/photo/cows-under-a-roof-in-captivity-10041350/",
+    "query": "dairy farm cows barn interior"
+  },
+  "golden-field": {
+    "files": {
+      "960": "/photos/scenic/golden-field-960.webp",
+      "main": "/photos/scenic/golden-field.webp"
+    },
+    "sourceId": "pexels-11987205",
+    "source": "pexels",
+    "credit": "Tamhasip Khan",
+    "creditUrl": "https://www.pexels.com/photo/brown-grass-field-11987205/",
+    "query": "golden wheat field sunset"
+  },
+  "pasture-mist": {
+    "files": {
+      "960": "/photos/scenic/pasture-mist-960.webp",
+      "main": "/photos/scenic/pasture-mist.webp"
+    },
+    "sourceId": "pexels-34449787",
+    "source": "pexels",
+    "credit": "Roman Biernacki",
+    "creditUrl": "https://www.pexels.com/photo/cows-grazing-in-misty-morning-pasture-34449787/",
+    "query": "misty morning pasture cows"
+  },
+  "farmer-hands": {
+    "files": {
+      "960": "/photos/scenic/farmer-hands-960.webp",
+      "main": "/photos/scenic/farmer-hands.webp"
+    },
+    "sourceId": "pexels-7728121",
+    "source": "pexels",
+    "credit": "Greta Hoffman",
+    "creditUrl": "https://www.pexels.com/photo/crop-gardener-with-springs-planted-into-soil-7728121/",
+    "query": "farmer hands soil plant"
+  },
+  "milk-splash": {
+    "files": {
+      "960": "/photos/scenic/milk-splash-960.webp",
+      "main": "/photos/scenic/milk-splash.webp"
+    },
+    "sourceId": "pexels-7034",
+    "source": "pexels",
+    "credit": "Snapwire",
+    "creditUrl": "https://www.pexels.com/photo/coffee-cup-milk-7034/",
+    "query": "milk splash pour white"
+  },
+  "calves-field": {
+    "files": {
+      "960": "/photos/scenic/calves-field-960.webp",
+      "main": "/photos/scenic/calves-field.webp"
+    },
+    "sourceId": "pexels-4717273",
+    "source": "pexels",
+    "credit": "Samuel Walker",
+    "creditUrl": "https://www.pexels.com/photo/cows-on-a-grassy-field-4717273/",
+    "query": "calves cows green meadow"
+  },
+  "rice-paddy": {
+    "files": {
+      "960": "/photos/scenic/rice-paddy-960.webp",
+      "main": "/photos/scenic/rice-paddy.webp"
+    },
+    "sourceId": "pexels-36869062",
+    "source": "pexels",
+    "credit": "masudar rahman",
+    "creditUrl": "https://www.pexels.com/photo/farmers-working-in-lush-green-rice-fields-in-bangladesh-36869062/",
+    "query": "rice paddy field green bangladesh"
+  },
+  "haystack": {
+    "files": {
+      "960": "/photos/scenic/haystack-960.webp",
+      "main": "/photos/scenic/haystack.webp"
+    },
+    "sourceId": "pexels-33770617",
+    "source": "pexels",
+    "credit": "雪冬 王",
+    "creditUrl": "https://www.pexels.com/photo/sunlit-mongolian-steppe-with-rolling-hills-33770617/",
+    "query": "haystack field golden hour"
+  }
+}

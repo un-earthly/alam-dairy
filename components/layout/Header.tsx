@@ -3,8 +3,11 @@
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 import { useTranslations } from 'next-intl'
-import { ShoppingCart, Menu, X, Leaf, LogOut, User, Package } from 'lucide-react'
-import { useState, useEffect } from 'react'
+import {
+  ShoppingCart, Menu, X, LogOut, User, Package, Milk, Truck, Leaf,
+  BookOpen, Camera, Sprout, BadgeCheck, Phone,
+} from 'lucide-react'
+import { useState, useEffect, useSyncExternalStore } from 'react'
 import type { User as SupabaseUser } from '@supabase/supabase-js'
 import { Button, buttonVariants } from '@/components/ui/button'
 import { cn } from '@/lib/utils'
@@ -22,6 +25,8 @@ import { useCart } from '@/lib/store/cart'
 import { useCartDrawer } from '@/lib/store/cartDrawer'
 import { createClient } from '@/lib/supabase/client'
 import LocaleSwitcher from './LocaleSwitcher'
+import Logo from './Logo'
+import MegaMenu, { type MegaSection, type MegaLink } from './MegaMenu'
 
 export default function Header({
   locale,
@@ -34,15 +39,18 @@ export default function Header({
   const count = useCart((s) => s.count())
   const openCart = useCartDrawer((s) => s.open)
   const [menuOpen, setMenuOpen] = useState(false)
-  const [mounted, setMounted] = useState(false)
   const [scrolled, setScrolled] = useState(false)
   const [user, setUser] = useState<SupabaseUser | null>(initialUser)
   const supabase = createClient()
   const router = useRouter()
   const base = `/${locale}`
+  const mounted = useSyncExternalStore(
+    () => () => undefined,
+    () => true,
+    () => false
+  )
 
   useEffect(() => {
-    setMounted(true)
     const { data: { subscription } } = supabase.auth.onAuthStateChange((_e, session) => {
       setUser(session?.user ?? null)
     })
@@ -64,9 +72,81 @@ export default function Header({
   const avatarFallback = user?.email?.slice(0, 2).toUpperCase() ?? 'U'
   const avatarUrl = user?.user_metadata?.avatar_url as string | undefined
 
-  const navLinks = [
-    { href: `${base}/shop`, label: t('shop') },
-    { href: `${base}/farm`, label: t('farm') },
+  const megaSections: MegaSection[] = [
+    {
+      label: t('products'),
+      columns: [
+        {
+          heading: t('shop'),
+          links: [
+            { href: `${base}/shop`, label: t('mega_dairy'), desc: t('mega_dairy_desc'), icon: <Milk className="h-4 w-4" /> },
+            { href: `${base}/shop?type=milk`, label: t('mega_milk'), icon: <Milk className="h-4 w-4" /> },
+            { href: `${base}/shop?type=yogurt`, label: t('mega_yogurt'), icon: <Leaf className="h-4 w-4" /> },
+            { href: `${base}/shop?type=ghee`, label: t('mega_ghee'), icon: <Sprout className="h-4 w-4" /> },
+          ],
+        },
+        {
+          heading: t('farm'),
+          links: [
+            { href: `${base}/farm`, label: t('mega_supplies'), desc: t('mega_supplies_desc'), icon: <Truck className="h-4 w-4" /> },
+            { href: `${base}/farm?type=cattle`, label: t('mega_cattle'), icon: <BadgeCheck className="h-4 w-4" /> },
+            { href: `${base}/farm?type=feed`, label: t('mega_feed'), icon: <Sprout className="h-4 w-4" /> },
+          ],
+        },
+      ],
+      feature: {
+        href: `${base}/shop`,
+        image: '/photos/milk-pour.jpg',
+        title: t('mega_products_feature'),
+        cta: t('mega_products_cta'),
+      },
+    },
+    {
+      label: t('company'),
+      columns: [
+        {
+          heading: t('company'),
+          links: [
+            { href: `${base}/about`, label: t('about'), desc: t('about_desc'), icon: <User className="h-4 w-4" /> },
+            { href: `${base}/our-story`, label: t('story'), desc: t('story_desc'), icon: <BookOpen className="h-4 w-4" /> },
+            { href: `${base}/sustainability`, label: t('sustainability'), desc: t('sustainability_desc'), icon: <Sprout className="h-4 w-4" /> },
+            { href: `${base}/certifications`, label: t('certifications'), desc: t('certifications_desc'), icon: <BadgeCheck className="h-4 w-4" /> },
+          ],
+        },
+      ],
+      feature: {
+        href: `${base}/our-story`,
+        image: '/photos/scenic/pasture-mist.webp',
+        title: t('mega_company_feature'),
+        cta: t('mega_company_cta'),
+      },
+    },
+  ]
+
+  const plainLinks: MegaLink[] = [
+    { href: `${base}/gallery`, label: t('gallery') },
+    { href: `${base}/contact`, label: t('contact') },
+  ]
+
+  const mobileGroups: { heading: string; links: { href: string; label: string; icon: React.ReactNode }[] }[] = [
+    {
+      heading: t('products'),
+      links: [
+        { href: `${base}/shop`, label: t('shop'), icon: <Milk className="h-4 w-4" /> },
+        { href: `${base}/farm`, label: t('farm'), icon: <Truck className="h-4 w-4" /> },
+      ],
+    },
+    {
+      heading: t('company'),
+      links: [
+        { href: `${base}/about`, label: t('about'), icon: <User className="h-4 w-4" /> },
+        { href: `${base}/our-story`, label: t('story'), icon: <BookOpen className="h-4 w-4" /> },
+        { href: `${base}/sustainability`, label: t('sustainability'), icon: <Sprout className="h-4 w-4" /> },
+        { href: `${base}/certifications`, label: t('certifications'), icon: <BadgeCheck className="h-4 w-4" /> },
+        { href: `${base}/gallery`, label: t('gallery'), icon: <Camera className="h-4 w-4" /> },
+        { href: `${base}/contact`, label: t('contact'), icon: <Phone className="h-4 w-4" /> },
+      ],
+    },
   ]
 
   return (
@@ -86,26 +166,18 @@ export default function Header({
       >
         {/* Logo */}
         <Link href={base} className="flex items-center gap-2.5 group">
-          <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-primary text-primary-foreground shadow-sm transition-transform duration-200 group-hover:scale-105">
-            <Leaf className="h-4 w-4" />
-          </div>
-          <span className="text-sm font-semibold text-foreground leading-tight">
+          <Logo
+            height={32}
+            priority
+            className="shrink-0 transition-transform duration-200 group-hover:scale-105 dark:brightness-0 dark:invert"
+          />
+          <span className="font-display text-sm font-semibold text-foreground leading-tight">
             {locale === 'bn' ? 'আলম ডেইরি' : 'Alam Dairy'}
           </span>
         </Link>
 
-        {/* Desktop nav */}
-        <nav className="hidden items-center gap-7 text-sm md:flex">
-          {navLinks.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className="relative text-muted-foreground hover:text-foreground transition-colors duration-200 after:absolute after:-bottom-0.5 after:left-0 after:h-[2px] after:w-0 after:rounded-full after:bg-primary after:transition-[width] after:duration-300 hover:after:w-full"
-            >
-              {link.label}
-            </Link>
-          ))}
-        </nav>
+        {/* Desktop nav: mega menu */}
+        <MegaMenu sections={megaSections} plainLinks={plainLinks} />
 
         {/* Right side */}
         <div className="flex items-center gap-0.5">
@@ -154,7 +226,7 @@ export default function Header({
               </DropdownMenuContent>
             </DropdownMenu>
           ) : (
-            <Link href={`${base}/auth`} className={cn(buttonVariants({ size: 'sm' }), 'hidden md:flex ml-1')}>
+            <Link href={`${base}/auth`} className={cn(buttonVariants({ size: 'sm' }), 'hidden lg:flex ml-1')}>
               {t('login')}
             </Link>
           )}
@@ -163,7 +235,7 @@ export default function Header({
           <Button
             variant="ghost"
             size="icon"
-            className="md:hidden ml-0.5"
+            className="lg:hidden ml-0.5"
             onClick={() => setMenuOpen((v) => !v)}
             aria-label="Menu"
           >
@@ -177,17 +249,25 @@ export default function Header({
 
       {/* Mobile menu */}
       {menuOpen && (
-        <div className="border-t bg-background/95 backdrop-blur-lg px-4 py-3 md:hidden animate-slide-down">
+        <div className="max-h-[calc(100vh-4rem)] overflow-y-auto border-t bg-background/95 backdrop-blur-lg px-4 py-3 lg:hidden animate-slide-down">
           <nav className="flex flex-col gap-0.5">
-            {navLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                onClick={() => setMenuOpen(false)}
-                className="flex items-center rounded-lg px-3 py-2.5 text-sm font-medium text-muted-foreground hover:bg-muted hover:text-foreground transition-colors"
-              >
-                {link.label}
-              </Link>
+            {mobileGroups.map((group) => (
+              <div key={group.heading} className="mb-1">
+                <p className="px-3 pb-1 pt-2 text-[11px] font-semibold uppercase tracking-widest text-muted-foreground/70">
+                  {group.heading}
+                </p>
+                {group.links.map((link) => (
+                  <Link
+                    key={link.href}
+                    href={link.href}
+                    onClick={() => setMenuOpen(false)}
+                    className="flex items-center gap-2.5 rounded-lg px-3 py-2.5 text-sm font-medium text-muted-foreground hover:bg-muted hover:text-foreground transition-colors"
+                  >
+                    <span className="text-pasture">{link.icon}</span>
+                    {link.label}
+                  </Link>
+                ))}
+              </div>
             ))}
             {user ? (
               <>

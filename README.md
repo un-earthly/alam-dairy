@@ -1,6 +1,6 @@
-# Alam Dairy Firm
+# Alam Dairy
 
-E-commerce platform for Alam Dairy Firm, Bangladesh. Sells dairy products (B2C) and farm supplies / cattle (B2B) from a single storefront.
+E-commerce platform for Alam Dairy, Bangladesh. Sells dairy products (B2C) and farm supplies / cattle (B2B) from a single storefront.
 
 ## Stack
 
