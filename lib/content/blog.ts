@@ -72,7 +72,7 @@ export const blogPosts: BlogPost[] = [
     slug: 'ghee-the-slow-way',
     date: '2026-05-18',
     minutes: 5,
-    image: '/products/pure-ghee-500g-800.webp',
+    image: 'https://res.cloudinary.com/oeon1p4w/image/upload/v1783742543/products/pure-ghee-500g.webp',
     title: {
       en: 'Ghee, the Slow Way: From Cream to Gold in Nine Hours',
       bn: 'ধীরে বানানো ঘি: ননী থেকে সোনালি ঘি, ন’ঘণ্টার গল্প',
