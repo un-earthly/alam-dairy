@@ -2,6 +2,7 @@ import { z } from 'zod'
 
 export const orderItemSchema = z.object({
   id: z.uuid(),
+  variant_id: z.uuid().optional(),
   quantity: z.number().int().positive().max(999),
 })
 

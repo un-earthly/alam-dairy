@@ -52,7 +52,7 @@ export default function CheckoutForm({ locale }: { locale: string }) {
       const result = await placeOrder(locale, {
         ...form,
         payment_method: 'cod',
-        items: items.map((item) => ({ id: item.id, quantity: item.quantity })),
+        items: items.map((item) => ({ id: item.id, variant_id: item.variant_id, quantity: item.quantity })),
       })
       // On success the action redirects and never returns
       if (result?.ok === false) {
@@ -85,7 +85,7 @@ export default function CheckoutForm({ locale }: { locale: string }) {
           {isBn ? 'অর্ডার সারসংক্ষেপ' : 'Order Summary'}
         </h2>
         {items.map((item) => (
-          <div key={item.id} className="flex justify-between text-sm">
+          <div key={`${item.id}:${item.variant_id ?? ''}`} className="flex justify-between text-sm">
             <span className="text-gray-700">
               {locale === 'bn' ? item.name_bn : item.name_en} × {item.quantity}
             </span>

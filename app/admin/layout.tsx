@@ -10,13 +10,21 @@ import {
   LogOut,
   Search,
   Import,
+  Tag,
+  BadgeCheck,
+  Star,
+  RefreshCw,
 } from 'lucide-react'
 import Logo from '@/components/layout/Logo'
 
 const NAV = [
   { href: '/admin', label: 'Dashboard', icon: LayoutDashboard },
   { href: '/admin/products', label: 'Products', icon: Package },
+  { href: '/admin/categories', label: 'Categories', icon: Tag },
+  { href: '/admin/brands', label: 'Brands', icon: BadgeCheck },
   { href: '/admin/orders', label: 'Orders', icon: ShoppingBag },
+  { href: '/admin/subscriptions', label: 'Subscriptions', icon: RefreshCw },
+  { href: '/admin/reviews', label: 'Reviews', icon: Star },
   { href: '/admin/customers', label: 'Customers', icon: Users },
   { href: '/admin/inventory', label: 'Inventory', icon: BarChart3 },
   { href: '/admin/competitor-import', label: 'Competitor Import', icon: Search },
@@ -40,7 +48,7 @@ export default async function AdminLayout({ children }: { children: React.ReactN
   return (
     <div className="flex min-h-screen bg-muted/20">
       {/* Sidebar */}
-      <aside className="hidden w-56 flex-col bg-gray-950 text-white md:flex">
+      <aside className="hidden w-56 flex-col bg-gray-950 text-white md:sticky md:top-0 md:flex md:h-screen md:overflow-y-auto">
         <div className="flex items-center gap-2.5 px-4 py-4 border-b border-white/10">
           <Logo height={28} className="shrink-0 brightness-0 invert" />
           <span className="font-semibold text-sm">Alam Dairy Admin</span>

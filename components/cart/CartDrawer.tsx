@@ -42,7 +42,7 @@ export default function CartDrawer() {
           <>
             <div className="flex-1 overflow-y-auto py-2">
               {items.map((item) => (
-                <div key={item.id} className="flex gap-3 py-3">
+                <div key={`${item.id}:${item.variant_id ?? ''}`} className="flex gap-3 py-3">
                   <div className="h-16 w-16 shrink-0 overflow-hidden rounded-lg bg-muted">
                     {item.image ? (
                       <Image src={item.image} alt="" width={64} height={64} className="h-full w-full object-cover" />
@@ -63,20 +63,20 @@ export default function CartDrawer() {
 
                     <div className="flex items-center gap-2 mt-1">
                       <button
-                        onClick={() => updateQty(item.id, item.quantity - 1)}
+                        onClick={() => updateQty(item.id, item.quantity - 1, item.variant_id)}
                         className="h-6 w-6 rounded-md border border-border text-sm font-bold hover:bg-muted hover:border-primary/50 flex items-center justify-center transition-colors duration-100"
                       >
                         −
                       </button>
                       <span className="text-sm w-4 text-center font-medium tabular-nums">{item.quantity}</span>
                       <button
-                        onClick={() => updateQty(item.id, item.quantity + 1)}
+                        onClick={() => updateQty(item.id, item.quantity + 1, item.variant_id)}
                         className="h-6 w-6 rounded-md border border-border text-sm font-bold hover:bg-muted hover:border-primary/50 flex items-center justify-center transition-colors duration-100"
                       >
                         +
                       </button>
                       <button
-                        onClick={() => removeItem(item.id)}
+                        onClick={() => removeItem(item.id, item.variant_id)}
                         className="ml-auto text-muted-foreground/50 hover:text-destructive transition-colors duration-150"
                         aria-label={t('remove')}
                       >

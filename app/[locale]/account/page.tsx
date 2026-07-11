@@ -1,7 +1,7 @@
 import { redirect } from 'next/navigation'
 import Link from 'next/link'
 import { createClient } from '@/lib/supabase/server'
-import { Package, User, Settings, ChevronRight, ShieldCheck } from 'lucide-react'
+import { Package, User, Settings, ChevronRight, ShieldCheck, RefreshCw } from 'lucide-react'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import { Badge } from '@/components/ui/badge'
@@ -42,6 +42,12 @@ export default async function AccountPage({ params }: { params: Promise<{ locale
       icon: Package,
       label: isBn ? 'আমার অর্ডার' : 'My Orders',
       desc: isBn ? `${orderCount ?? 0}টি অর্ডার` : `${orderCount ?? 0} orders`,
+    },
+    {
+      href: `/${locale}/account/subscriptions`,
+      icon: RefreshCw,
+      label: isBn ? 'আমার সাবস্ক্রিপশন' : 'My Subscriptions',
+      desc: isBn ? 'পুনরাবৃত্ত অর্ডার পরিচালনা করুন' : 'Manage recurring deliveries',
     },
     {
       href: `/${locale}/shop`,

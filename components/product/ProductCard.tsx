@@ -9,8 +9,9 @@ import { Badge } from '@/components/ui/badge'
 import { useCart } from '@/lib/store/cart'
 import { useCartDrawer } from '@/lib/store/cartDrawer'
 import type { Database } from '@/lib/supabase/types'
+import type { ProductWithBrand } from '@/lib/shop/queryProducts'
 
-type Product = Database['public']['Tables']['products']['Row']
+type Product = Database['public']['Tables']['products']['Row'] | ProductWithBrand
 
 export default function ProductCard({ product, basePath }: { product: Product; basePath: string }) {
   const locale = useLocale()
@@ -22,6 +23,7 @@ export default function ProductCard({ product, basePath }: { product: Product; b
   const name = locale === 'bn' ? product.name_bn : product.name_en
   const price = product.sale_price ?? product.price
   const isOnSale = !!product.sale_price
+  const brandName = 'brand' in product ? product.brand?.name : undefined
 
   function handleAdd() {
     addItem({
@@ -38,7 +40,7 @@ export default function ProductCard({ product, basePath }: { product: Product; b
   }
 
   return (
-    <div className="group relative flex flex-col overflow-hidden rounded-xl border bg-card shadow-sm hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200">
+    <div className="group relative flex flex-col overflow-hidden rounded-[2rem] border border-border bg-card shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-pasture/15">
       {/* Image */}
       <Link href={`${basePath}/${product.slug}`} className="block aspect-square overflow-hidden bg-muted">
         {product.images[0] ? (
@@ -69,6 +71,9 @@ export default function ProductCard({ product, basePath }: { product: Product; b
       {/* Info */}
       <div className="flex flex-1 flex-col p-3 gap-2">
         <Link href={`${basePath}/${product.slug}`}>
+          {brandName && (
+            <span className="text-[11px] font-medium uppercase tracking-wide text-muted-foreground">{brandName}</span>
+          )}
           <h3 className="text-sm font-semibold text-foreground line-clamp-2 leading-snug">{name}</h3>
         </Link>
 

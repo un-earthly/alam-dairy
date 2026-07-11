@@ -115,7 +115,17 @@
     "add_to_cart": "Add to Cart",
     "out_of_stock": "Out of Stock",
     "per_unit": "per",
-    "subscribe": "Subscribe"
+    "subscribe": "Subscribe",
+    "hero_eyebrow": "Fresh from our farm",
+    "hero_title": "Shop Alam Dairy",
+    "hero_subtitle": "Farm-fresh milk, yogurt, ghee and more — delivered to your door.",
+    "sort_newest": "Newest",
+    "sort_price_asc": "Price: Low to High",
+    "sort_price_desc": "Price: High to Low",
+    "search_placeholder": "Search products...",
+    "load_more": "Load more",
+    "no_more_results": "No more products",
+    "category_all": "All"
   },
   "farm": {
     "title": "Farm Supplies",

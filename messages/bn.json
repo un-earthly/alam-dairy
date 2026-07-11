@@ -115,7 +115,17 @@
     "add_to_cart": "কার্টে যোগ করুন",
     "out_of_stock": "স্টক নেই",
     "per_unit": "প্রতি",
-    "subscribe": "সাবস্ক্রাইব করুন"
+    "subscribe": "সাবস্ক্রাইব করুন",
+    "hero_eyebrow": "আমাদের খামার থেকে সতেজ",
+    "hero_title": "আলম ডেইরি থেকে কিনুন",
+    "hero_subtitle": "খামার থেকে সতেজ দুধ, দই, ঘি ও আরও অনেক কিছু — আপনার দোরগোড়ায়।",
+    "sort_newest": "নতুন",
+    "sort_price_asc": "মূল্য: কম থেকে বেশি",
+    "sort_price_desc": "মূল্য: বেশি থেকে কম",
+    "search_placeholder": "পণ্য খুঁজুন...",
+    "load_more": "আরও দেখুন",
+    "no_more_results": "আর কোনো পণ্য নেই",
+    "category_all": "সব"
   },
   "farm": {
     "title": "খামার সরবরাহ",
