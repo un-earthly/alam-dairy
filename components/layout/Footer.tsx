@@ -15,7 +15,7 @@ export default function Footer({ locale }: { locale: string }) {
       <div
         aria-hidden
         className="pointer-events-none absolute inset-0 bg-repeat opacity-[0.06] mix-blend-multiply dark:opacity-[0.04] dark:invert dark:saturate-0 dark:mix-blend-screen"
-        style={{ backgroundImage: 'url(/doodle-2.png)', backgroundSize: '460px' }}
+        style={{ backgroundImage: 'url(https://res.cloudinary.com/oeon1p4w/image/upload/v1783768889/marketing/doodle-2.png)', backgroundSize: '460px' }}
       />
       <div className="relative mx-auto max-w-7xl px-4 py-12">
         <div className="grid grid-cols-2 gap-8 sm:grid-cols-4">

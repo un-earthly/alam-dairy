@@ -118,7 +118,7 @@ export default function AuthPage({ params }: { params: Promise<{ locale: string 
       <div
         aria-hidden
         className="pointer-events-none absolute inset-0 bg-repeat opacity-[0.05] mix-blend-multiply"
-        style={{ backgroundImage: 'url(/doodle.png)', backgroundSize: '420px' }}
+        style={{ backgroundImage: 'url(https://res.cloudinary.com/oeon1p4w/image/upload/v1783768887/marketing/doodle.png)', backgroundSize: '420px' }}
       />
 
       {/* ── Left brand panel ── */}
@@ -130,7 +130,7 @@ export default function AuthPage({ params }: { params: Promise<{ locale: string 
         <div
           aria-hidden
           className="pointer-events-none absolute inset-0 bg-repeat opacity-[0.15] invert saturate-0"
-          style={{ backgroundImage: 'url(/doodle-2.png)', backgroundSize: '340px' }}
+          style={{ backgroundImage: 'url(https://res.cloudinary.com/oeon1p4w/image/upload/v1783768889/marketing/doodle-2.png)', backgroundSize: '340px' }}
         />
 
         {/* Logo */}
@@ -179,7 +179,7 @@ export default function AuthPage({ params }: { params: Promise<{ locale: string 
         <div
           aria-hidden
           className="pointer-events-none absolute left-0 top-0 h-44 w-44 bg-contain bg-no-repeat opacity-20"
-          style={{ backgroundImage: 'url(/corner-1.png)' }}
+          style={{ backgroundImage: 'url(https://res.cloudinary.com/oeon1p4w/image/upload/v1783768890/marketing/corner-1.png)' }}
         />
         <div className="w-full max-w-sm space-y-8">
           {/* Mobile logo */}

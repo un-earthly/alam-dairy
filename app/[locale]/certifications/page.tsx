@@ -27,7 +27,7 @@ export default async function CertificationsPage({ params }: { params: Promise<{
                 eyebrow={t('hero_eyebrow')}
                 title={t('hero_title')}
                 subtitle={t('hero_subtitle')}
-                image="/photos/scenic/barn.webp"
+                image="https://res.cloudinary.com/oeon1p4w/image/upload/v1783768901/marketing/photos/scenic/barn.webp"
             />
 
             <section className="relative overflow-hidden py-16 sm:py-24">

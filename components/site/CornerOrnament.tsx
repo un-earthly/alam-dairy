@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import { cn } from '@/lib/utils'
 
-// The kantha corner motif (/corner-1.png), reused across sections with a
+// The kantha corner motif (Cloudinary-hosted), reused across sections with a
 // different transform each time so it never reads as a repeat.
 // Base art hugs the top-left; `corner` mirrors it into place. `onDark`
 // switches the blend for photo/forest backgrounds.
@@ -34,7 +34,7 @@ export default function CornerOrnament({
       style={{ width: size, height: size, opacity, rotate: rotate ? `${rotate}deg` : undefined }}
     >
       <Image
-        src="/corner-1.png"
+        src="https://res.cloudinary.com/oeon1p4w/image/upload/v1783768890/marketing/corner-1.png"
         alt=""
         width={size}
         height={size}

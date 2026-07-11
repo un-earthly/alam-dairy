@@ -21,7 +21,7 @@ export default async function ContactPage({ params }: { params: Promise<{ locale
                 eyebrow={t('hero_eyebrow')}
                 title={t('hero_title')}
                 subtitle={t('hero_subtitle')}
-                image="/photos/scenic/rural-road.webp"
+                image="https://res.cloudinary.com/oeon1p4w/image/upload/v1783768912/marketing/photos/scenic/rural-road.webp"
             />
 
             <section className="relative overflow-hidden py-16 sm:py-24">

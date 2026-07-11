@@ -34,7 +34,7 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
         eyebrow={t('hero_eyebrow')}
         title={t('hero_title')}
         subtitle={t('hero_subtitle')}
-        image="/photos/scenic/farm-landscape.webp"
+        image="https://res.cloudinary.com/oeon1p4w/image/upload/v1783768907/marketing/photos/scenic/farm-landscape.webp"
         tall
       />
 
@@ -53,7 +53,7 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
           <Reveal delay={150} className="relative">
             <div className="relative overflow-hidden rounded-[3rem]">
               <Image
-                src="/photos/milking.jpg"
+                src="https://res.cloudinary.com/oeon1p4w/image/upload/v1783768898/marketing/photos/milking.jpg"
                 alt="Milk cans at the farm"
                 width={880}
                 height={660}
@@ -93,7 +93,7 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
       </section>
 
       {/* Founder quote over parallax herd */}
-      <ParallaxBand image="/photos/scenic/cow-herd.webp">
+      <ParallaxBand image="https://res.cloudinary.com/oeon1p4w/image/upload/v1783768903/marketing/photos/scenic/cow-herd.webp">
         <Reveal>
           <p className="font-accent text-2xl leading-relaxed text-butter sm:text-3xl">“{t('band_quote')}”</p>
           <p className="mt-4 text-xs font-medium uppercase tracking-widest text-cream/80">{t('band_sign')}</p>
@@ -105,8 +105,8 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
         <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-2">
           <Reveal className="order-2 lg:order-1">
             <div className="grid grid-cols-2 gap-4">
-              <Image src="/photos/scenic/farmer-hands.webp" alt="Farmer's hands at work" width={600} height={450} className="blob-1 aspect-square w-full object-cover shadow-lg shadow-forest/10 rotate-[-2deg]" sizes="(min-width: 1024px) 25vw, 45vw" />
-              <Image src="/photos/cow-portrait.jpg" alt="A cow at the farm" width={600} height={450} className="blob-3 aspect-square w-full object-cover shadow-lg shadow-forest/10 mt-8 rotate-[2deg]" sizes="(min-width: 1024px) 25vw, 45vw" />
+              <Image src="https://res.cloudinary.com/oeon1p4w/image/upload/v1783768905/marketing/photos/scenic/farmer-hands.webp" alt="Farmer's hands at work" width={600} height={450} className="blob-1 aspect-square w-full object-cover shadow-lg shadow-forest/10 rotate-[-2deg]" sizes="(min-width: 1024px) 25vw, 45vw" />
+              <Image src="https://res.cloudinary.com/oeon1p4w/image/upload/v1783768896/marketing/photos/cow-portrait.jpg" alt="A cow at the farm" width={600} height={450} className="blob-3 aspect-square w-full object-cover shadow-lg shadow-forest/10 mt-8 rotate-[2deg]" sizes="(min-width: 1024px) 25vw, 45vw" />
             </div>
           </Reveal>
           <Reveal delay={120} className="order-1 lg:order-2">

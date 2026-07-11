@@ -16,7 +16,7 @@ export const blogPosts: BlogPost[] = [
     slug: 'why-a2-milk',
     date: '2026-06-12',
     minutes: 4,
-    image: '/photos/scenic/pasture-mist.webp',
+    image: 'https://res.cloudinary.com/oeon1p4w/image/upload/v1783768910/marketing/photos/scenic/pasture-mist.webp',
     title: {
       en: 'Why We Keep a Separate A2 Herd',
       bn: 'কেন আমরা আলাদা এ২ গাভীর পাল রাখি',
@@ -44,7 +44,7 @@ export const blogPosts: BlogPost[] = [
     slug: 'monsoon-on-the-farm',
     date: '2026-07-01',
     minutes: 3,
-    image: '/photos/scenic/rice-paddy.webp',
+    image: 'https://res.cloudinary.com/oeon1p4w/image/upload/v1783768911/marketing/photos/scenic/rice-paddy.webp',
     title: {
       en: 'Monsoon on the Farm: How the Herd Weathers the Rains',
       bn: 'বর্ষায় খামার: বৃষ্টির দিনে পালের যত্ন',
@@ -100,7 +100,7 @@ export const blogPosts: BlogPost[] = [
     slug: 'choosing-a-dairy-cow',
     date: '2026-04-02',
     minutes: 6,
-    image: '/photos/scenic/calves-field.webp',
+    image: 'https://res.cloudinary.com/oeon1p4w/image/upload/v1783768902/marketing/photos/scenic/calves-field.webp',
     title: {
       en: 'Buying Your First Dairy Cow: A Farmer’s Checklist',
       bn: 'প্রথম দুধের গাভী কেনা: খামারির চেকলিস্ট',

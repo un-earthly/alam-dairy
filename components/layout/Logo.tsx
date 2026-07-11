@@ -1,5 +1,6 @@
 import Image from 'next/image'
-import logo from '@/public/logo-transparent.png'
+
+const logo = 'https://res.cloudinary.com/oeon1p4w/image/upload/v1783768891/marketing/logo-transparent.png'
 
 // Intrinsic ratio of logo-transparent.png is 1024x559
 const RATIO = 1024 / 559

@@ -14,12 +14,13 @@ import LazyVideo from '@/components/landing/LazyVideo'
 import ParallaxBand from '@/components/site/ParallaxBand'
 import Timeline from '@/components/site/Timeline'
 import CornerOrnament from '@/components/site/CornerOrnament'
-import pasturePanorama from '@/public/photos/pasture-panorama.jpg'
-import cowPortrait from '@/public/photos/cow-portrait.jpg'
-import milkPour from '@/public/photos/milk-pour.jpg'
-import calf from '@/public/photos/calf.jpg'
-import milking from '@/public/photos/milking.jpg'
-import field from '@/public/photos/field.jpg'
+
+const pasturePanorama = 'https://res.cloudinary.com/oeon1p4w/image/upload/v1783768900/marketing/photos/pasture-panorama.jpg'
+const cowPortrait = 'https://res.cloudinary.com/oeon1p4w/image/upload/v1783768896/marketing/photos/cow-portrait.jpg'
+const milkPour = 'https://res.cloudinary.com/oeon1p4w/image/upload/v1783768899/marketing/photos/milk-pour.jpg'
+const calf = 'https://res.cloudinary.com/oeon1p4w/image/upload/v1783768895/marketing/photos/calf.jpg'
+const milking = 'https://res.cloudinary.com/oeon1p4w/image/upload/v1783768898/marketing/photos/milking.jpg'
+const field = 'https://res.cloudinary.com/oeon1p4w/image/upload/v1783768897/marketing/photos/field.jpg'
 
 export default function HomePage() {
   return <HomeContent />
@@ -93,17 +94,17 @@ function HomeContent() {
   ]
 
   const galleryShots = [
-    { src: cowPortrait, alt: 'Dairy cow at the farm', blob: 'blob-1', className: 'rotate-[-2deg] sm:mt-10' },
-    { src: milkPour, alt: 'Fresh milk being poured', blob: 'blob-2', className: 'rotate-[1.5deg]' },
-    { src: calf, alt: 'A young calf', blob: 'blob-3', className: 'rotate-[2deg] sm:mt-16' },
-    { src: milking, alt: 'Milk cans on a wooden cart', blob: 'blob-2', className: 'rotate-[-1.5deg] sm:mt-6' },
+    { src: cowPortrait, width: 867, height: 1300, alt: 'Dairy cow at the farm', blob: 'blob-1', className: 'rotate-[-2deg] sm:mt-10' },
+    { src: milkPour, width: 867, height: 1300, alt: 'Fresh milk being poured', blob: 'blob-2', className: 'rotate-[1.5deg]' },
+    { src: calf, width: 1880, height: 1254, alt: 'A young calf', blob: 'blob-3', className: 'rotate-[2deg] sm:mt-16' },
+    { src: milking, width: 1880, height: 1253, alt: 'Milk cans on a wooden cart', blob: 'blob-2', className: 'rotate-[-1.5deg] sm:mt-6' },
   ]
 
   const storyMilestones = [
-    { year: '2015', title: tStory('m2015_title'), text: tStory('m2015_text'), image: '/photos/scenic/dairy-farm.webp' },
-    { year: '2018', title: tStory('m2018_title'), text: tStory('m2018_text'), image: '/photos/scenic/rural-road.webp' },
-    { year: '2022', title: tStory('m2022_title'), text: tStory('m2022_text'), image: '/photos/scenic/tractor.webp' },
-    { year: '2026', title: tStory('m2026_title'), text: tStory('m2026_text'), image: '/photos/scenic/cow-herd.webp' },
+    { year: '2015', title: tStory('m2015_title'), text: tStory('m2015_text'), image: 'https://res.cloudinary.com/oeon1p4w/image/upload/v1783768904/marketing/photos/scenic/dairy-farm.webp' },
+    { year: '2018', title: tStory('m2018_title'), text: tStory('m2018_text'), image: 'https://res.cloudinary.com/oeon1p4w/image/upload/v1783768912/marketing/photos/scenic/rural-road.webp' },
+    { year: '2022', title: tStory('m2022_title'), text: tStory('m2022_text'), image: 'https://res.cloudinary.com/oeon1p4w/image/upload/v1783768913/marketing/photos/scenic/tractor.webp' },
+    { year: '2026', title: tStory('m2026_title'), text: tStory('m2026_text'), image: 'https://res.cloudinary.com/oeon1p4w/image/upload/v1783768903/marketing/photos/scenic/cow-herd.webp' },
   ]
 
   return (
@@ -111,7 +112,7 @@ function HomeContent() {
 
       {/* ── 1. Hero: farm video, black overlay, glass panel ──── */}
       <section className="relative flex min-h-[80vh] items-center overflow-hidden bg-forest text-cream sm:min-h-[88vh]">
-        <LazyVideo src="/hero-720.mp4" poster="/hero-poster.jpg" className="absolute inset-0" />
+        <LazyVideo src="https://res.cloudinary.com/oeon1p4w/video/upload/v1783768893/marketing/hero-720.mp4" poster="https://res.cloudinary.com/oeon1p4w/image/upload/v1783768894/marketing/hero-poster.jpg" className="absolute inset-0" />
         {/* Black gradient overlay for legibility over footage */}
         <div
           className="absolute inset-0"
@@ -121,7 +122,7 @@ function HomeContent() {
         <div
           aria-hidden
           className="pointer-events-none absolute bottom-0 left-0 right-0 h-40 bg-repeat-x opacity-[0.12] invert saturate-0"
-          style={{ backgroundImage: 'url(/doodle-2.png)', backgroundSize: 'auto 100%' }}
+          style={{ backgroundImage: 'url(https://res.cloudinary.com/oeon1p4w/image/upload/v1783768889/marketing/doodle-2.png)', backgroundSize: 'auto 100%' }}
         />
 
         <div className="relative mx-auto w-full max-w-7xl px-4 py-20 sm:py-28">
@@ -187,9 +188,10 @@ function HomeContent() {
               <Image
                 src={pasturePanorama}
                 alt="Cows grazing on green pasture"
+                width={1880}
+                height={1056}
                 className="h-64 w-full object-cover sm:h-96"
                 sizes="(min-width: 1024px) 60vw, 100vw"
-                placeholder="blur"
               />
             </div>
             <EstdBadge className="absolute -bottom-8 left-6 text-forest [&_svg_circle]:fill-cream sm:left-10" />
@@ -202,7 +204,7 @@ function HomeContent() {
         <div
           aria-hidden
           className="pointer-events-none absolute inset-0 bg-repeat opacity-[0.07] invert saturate-0"
-          style={{ backgroundImage: 'url(/doodle.png)', backgroundSize: '420px' }}
+          style={{ backgroundImage: 'url(https://res.cloudinary.com/oeon1p4w/image/upload/v1783768887/marketing/doodle.png)', backgroundSize: '420px' }}
         />
         <div
           ref={statsRef}
@@ -295,7 +297,7 @@ function HomeContent() {
         <div
           aria-hidden
           className="pointer-events-none absolute inset-0 bg-repeat opacity-[0.08] mix-blend-multiply dark:opacity-[0.05] dark:invert dark:saturate-0 dark:mix-blend-screen"
-          style={{ backgroundImage: 'url(/doodle.png)', backgroundSize: '480px' }}
+          style={{ backgroundImage: 'url(https://res.cloudinary.com/oeon1p4w/image/upload/v1783768887/marketing/doodle.png)', backgroundSize: '480px' }}
         />
         <div className="relative mx-auto max-w-7xl px-4">
           <RevealSection className="mb-12 text-center">
@@ -319,9 +321,10 @@ function HomeContent() {
                 <Image
                   src={shot.src}
                   alt={shot.alt}
+                  width={shot.width}
+                  height={shot.height}
                   className={cn('aspect-[4/5] w-full object-cover shadow-lg shadow-forest/10', shot.blob)}
                   sizes="(min-width: 1024px) 25vw, 50vw"
-                  placeholder="blur"
                 />
               </div>
             ))}
@@ -418,7 +421,7 @@ function HomeContent() {
       </section>
 
       {/* ── 8.5. Photographic parallax interlude ───────────── */}
-      <ParallaxBand image="/photos/scenic/golden-field.webp" className="min-h-[36vh] sm:min-h-[44vh]" speed={0.5}>
+      <ParallaxBand image="https://res.cloudinary.com/oeon1p4w/image/upload/v1783768907/marketing/photos/scenic/golden-field.webp" className="min-h-[36vh] sm:min-h-[44vh]" speed={0.5}>
         <RevealSection>
           <p className="font-accent text-2xl text-butter sm:text-3xl">{t('home_band_eyebrow')}</p>
           <h2 className="mt-2 font-display text-3xl font-semibold tracking-wide text-cream sm:text-4xl">
@@ -496,19 +499,18 @@ function HomeContent() {
           quality={30}
           className="object-cover blur-md scale-105"
           sizes="100vw"
-          placeholder="blur"
         />
         <div className="absolute inset-0 bg-pasture/80 dark:bg-forest/85" />
         {/* kantha corner ornaments */}
         <div
           aria-hidden
           className="pointer-events-none absolute -left-10 -top-10 h-48 w-48 rotate-12 bg-repeat opacity-20 invert saturate-0"
-          style={{ backgroundImage: 'url(/doodle-2.png)', backgroundSize: '300px' }}
+          style={{ backgroundImage: 'url(https://res.cloudinary.com/oeon1p4w/image/upload/v1783768889/marketing/doodle-2.png)', backgroundSize: '300px' }}
         />
         <div
           aria-hidden
           className="pointer-events-none absolute -bottom-10 -right-10 h-48 w-48 -rotate-12 bg-repeat opacity-20 invert saturate-0"
-          style={{ backgroundImage: 'url(/doodle-2.png)', backgroundSize: '300px' }}
+          style={{ backgroundImage: 'url(https://res.cloudinary.com/oeon1p4w/image/upload/v1783768889/marketing/doodle-2.png)', backgroundSize: '300px' }}
         />
 
         <div className="relative mx-auto max-w-7xl px-4">
@@ -554,7 +556,7 @@ function HomeContent() {
         <div
           aria-hidden
           className="pointer-events-none absolute inset-0 bg-repeat opacity-[0.07] invert saturate-0"
-          style={{ backgroundImage: 'url(/doodle.png)', backgroundSize: '420px' }}
+          style={{ backgroundImage: 'url(https://res.cloudinary.com/oeon1p4w/image/upload/v1783768887/marketing/doodle.png)', backgroundSize: '420px' }}
         />
         <div className="relative mx-auto max-w-3xl px-4 text-center">
           <RevealSection>

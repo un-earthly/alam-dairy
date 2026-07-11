@@ -5,7 +5,7 @@ import CornerOrnament from '@/components/site/CornerOrnament'
 import { cn } from '@/lib/utils'
 
 // Immersive photographic page header with a parallax backdrop.
-// `image` is a public path (e.g. /photos/scenic/crop-field.webp).
+// `image` is a Cloudinary URL (e.g. .../marketing/photos/scenic/crop-field.webp).
 export default function PageHero({
   eyebrow,
   title,

@@ -96,7 +96,7 @@ export default function Header({
       ],
       feature: {
         href: `${base}/shop`,
-        image: '/photos/milk-pour.jpg',
+        image: 'https://res.cloudinary.com/oeon1p4w/image/upload/v1783768899/marketing/photos/milk-pour.jpg',
         title: t('mega_products_feature'),
         cta: t('mega_products_cta'),
       },
@@ -116,7 +116,7 @@ export default function Header({
       ],
       feature: {
         href: `${base}/our-story`,
-        image: '/photos/scenic/pasture-mist.webp',
+        image: 'https://res.cloudinary.com/oeon1p4w/image/upload/v1783768910/marketing/photos/scenic/pasture-mist.webp',
         title: t('mega_company_feature'),
         cta: t('mega_company_cta'),
       },

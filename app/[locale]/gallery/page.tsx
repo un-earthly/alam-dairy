@@ -16,22 +16,22 @@ export default async function GalleryPage({ params }: { params: Promise<{ locale
     const t = await getTranslations('gallery')
 
     const herdShots = [
-        '/photos/scenic/cow-herd.webp',
-        '/photos/scenic/calves-field.webp',
-        '/photos/cow-portrait.jpg',
-        '/photos/scenic/pasture-mist.webp',
+        'https://res.cloudinary.com/oeon1p4w/image/upload/v1783768903/marketing/photos/scenic/cow-herd.webp',
+        'https://res.cloudinary.com/oeon1p4w/image/upload/v1783768902/marketing/photos/scenic/calves-field.webp',
+        'https://res.cloudinary.com/oeon1p4w/image/upload/v1783768896/marketing/photos/cow-portrait.jpg',
+        'https://res.cloudinary.com/oeon1p4w/image/upload/v1783768910/marketing/photos/scenic/pasture-mist.webp',
     ]
     const landShots = [
-        '/photos/scenic/crop-field.webp',
-        '/photos/scenic/golden-field.webp',
-        '/photos/scenic/rice-paddy.webp',
-        '/photos/scenic/farm-landscape.webp',
+        'https://res.cloudinary.com/oeon1p4w/image/upload/v1783768903/marketing/photos/scenic/crop-field.webp',
+        'https://res.cloudinary.com/oeon1p4w/image/upload/v1783768907/marketing/photos/scenic/golden-field.webp',
+        'https://res.cloudinary.com/oeon1p4w/image/upload/v1783768911/marketing/photos/scenic/rice-paddy.webp',
+        'https://res.cloudinary.com/oeon1p4w/image/upload/v1783768907/marketing/photos/scenic/farm-landscape.webp',
     ]
     const workShots = [
-        '/photos/scenic/dairy-farm.webp',
-        '/photos/scenic/tractor.webp',
-        '/photos/milking.jpg',
-        '/photos/scenic/farmer-hands.webp',
+        'https://res.cloudinary.com/oeon1p4w/image/upload/v1783768904/marketing/photos/scenic/dairy-farm.webp',
+        'https://res.cloudinary.com/oeon1p4w/image/upload/v1783768913/marketing/photos/scenic/tractor.webp',
+        'https://res.cloudinary.com/oeon1p4w/image/upload/v1783768898/marketing/photos/milking.jpg',
+        'https://res.cloudinary.com/oeon1p4w/image/upload/v1783768905/marketing/photos/scenic/farmer-hands.webp',
     ]
 
     return (
@@ -40,7 +40,7 @@ export default async function GalleryPage({ params }: { params: Promise<{ locale
                 eyebrow={t('hero_eyebrow')}
                 title={t('hero_title')}
                 subtitle={t('hero_subtitle')}
-                image="/photos/scenic/farm-landscape.webp"
+                image="https://res.cloudinary.com/oeon1p4w/image/upload/v1783768907/marketing/photos/scenic/farm-landscape.webp"
                 tall
             />
 
@@ -49,7 +49,7 @@ export default async function GalleryPage({ params }: { params: Promise<{ locale
                 <GalleryGrid title={t('herd_title')} shots={herdShots} />
             </section>
 
-            <ParallaxBand image="/photos/scenic/rural-road.webp" className="min-h-[35vh] sm:min-h-[42vh]" />
+            <ParallaxBand image="https://res.cloudinary.com/oeon1p4w/image/upload/v1783768912/marketing/photos/scenic/rural-road.webp" className="min-h-[35vh] sm:min-h-[42vh]" />
 
             <section className="py-16 sm:py-24">
                 <GalleryGrid title={t('land_title')} shots={landShots} reverse />

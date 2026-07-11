@@ -20,15 +20,15 @@ export default async function StoryPage({ params }: { params: Promise<{ locale: 
     const base = `/${locale}`
 
     const milestones = [
-        { year: '2015', title: t('m2015_title'), text: t('m2015_text'), image: '/photos/scenic/dairy-farm.webp' },
-        { year: '2016', title: t('m2016_title'), text: t('m2016_text'), image: '/photos/scenic/farmer-hands.webp' },
-        { year: '2017', title: t('m2017_title'), text: t('m2017_text'), image: '/photos/scenic/milk-splash.webp' },
-        { year: '2018', title: t('m2018_title'), text: t('m2018_text'), image: '/photos/scenic/rural-road.webp' },
-        { year: '2020', title: t('m2020_title'), text: t('m2020_text'), image: '/photos/scenic/rice-paddy.webp' },
-        { year: '2021', title: t('m2021_title'), text: t('m2021_text'), image: '/photos/scenic/calves-field.webp' },
-        { year: '2022', title: t('m2022_title'), text: t('m2022_text'), image: '/photos/scenic/tractor.webp' },
-        { year: '2024', title: t('m2024_title'), text: t('m2024_text'), image: '/photos/scenic/golden-field.webp' },
-        { year: '2026', title: t('m2026_title'), text: t('m2026_text'), image: '/photos/scenic/cow-herd.webp' },
+        { year: '2015', title: t('m2015_title'), text: t('m2015_text'), image: 'https://res.cloudinary.com/oeon1p4w/image/upload/v1783768904/marketing/photos/scenic/dairy-farm.webp' },
+        { year: '2016', title: t('m2016_title'), text: t('m2016_text'), image: 'https://res.cloudinary.com/oeon1p4w/image/upload/v1783768905/marketing/photos/scenic/farmer-hands.webp' },
+        { year: '2017', title: t('m2017_title'), text: t('m2017_text'), image: 'https://res.cloudinary.com/oeon1p4w/image/upload/v1783768909/marketing/photos/scenic/milk-splash.webp' },
+        { year: '2018', title: t('m2018_title'), text: t('m2018_text'), image: 'https://res.cloudinary.com/oeon1p4w/image/upload/v1783768912/marketing/photos/scenic/rural-road.webp' },
+        { year: '2020', title: t('m2020_title'), text: t('m2020_text'), image: 'https://res.cloudinary.com/oeon1p4w/image/upload/v1783768911/marketing/photos/scenic/rice-paddy.webp' },
+        { year: '2021', title: t('m2021_title'), text: t('m2021_text'), image: 'https://res.cloudinary.com/oeon1p4w/image/upload/v1783768902/marketing/photos/scenic/calves-field.webp' },
+        { year: '2022', title: t('m2022_title'), text: t('m2022_text'), image: 'https://res.cloudinary.com/oeon1p4w/image/upload/v1783768913/marketing/photos/scenic/tractor.webp' },
+        { year: '2024', title: t('m2024_title'), text: t('m2024_text'), image: 'https://res.cloudinary.com/oeon1p4w/image/upload/v1783768907/marketing/photos/scenic/golden-field.webp' },
+        { year: '2026', title: t('m2026_title'), text: t('m2026_text'), image: 'https://res.cloudinary.com/oeon1p4w/image/upload/v1783768903/marketing/photos/scenic/cow-herd.webp' },
     ]
 
     return (
@@ -37,7 +37,7 @@ export default async function StoryPage({ params }: { params: Promise<{ locale: 
                 eyebrow={t('hero_eyebrow')}
                 title={t('hero_title')}
                 subtitle={t('hero_subtitle')}
-                image="/photos/scenic/pasture-mist.webp"
+                image="https://res.cloudinary.com/oeon1p4w/image/upload/v1783768910/marketing/photos/scenic/pasture-mist.webp"
                 tall
             />
 
@@ -61,7 +61,7 @@ export default async function StoryPage({ params }: { params: Promise<{ locale: 
                 </div>
             </section>
 
-            <ParallaxBand image="/photos/scenic/crop-field.webp" className="min-h-[38vh] sm:min-h-[46vh]">
+            <ParallaxBand image="https://res.cloudinary.com/oeon1p4w/image/upload/v1783768903/marketing/photos/scenic/crop-field.webp" className="min-h-[38vh] sm:min-h-[46vh]">
                 <Reveal>
                     <p className="font-accent text-2xl text-butter sm:text-3xl">{t('timeline_eyebrow')}</p>
                     <h2 className="mt-2 font-display text-3xl font-semibold tracking-wide sm:text-4xl">{t('timeline_title')}</h2>

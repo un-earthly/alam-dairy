@@ -30,7 +30,7 @@ export default async function SustainabilityPage({ params }: { params: Promise<{
                 eyebrow={t('hero_eyebrow')}
                 title={t('hero_title')}
                 subtitle={t('hero_subtitle')}
-                image="/photos/scenic/rice-paddy.webp"
+                image="https://res.cloudinary.com/oeon1p4w/image/upload/v1783768911/marketing/photos/scenic/rice-paddy.webp"
                 tall
             />
 
@@ -63,7 +63,7 @@ export default async function SustainabilityPage({ params }: { params: Promise<{
                 </div>
             </section>
 
-            <ParallaxBand image="/photos/scenic/haystack.webp">
+            <ParallaxBand image="https://res.cloudinary.com/oeon1p4w/image/upload/v1783768908/marketing/photos/scenic/haystack.webp">
                 <Reveal>
                     <p className="font-accent text-2xl leading-relaxed text-butter sm:text-3xl">&ldquo;{t('band_quote')}&rdquo;</p>
                 </Reveal>
