@@ -1,12 +1,12 @@
 slug,name_en,name_bn,category,unit,our_price_bdt,our_sale_price_bdt,stock,competitor_price_min_bdt,competitor_price_max_bdt,target_price_bdt,notes
 fresh-milk-1l,Fresh Milk 1 Litre,তাজা দুধ ১ লিটার,dairy,litre,80,,200,,,,
-fresh-milk-500ml,Fresh Milk 500 ml,তাজা দুধ ৫০০ মিলি,dairy,500ml,45,,300,,,,
+fresh-milk-500ml,Fresh Milk 500 ml,তাজা দুধ ৫০০ মিলি,dairy,500ml,45,,300,120,120,,onaturalbd: Pure Deshi Cow Milk - খাঁটি দেশী গরুর দুধ - O'Natural/Ltr
 fresh-milk-2l,Fresh Milk 2 Litre,তাজা দুধ ২ লিটার,dairy,litre,155,150,120,,,,
-a2-milk-1l,A2 Milk 1 Litre,এ২ দুধ ১ লিটার,dairy,litre,130,,80,,,,
+a2-milk-1l,A2 Milk 1 Litre,এ২ দুধ ১ লিটার,dairy,litre,130,,80,200,400,,"agromukam: Taipet Premium Chicken, Milk & Fish Dry Cat Food for Kitten 1kg"
 buffalo-milk-1l,Buffalo Milk 1 Litre,মহিষের দুধ ১ লিটার,dairy,litre,100,,60,,,,
 mishti-doi-500g,Mishti Doi 500g,মিষ্টি দই ৫০০ গ্রাম,dairy,500g,120,,50,,,,
 mishti-doi-1kg,Mishti Doi 1 kg,মিষ্টি দই ১ কেজি,dairy,1kg,230,220,30,,,,
-plain-yogurt-500g,Plain Yogurt 500g,সাদা দই ৫০০ গ্রাম,dairy,500g,90,,80,,,,
+plain-yogurt-500g,Plain Yogurt 500g,সাদা দই ৫০০ গ্রাম,dairy,500g,90,,80,500,800,,onaturalbd: Curd/Yogurt Sour (Tok Doi) - টক দই - O'Natural
 pure-ghee-250g,Pure Ghee 250g,খাঁটি ঘি ২৫০ গ্রাম,dairy,250g,440,,40,,,,
 pure-ghee-500g,Pure Ghee 500g,খাঁটি ঘি ৫০০ গ্রাম,dairy,500g,850,,30,,,,
 pure-ghee-1kg,Pure Ghee 1 kg,খাঁটি ঘি ১ কেজি,dairy,1kg,1650,1600,20,,,,
@@ -29,34 +29,34 @@ whey-protein-1kg,Whey Protein 1 kg,হোয়ে প্রোটিন ১ ক
 kefir-500ml,Kefir 500ml,কেফির ৫০০ মিলি,dairy,500ml,160,,30,,,,
 skimmed-milk-1l,Skimmed Milk 1 Litre,স্কিমড দুধ ১ লিটার,dairy,litre,75,,90,,,,
 butter-milk-500ml,Buttermilk 500ml,ঘোল ৫০০ মিলি,dairy,500ml,40,,120,,,,
-cattle-feed-50kg,Cattle Feed 50 kg,গরুর খাবার ৫০ কেজি,feed,50kg bag,1200,,100,,,,
-dairy-concentrate-25kg,Dairy Cow Concentrate 25 kg,ডেইরি কনসেন্ট্রেট ২৫ কেজি,feed,25kg bag,950,,80,,,,
-calf-starter-20kg,Calf Starter Feed 20 kg,বাছুরের খাবার ২০ কেজি,feed,20kg bag,700,,60,,,,
-wheat-bran-50kg,Wheat Bran 50 kg,গমের ভুসি ৫০ কেজি,feed,50kg bag,650,,150,,,,
-rice-straw-bale,Rice Straw Bale,ধানের খড় (এক বেল),feed,bale,250,,200,,,,
+cattle-feed-50kg,Cattle Feed 50 kg,গরুর খাবার ৫০ কেজি,feed,50kg bag,1200,,100,36000,36000,,agromukam: Yellow Corn Cattle feed (per ton)
+dairy-concentrate-25kg,Dairy Cow Concentrate 25 kg,ডেইরি কনসেন্ট্রেট ২৫ কেজি,feed,25kg bag,950,,80,2000,2100,,agromukam: Dairy High Concentrate (per 50kg bag)
+calf-starter-20kg,Calf Starter Feed 20 kg,বাছুরের খাবার ২০ কেজি,feed,20kg bag,700,,60,120,825,,agromukam: CALF CARE 100gm
+wheat-bran-50kg,Wheat Bran 50 kg,গমের ভুসি ৫০ কেজি,feed,50kg bag,650,,150,44.5,44.5,,agromukam: Wheat Bran Tanzanian (Per kg)
+rice-straw-bale,Rice Straw Bale,ধানের খড় (এক বেল),feed,bale,250,,200,31.5,31.5,,agromukam: De Oiled Rice Bran (DORB) ( 7 star/Mojumder/Alal) per kg
 maize-silage-25kg,Maize Silage 25 kg,ভুট্টা সাইলেজ ২৫ কেজি,feed,25kg bag,480,,70,,,,
-soybean-meal-50kg,Soybean Meal 50 kg,সয়াবিন খৈল ৫০ কেজি,feed,50kg bag,1800,1750,90,,,,
+soybean-meal-50kg,Soybean Meal 50 kg,সয়াবিন খৈল ৫০ কেজি,feed,50kg bag,1800,1750,90,66,66,,agromukam: Soyabean Meal Cake ( City and Fresh ) per kg
 cotton-cake-50kg,Cotton Seed Cake 50 kg,তুলার খৈল ৫০ কেজি,feed,50kg bag,1400,,60,,,,
-molasses-20l,Molasses 20 Litre,গুড় ২০ লিটার,feed,20L drum,900,,50,,,,
+molasses-20l,Molasses 20 Litre,গুড় ২০ লিটার,feed,20L drum,900,,50,173,6250,,agromukam: Dried Molasses Powder 25kg
 urea-block-5kg,Urea Block 5 kg,ইউরিয়া ব্লক ৫ কেজি,feed,5kg,350,,80,,,,
 bypass-fat-25kg,Bypass Fat 25 kg,বাইপাস ফ্যাট ২৫ কেজি,feed,25kg bag,2200,,40,,,,
-tmr-feed-50kg,TMR Feed Mix 50 kg,টিএমআর ফিড ৫০ কেজি,feed,50kg bag,1350,,55,,,,
-mineral-mix-10kg,Mineral Mixture 10 kg,মিনারেল মিশ্রণ ১০ কেজি,feed,10kg bag,550,,100,,,,
-salt-block-2kg,Salt Block 2 kg,লবণের ব্লক ২ কেজি,feed,2kg,120,,150,,,,
+tmr-feed-50kg,TMR Feed Mix 50 kg,টিএমআর ফিড ৫০ কেজি,feed,50kg bag,1350,,55,1500,1500,,agromukam: Dairy Milk Low TMR (per 50kg bag)
+mineral-mix-10kg,Mineral Mixture 10 kg,মিনারেল মিশ্রণ ১০ কেজি,feed,10kg bag,550,,100,80,80,,agromukam: Calci Boost (Birds Calcium & Mineral block)
+salt-block-2kg,Salt Block 2 kg,লবণের ব্লক ২ কেজি,feed,2kg,120,,150,1000,4700,,agromukam: Pink Salt Block 6 Block (1 Box)
 hay-bale,Hay Bale,শুকনো ঘাসের বেল,feed,bale,400,,80,,,,
-fish-meal-25kg,Fish Meal 25 kg,মাছের খাবার ২৫ কেজি,feed,25kg bag,1600,,35,,,,
+fish-meal-25kg,Fish Meal 25 kg,মাছের খাবার ২৫ কেজি,feed,25kg bag,1600,,35,36,2450,,agromukam: Fish Meal (60% Protin) -25 Kg
 palm-kernel-50kg,Palm Kernel Cake 50 kg,পাম কার্নেল কেক ৫০ কেজি,feed,50kg bag,1100,,70,,,,
 sunflower-meal-25kg,Sunflower Meal 25 kg,সূর্যমুখীর খৈল ২৫ কেজি,feed,25kg bag,880,,45,,,,
-green-grass-bundle,Green Grass Bundle,কাঁচা ঘাস (বান্ডিল),feed,bundle,80,,250,,,,
+green-grass-bundle,Green Grass Bundle,কাঁচা ঘাস (বান্ডিল),feed,bundle,80,,250,3550,3550,,"agromukam: Premium Lawn Grass Seeds – For a Lush, Green & Durable Lawn 250 gm"
 sugarcane-bagasse-50kg,Sugarcane Bagasse 50 kg,আখের ছোবড়া ৫০ কেজি,feed,50kg bag,300,,120,,,,
 holstein-calf-f,Holstein Friesian Heifer Calf,হলস্টেইন ফ্রিজিয়ান বাছুর (স্ত্রী),cattle,head,45000,,5,,,,
 holstein-cow,Holstein Friesian Milking Cow,হলস্টেইন ফ্রিজিয়ান গাভী,cattle,head,180000,160000,3,,,,
-sahiwal-cow,Sahiwal Cow,সাহীওয়াল গাভী,cattle,head,90000,,4,,,,
+sahiwal-cow,Sahiwal Cow,সাহীওয়াল গাভী,cattle,head,90000,,4,112750,184800,,agromukam: Deshi Shahiwal: Red (Tag: 25-041)
 crossbred-heifer,Crossbred Heifer,ক্রসব্রেড হেইফার,cattle,head,65000,,6,,,,
 jersey-cow,Jersey Cow,জার্সি গাভী,cattle,head,120000,110000,2,,,,
 breeding-bull,Breeding Bull,প্রজনন ষাঁড়,cattle,head,200000,,1,,,,
 murrah-buffalo,Murrah Buffalo,মুরা মহিষ,cattle,head,150000,,2,,,,
-local-breed-cow,Local Breed Cow,দেশী গাভী,cattle,head,40000,,8,,,,
+local-breed-cow,Local Breed Cow,দেশী গাভী,cattle,head,40000,,8,108000,189000,,agromukam: Deshi: Black (Tag No-1140)
 pregnant-heifer,Pregnant Heifer,গর্ভবতী হেইফার,cattle,head,85000,,3,,,,
 high-yield-cow,High-Yield Dairy Cow,উচ্চ উৎপাদনশীল গাভী,cattle,head,220000,200000,2,,,,
 calf-male-3mo,Male Calf 3 Months,"বাছুর (পুরুষ, ৩ মাস)",cattle,head,18000,,7,,,,
@@ -64,23 +64,23 @@ nili-ravi-buffalo,Nili-Ravi Buffalo,নীলি-রাভি মহিষ,cattl
 young-heifer-6mo,Young Heifer 6 Months,তরুণ হেইফার (৬ মাস),cattle,head,30000,,5,,,,
 beef-bull,Beef Bull (Fattening),গরু মোটাতাজাকরণ (ষাঁড়),cattle,head,95000,,4,,,,
 crossbred-bull-calf,Crossbred Bull Calf,ক্রসব্রেড বুল কাফ,cattle,head,22000,,6,,,,
-milking-machine-single,Single Cluster Milking Machine,একক দোহন যন্ত্র,equipment,piece,18000,16500,10,,,,
+milking-machine-single,Single Cluster Milking Machine,একক দোহন যন্ত্র,equipment,piece,18000,16500,10,62000,70000,,agromukam: Single Milking Machine (TEY-1AK)
 milking-machine-double,Double Cluster Milking Machine,দ্বৈত দোহন যন্ত্র,equipment,piece,32000,,5,,,,
 milk-tank-100l,Milk Chilling Tank 100 L,দুধ ঠান্ডা করার ট্যাংক ১০০ লিটার,equipment,piece,85000,,3,,,,
 milk-tank-500l,Milk Chilling Tank 500 L,দুধ ঠান্ডা করার ট্যাংক ৫০০ লিটার,equipment,piece,320000,,1,,,,
-milk-can-20l-ss,Milk Can 20 L Stainless Steel,দুধের কেন ২০ লিটার (স্টেইনলেস),equipment,piece,2800,2600,30,,,,
-milk-can-10l-al,Milk Can 10 L Aluminium,দুধের কেন ১০ লিটার (অ্যালুমিনিয়াম),equipment,piece,1200,,50,,,,
-lactometer,Milk Testing Lactometer,ল্যাকটোমিটার,equipment,piece,350,,40,,,,
+milk-can-20l-ss,Milk Can 20 L Stainless Steel,দুধের কেন ২০ লিটার (স্টেইনলেস),equipment,piece,2800,2600,30,9500,9500,,agromukam: 40 Ltr Aluminium Milk Transport Can – Bimal Brand (Truly International Quality)
+milk-can-10l-al,Milk Can 10 L Aluminium,দুধের কেন ১০ লিটার (অ্যালুমিনিয়াম),equipment,piece,1200,,50,9500,9500,,agromukam: 40 Ltr Aluminium Milk Transport Can – Bimal Brand (Truly International Quality)
+lactometer,Milk Testing Lactometer,ল্যাকটোমিটার,equipment,piece,350,,40,300,300,,agromukam: Lactometer Set - Bangladeshi
 fat-tester-gerber,Fat Tester Gerber Method,ফ্যাট টেস্টার (গার্বার),equipment,piece,4500,,8,,,,
-pasteurizer-50l,Milk Pasteurizer 50 L,পাস্তুরাইজার ৫০ লিটার,equipment,piece,55000,,4,,,,
-cream-separator,Cream Separator,ক্রিম বিভাজক,equipment,piece,12000,11000,7,,,,
+pasteurizer-50l,Milk Pasteurizer 50 L,পাস্তুরাইজার ৫০ লিটার,equipment,piece,55000,,4,125,325,,agromukam: Ready Milk ( Milk replacer)  500gm
+cream-separator,Cream Separator,ক্রিম বিভাজক,equipment,piece,12000,11000,7,32500,32500,,agromukam: CREAM SEPARATOR MACHINE (CHINA) -100 ltr
 butter-churn,Butter Churn 10 L,মাখন তৈরির যন্ত্র,equipment,piece,3500,,12,,,,
 yogurt-incubator,Yogurt Incubator 20 L,দই তৈরির ইনকিউবেটর,equipment,piece,6500,6000,6,,,,
 feeding-trough,Galvanized Feeding Trough,খাবার পাত্র (গ্যালভানাইজড),equipment,piece,2200,,20,,,,
 water-trough-100l,Water Trough 100 L,পানির পাত্র ১০০ লিটার,equipment,piece,3800,,15,,,,
-ear-tag-set-100,Ear Tag Set 100 pcs,কানের ট্যাগ সেট (১০০ পিস),equipment,set,800,,25,,,,
-cattle-scale,Cattle Weighing Scale 2T,গরু মাপার দাঁড়িপাল্লা,equipment,piece,28000,,3,,,,
-drenching-gun,Drenching Gun 300 ml,ড্রেঞ্চিং গান,equipment,piece,650,,30,,,,
+ear-tag-set-100,Ear Tag Set 100 pcs,কানের ট্যাগ সেট (১০০ পিস),equipment,set,800,,25,30,45,,agromukam: Ear Tag Durable Laser Engraved Livestock Identification Tag
+cattle-scale,Cattle Weighing Scale 2T,গরু মাপার দাঁড়িপাল্লা,equipment,piece,28000,,3,55000,60000,,agromukam: Cattle Weight Scale (Buffalo – Cow – Bull)-1Ton
+drenching-gun,Drenching Gun 300 ml,ড্রেঞ্চিং গান,equipment,piece,650,,30,800,820,,agromukam: Livestock Drenching Syringe with Stainless Steel Nozzle 50ml
 teat-dip-cup,Teat Dip Cup,টিট ডিপ কাপ,equipment,piece,280,,45,,,,
-milking-bucket-20l,Milking Bucket 20 L SS,দুধ সংগ্রহের বালতি ২০ লিটার,equipment,piece,1800,,25,,,,
+milking-bucket-20l,Milking Bucket 20 L SS,দুধ সংগ্রহের বালতি ২০ লিটার,equipment,piece,1800,,25,62000,70000,,agromukam: Single Milking Machine (Single Bucket)-Model: TY-1AK
 barn-cleaner-set,Barn Cleaning Equipment Set,গোয়ালঘর পরিষ্কারের সরঞ্জাম সেট,equipment,set,1500,1350,20,,,,

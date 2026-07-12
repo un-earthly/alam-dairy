@@ -62,6 +62,8 @@ export interface Database {
           seo_description_en: string | null
           og_image_url: string | null
           vendor_id: string | null
+          is_featured: boolean
+          featured_sort_order: number
           created_at: string
           updated_at: string
         }

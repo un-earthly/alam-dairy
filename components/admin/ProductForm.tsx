@@ -87,6 +87,8 @@ interface ProductFormProps {
     seo_description_bn: string | null
     seo_description_en: string | null
     og_image_url: string | null
+    is_featured: boolean
+    featured_sort_order: number
     media: MediaItem[]
     variants: VariantItem[]
     bulkTiers: TierItem[]
@@ -127,6 +129,7 @@ export default function ProductForm({ categories, brands, initialData }: Product
     unit: initialData?.unit ?? 'kg',
     stock: initialData?.stock.toString() ?? '0',
     is_active: initialData?.is_active ?? true,
+    is_featured: initialData?.is_featured ?? false,
     tags: initialData?.tags ?? [] as string[],
     tagInput: '',
     category_id: initialData?.category_id ?? '',
@@ -289,6 +292,8 @@ export default function ProductForm({ categories, brands, initialData }: Product
         seo_description_bn: form.seo_description_bn || null,
         seo_description_en: form.seo_description_en || null,
         og_image_url: ogImageUrl || null,
+        is_featured: form.is_featured,
+        featured_sort_order: initialData?.featured_sort_order ?? 0,
         ...(slug ? { slug } : {}),
       }
 
@@ -691,6 +696,15 @@ export default function ProductForm({ categories, brands, initialData }: Product
             className="rounded border-gray-300"
           />
           <span className="text-sm font-medium">Active (visible in store)</span>
+        </label>
+        <label className="flex items-center gap-2 cursor-pointer">
+          <input
+            type="checkbox"
+            checked={form.is_featured}
+            onChange={(e) => set('is_featured', e.target.checked)}
+            className="rounded border-gray-300"
+          />
+          <span className="text-sm font-medium">Featured (promoted in shop)</span>
         </label>
       </div>
 

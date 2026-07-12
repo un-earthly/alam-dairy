@@ -5,6 +5,7 @@ import type { User as SupabaseUser } from '@supabase/supabase-js'
 import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
 import CartDrawer from '@/components/cart/CartDrawer'
+import { ToastViewport } from '@/components/ui/toast'
 
 export default function LocaleShell({
     children,
@@ -24,6 +25,7 @@ export default function LocaleShell({
             <main className="flex-1">{children}</main>
             {!hideFooter && <Footer locale={locale} />}
             <CartDrawer />
+            <ToastViewport />
         </div>
     )
 }

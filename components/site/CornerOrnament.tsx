@@ -8,7 +8,7 @@ import { cn } from '@/lib/utils'
 const CORNERS = {
   tl: '-top-6 -left-6',
   tr: '-top-6 -right-6 -scale-x-100',
-  bl: '-bottom-6 -left-6 -scale-y-100',
+  bl: '-bottom-6 -left-6',
   br: '-bottom-6 -right-6 -scale-100',
 } as const
 

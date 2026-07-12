@@ -136,7 +136,8 @@
     "filter_equipment": "যন্ত্রপাতি",
     "add_to_cart": "কার্টে যোগ করুন",
     "request_quote": "কোটেশন চাই",
-    "view_details": "বিস্তারিত দেখুন"
+    "view_details": "বিস্তারিত দেখুন",
+    "recently_viewed": "সম্প্রতি দেখা হয়েছে"
   },
   "cart": {
     "title": "আপনার কার্ট",

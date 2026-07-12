@@ -136,7 +136,8 @@
     "filter_equipment": "Equipment",
     "add_to_cart": "Add to Cart",
     "request_quote": "Request Quote",
-    "view_details": "View Details"
+    "view_details": "View Details",
+    "recently_viewed": "Recently Viewed"
   },
   "cart": {
     "title": "Your Cart",

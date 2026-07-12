@@ -469,7 +469,7 @@ function HomeContent() {
 
       {/* ── 10. Timeline teaser ─────────────────────────────── */}
       <section className="relative overflow-hidden py-16 sm:py-24">
-        <CornerOrnament corner="bl" size={230} rotate={8} opacity={0.32} />
+        <CornerOrnament corner="bl" size={230} rotate={0} opacity={0.32} />
         <div className="mx-auto max-w-7xl px-4">
           <RevealSection className="mb-12 text-center">
             <p className="font-accent text-lg text-butter">{t('timeline_teaser_eyebrow')}</p>
@@ -497,19 +497,14 @@ function HomeContent() {
           aria-hidden
           fill
           quality={30}
-          className="object-cover blur-md scale-105"
+          className="object-cover blur-xs scale-105"
           sizes="100vw"
         />
         <div className="absolute inset-0 bg-pasture/80 dark:bg-forest/85" />
         {/* kantha corner ornaments */}
         <div
           aria-hidden
-          className="pointer-events-none absolute -left-10 -top-10 h-48 w-48 rotate-12 bg-repeat opacity-20 invert saturate-0"
-          style={{ backgroundImage: 'url(https://res.cloudinary.com/oeon1p4w/image/upload/v1783768889/marketing/doodle-2.png)', backgroundSize: '300px' }}
-        />
-        <div
-          aria-hidden
-          className="pointer-events-none absolute -bottom-10 -right-10 h-48 w-48 -rotate-12 bg-repeat opacity-20 invert saturate-0"
+          className="pointer-events-none absolute -bottom-10 right-0 h-48 w-full bg-repeat opacity-20 invert saturate-0"
           style={{ backgroundImage: 'url(https://res.cloudinary.com/oeon1p4w/image/upload/v1783768889/marketing/doodle-2.png)', backgroundSize: '300px' }}
         />
 

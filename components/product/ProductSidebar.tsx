@@ -3,20 +3,38 @@
 import { useEffect, useRef, useState } from 'react'
 import { useRouter, usePathname, useSearchParams } from 'next/navigation'
 import { useTranslations } from 'next-intl'
-import { Search, X } from 'lucide-react'
+import { Search, X, Milk, Beef, Wheat, Wrench, Stethoscope, Tag } from 'lucide-react'
+import SortDropdown from '@/components/product/SortDropdown'
+import PriceRangeSlider from '@/components/product/PriceRangeSlider'
 import type { Database } from '@/lib/supabase/types'
 
 type Category = Database['public']['Tables']['categories']['Row']
 type Brand = Database['public']['Tables']['brands']['Row']
 
-export default function ShopFilterRail({
+const ICONS: Record<string, typeof Milk> = {
+  dairy: Milk,
+  cattle: Beef,
+  feed: Wheat,
+  equipment: Wrench,
+  vet_supply: Stethoscope,
+}
+
+export default function ProductSidebar({
   categories,
-  brands,
+  brands = [],
+  counts,
+  totalCount,
   locale,
+  boundsMin,
+  boundsMax,
 }: {
   categories: Category[]
-  brands: Brand[]
+  brands?: Brand[]
+  counts: Record<string, number>
+  totalCount: number
   locale: string
+  boundsMin: number
+  boundsMax: number
 }) {
   const t = useTranslations('shop')
   const router = useRouter()
@@ -48,14 +66,12 @@ export default function ShopFilterRail({
 
   const activeCategory = searchParams.get('category') ?? ''
   const activeBrand = searchParams.get('brand') ?? ''
-  const activeSort = searchParams.get('sort') ?? 'newest'
-  const activeMin = searchParams.get('min') ?? ''
-  const activeMax = searchParams.get('max') ?? ''
-
+  const activeMin = searchParams.get('min')
+  const activeMax = searchParams.get('max')
   const hasActiveFilters = activeCategory || activeBrand || activeMin || activeMax || q
 
   return (
-    <div className="sticky top-20 space-y-4 rounded-2xl border border-border bg-card p-4 shadow-sm">
+    <aside className="w-full shrink-0 space-y-5 rounded-2xl border border-border bg-card p-4 shadow-sm lg:sticky lg:top-20 lg:w-64">
       <div className="relative">
         <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
         <input
@@ -66,20 +82,41 @@ export default function ShopFilterRail({
         />
       </div>
 
-      <div className="space-y-1.5">
+      <div className="space-y-1">
         <label className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">
           {locale === 'bn' ? 'বিভাগ' : 'Category'}
         </label>
-        <select
-          value={activeCategory}
-          onChange={(e) => updateParams({ category: e.target.value || null })}
-          className="w-full rounded-md border border-input bg-background px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-ring"
-        >
-          <option value="">{t('category_all')}</option>
-          {categories.map((c) => (
-            <option key={c.id} value={c.id}>{locale === 'bn' ? c.name_bn : c.name_en}</option>
-          ))}
-        </select>
+        <nav className="flex flex-col gap-0.5">
+          <button
+            onClick={() => updateParams({ category: null })}
+            className={`flex items-center justify-between rounded-lg px-2 py-1.5 text-sm font-medium transition-colors ${
+              !activeCategory ? 'bg-primary/10 text-primary' : 'text-foreground hover:bg-muted'
+            }`}
+          >
+            <span>{t('category_all')}</span>
+            <span className="text-xs text-muted-foreground">({totalCount})</span>
+          </button>
+          {categories.map((c) => {
+            const Icon = ICONS[c.slug] ?? Tag
+            const name = locale === 'bn' ? c.name_bn : c.name_en
+            const isActive = activeCategory === c.id
+            return (
+              <button
+                key={c.id}
+                onClick={() => updateParams({ category: isActive ? null : c.id })}
+                className={`flex items-center justify-between rounded-lg px-2 py-1.5 text-sm font-medium transition-colors ${
+                  isActive ? 'bg-primary/10 text-primary' : 'text-foreground hover:bg-muted'
+                }`}
+              >
+                <span className="flex items-center gap-2">
+                  <Icon className="h-3.5 w-3.5" />
+                  {name}
+                </span>
+                <span className="text-xs text-muted-foreground">({counts[c.id] ?? 0})</span>
+              </button>
+            )
+          })}
+        </nav>
       </div>
 
       {brands.length > 0 && (
@@ -100,44 +137,13 @@ export default function ShopFilterRail({
         </div>
       )}
 
-      <div className="space-y-1.5">
-        <label className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">
-          {locale === 'bn' ? 'মূল্য' : 'Price'}
-        </label>
-        <div className="flex items-center gap-2">
-          <input
-            type="number"
-            min="0"
-            placeholder="Min"
-            defaultValue={activeMin}
-            onBlur={(e) => updateParams({ min: e.target.value || null })}
-            className="w-full rounded-md border border-input bg-background px-2 py-1.5 text-sm focus:outline-none focus:ring-2 focus:ring-ring"
-          />
-          <span className="text-muted-foreground">–</span>
-          <input
-            type="number"
-            min="0"
-            placeholder="Max"
-            defaultValue={activeMax}
-            onBlur={(e) => updateParams({ max: e.target.value || null })}
-            className="w-full rounded-md border border-input bg-background px-2 py-1.5 text-sm focus:outline-none focus:ring-2 focus:ring-ring"
-          />
-        </div>
-      </div>
+      <PriceRangeSlider key={`${activeMin ?? ''}-${activeMax ?? ''}`} boundsMin={boundsMin} boundsMax={boundsMax} />
 
       <div className="space-y-1.5">
         <label className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">
           {locale === 'bn' ? 'সাজান' : 'Sort'}
         </label>
-        <select
-          value={activeSort}
-          onChange={(e) => updateParams({ sort: e.target.value === 'newest' ? null : e.target.value })}
-          className="w-full rounded-md border border-input bg-background px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-ring"
-        >
-          <option value="newest">{t('sort_newest')}</option>
-          <option value="price_asc">{t('sort_price_asc')}</option>
-          <option value="price_desc">{t('sort_price_desc')}</option>
-        </select>
+        <SortDropdown locale={locale} />
       </div>
 
       {hasActiveFilters && (
@@ -152,6 +158,6 @@ export default function ShopFilterRail({
           {locale === 'bn' ? 'ফিল্টার সরান' : 'Clear filters'}
         </button>
       )}
-    </div>
+    </aside>
   )
 }

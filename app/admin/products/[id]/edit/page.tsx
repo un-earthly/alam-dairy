@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation'
 import { createClient } from '@/lib/supabase/server'
 import ProductForm, { attributesToText } from '@/components/admin/ProductForm'
+import CornerOrnament from '@/components/site/CornerOrnament'
 import type { SubscriptionFrequency } from '@/lib/supabase/types'
 
 interface Props {
@@ -54,8 +55,12 @@ export default async function EditProductPage({ params }: Props) {
   }
 
   return (
-    <div className="max-w-2xl space-y-4">
-      <h1 className="text-2xl font-bold text-gray-900">Edit Product</h1>
+    <div className="relative max-w-2xl space-y-4">
+      <CornerOrnament corner="tr" size={120} rotate={-6} opacity={0.15} className="hidden lg:block" />
+      <div className="relative">
+        <p className="font-accent text-base text-pasture">Alam Dairy Admin</p>
+        <h1 className="font-display text-2xl font-bold text-foreground">Edit Product</h1>
+      </div>
       <ProductForm categories={categories ?? []} brands={brands ?? []} initialData={initialData} />
     </div>
   )
