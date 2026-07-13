@@ -9,6 +9,7 @@ import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
 import { cn } from '@/lib/utils'
 import { use } from 'react'
+import { Eye, EyeOff } from 'lucide-react'
 
 export default function AuthPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = use(params)
@@ -22,6 +23,8 @@ export default function AuthPage({ params }: { params: Promise<{ locale: string 
   const [confirmPassword, setConfirmPassword] = useState('')
   const [loading, setLoading] = useState(false)
   const [message, setMessage] = useState<{ type: 'success' | 'error'; text: string } | null>(null)
+  const [showPassword, setShowPassword] = useState(false)
+  const [showConfirmPassword, setShowConfirmPassword] = useState(false)
 
   useEffect(() => {
     supabase.auth.getSession().then(({ data: { session } }) => {
@@ -176,17 +179,17 @@ export default function AuthPage({ params }: { params: Promise<{ locale: string 
 
       {/* ── Right auth panel ── */}
       <div className="relative flex flex-1 flex-col items-center justify-center px-6 py-12 bg-background">
-        <div
+        {/* <div
           aria-hidden
           className="pointer-events-none absolute left-0 top-0 h-44 w-44 bg-contain bg-no-repeat opacity-20"
           style={{ backgroundImage: 'url(https://res.cloudinary.com/oeon1p4w/image/upload/v1783768890/marketing/corner-1.png)' }}
-        />
+        /> */}
         <div className="w-full max-w-sm space-y-8">
           {/* Mobile logo */}
-          <div className="flex lg:hidden items-center justify-center gap-2 text-primary font-bold text-lg">
+          {/* <div className="flex lg:hidden items-center justify-center gap-2 text-primary font-bold text-lg">
             <Logo height={24} className="shrink-0 dark:brightness-0 dark:invert" />
             {isBn ? 'আলম ডেইরি' : 'Alam Dairy'}
-          </div>
+          </div> */}
 
           {/* Heading */}
           <div className="space-y-2 text-center">
@@ -238,12 +241,32 @@ export default function AuthPage({ params }: { params: Promise<{ locale: string 
             </div>
             <div>
               <Label htmlFor="password">{isBn ? 'পাসওয়ার্ড' : 'Password'}</Label>
-              <Input id="password" type="password" value={password} onChange={(e) => setPassword(e.target.value)} className="mt-2" required />
+              <div className="relative mt-2">
+                <Input id="password" type={showPassword ? 'text' : 'password'} value={password} onChange={(e) => setPassword(e.target.value)} className="pr-10" required />
+                <button
+                  type="button"
+                  onClick={() => setShowPassword(!showPassword)}
+                  className="absolute right-3 top-1/2 -translate-y-1/2 text-muted-foreground hover:text-foreground transition-colors"
+                  tabIndex={-1}
+                >
+                  {showPassword ? <EyeOff className="h-4 w-4" /> : <Eye className="h-4 w-4" />}
+                </button>
+              </div>
             </div>
             {mode === 'register' && (
               <div>
                 <Label htmlFor="confirmPassword">{isBn ? 'পাসওয়ার্ড নিশ্চিত করুন' : 'Confirm password'}</Label>
-                <Input id="confirmPassword" type="password" value={confirmPassword} onChange={(e) => setConfirmPassword(e.target.value)} className="mt-2" required />
+                <div className="relative mt-2">
+                  <Input id="confirmPassword" type={showConfirmPassword ? 'text' : 'password'} value={confirmPassword} onChange={(e) => setConfirmPassword(e.target.value)} className="pr-10" required />
+                  <button
+                    type="button"
+                    onClick={() => setShowConfirmPassword(!showConfirmPassword)}
+                    className="absolute right-3 top-1/2 -translate-y-1/2 text-muted-foreground hover:text-foreground transition-colors"
+                    tabIndex={-1}
+                  >
+                    {showConfirmPassword ? <EyeOff className="h-4 w-4" /> : <Eye className="h-4 w-4" />}
+                  </button>
+                </div>
               </div>
             )}
             <Button type="submit" className="w-full h-11" disabled={loading}>
