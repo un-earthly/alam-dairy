@@ -3,14 +3,15 @@ import Link from 'next/link'
 import { Button } from '@/components/ui/button'
 import { Plus } from 'lucide-react'
 import CornerOrnament from '@/components/site/CornerOrnament'
-import AdminProductsTable from '@/components/admin/AdminProductsTable'
+import ProductsTableClient from './products-table-client'
+import { fetchProductsPage } from './actions'
 
 export default async function AdminProductsPage() {
   const supabase = await createClient()
-  const { data: products } = await supabase
-    .from('products')
-    .select('*')
-    .order('created_at', { ascending: false })
+  const initialData = await fetchProductsPage({
+    cursor: 0,
+    pageSize: 20,
+  })
 
   return (
     <div className="relative space-y-4">
@@ -27,7 +28,7 @@ export default async function AdminProductsPage() {
         </Link>
       </div>
 
-      <AdminProductsTable initialProducts={products ?? []} />
+      <ProductsTableClient initialProducts={initialData.rows} />
     </div>
   )
 }
