@@ -2,26 +2,30 @@ import { createClient } from '@/lib/supabase/server'
 import { ShoppingBag, Package, Users, TrendingUp } from 'lucide-react'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import Link from 'next/link'
+import { EmptyOrdersIllustration } from '@/components/admin/EmptyStates'
 
 export default async function AdminDashboard() {
   const supabase = await createClient()
 
   const [ordersRes, productsRes, customersRes] = await Promise.all([
-    supabase.from('orders').select('id, total, status, created_at').order('created_at', { ascending: false }).limit(5),
+    supabase.from('orders').select('id, total, status, created_at').order('created_at', { ascending: false }),
     supabase.from('products').select('id', { count: 'exact', head: true }),
     supabase.from('profiles').select('id', { count: 'exact', head: true }),
   ])
 
-  const orders = ordersRes.data ?? []
+  const allOrders = ordersRes.data ?? []
+  const orders = allOrders.slice(0, 5)
   const totalProducts = productsRes.count ?? 0
   const totalCustomers = customersRes.count ?? 0
-  const todayRevenue = orders
-    .filter((o) => new Date(o.created_at).toDateString() === new Date().toDateString())
+
+  const today = new Date().toDateString()
+  const todayRevenue = allOrders
+    .filter((o) => new Date(o.created_at).toDateString() === today)
     .reduce((sum, o) => sum + o.total, 0)
 
   const stats = [
     { label: "Today's Revenue", value: `৳${todayRevenue.toLocaleString()}`, icon: TrendingUp, color: 'text-success' },
-    { label: 'Total Orders',    value: orders.length.toString(),             icon: ShoppingBag, color: 'text-primary' },
+    { label: 'Total Orders',    value: allOrders.length.toString(),          icon: ShoppingBag, color: 'text-primary' },
     { label: 'Products',        value: totalProducts.toString(),             icon: Package,     color: 'text-primary' },
     { label: 'Customers',       value: totalCustomers.toString(),            icon: Users,       color: 'text-muted-foreground' },
   ]
@@ -58,13 +62,22 @@ export default async function AdminDashboard() {
       <Card>
         <CardHeader className="flex flex-row items-center justify-between">
           <CardTitle className="text-base">Recent Orders</CardTitle>
-          <Link href="/admin/orders" className="text-xs text-primary hover:text-primary/80 transition-colors">
-            View all
-          </Link>
+          {orders.length > 0 && (
+            <Link href="/admin/orders" className="text-xs text-primary hover:text-primary/80 transition-colors">
+              View all
+            </Link>
+          )}
         </CardHeader>
         <CardContent>
           {orders.length === 0 ? (
-            <p className="text-sm text-muted-foreground py-4 text-center">No orders yet</p>
+            <div className="py-8 text-center flex flex-col items-center">
+              <EmptyOrdersIllustration />
+              <p className="text-sm text-muted-foreground font-medium">No orders yet</p>
+              <p className="text-xs text-muted-foreground mt-1">Orders will appear here once customers place them</p>
+              <Link href="/admin/orders" className="text-xs text-primary hover:text-primary/80 transition-colors mt-3">
+                View orders
+              </Link>
+            </div>
           ) : (
             <div className="space-y-3">
               {orders.map((order) => (

@@ -79,6 +79,14 @@ export default function ImportedProductsClient({ products }: { products: Product
     })
   }
 
+  function selectAll() {
+    setSelected(new Set(filtered.map(p => p.id)))
+  }
+
+  function deselectAll() {
+    setSelected(new Set())
+  }
+
   function applyActive(ids: string[], active: boolean) {
     startTransition(async () => {
       const res = await setActive({ ids, active })
@@ -130,11 +138,20 @@ export default function ImportedProductsClient({ products }: { products: Product
           </select>
           <div className="ml-auto flex items-center gap-2">
             <span className="text-sm text-gray-500">{selected.size} selected</span>
+            {selected.size === 0 ? (
+              <Button size="sm" variant="outline" disabled={filtered.length === 0} onClick={selectAll} className="gap-1.5">
+                Select all
+              </Button>
+            ) : (
+              <Button size="sm" variant="outline" onClick={deselectAll} className="gap-1.5">
+                Deselect all
+              </Button>
+            )}
             <Button size="sm" disabled={selected.size === 0 || isPending} onClick={() => applyActive([...selected], true)} className="gap-1.5">
-              <Check className="h-3.5 w-3.5" /> Activate
+              <Check className="h-3.5 w-3.5" /> Publish
             </Button>
             <Button size="sm" variant="outline" disabled={selected.size === 0 || isPending} onClick={() => applyActive([...selected], false)} className="gap-1.5">
-              <X className="h-3.5 w-3.5" /> Deactivate
+              <X className="h-3.5 w-3.5" /> Unpublish
             </Button>
             <Button size="sm" variant="destructive" disabled={selected.size === 0 || isPending} onClick={() => applyDelete([...selected])} className="gap-1.5">
               <Trash2 className="h-3.5 w-3.5" /> Delete
@@ -189,7 +206,7 @@ export default function ImportedProductsClient({ products }: { products: Product
                 disabled={isPending}
                 onClick={() => applyActive([p.id], !p.is_active)}
               >
-                {p.is_active ? 'Deactivate' : 'Activate'}
+                {p.is_active ? 'Unpublish' : 'Publish'}
               </Button>
             </CardContent>
           </Card>
