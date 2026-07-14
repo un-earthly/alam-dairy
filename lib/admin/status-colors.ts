@@ -22,7 +22,6 @@ export const statusColorMap = {
   // Generic statuses
   enabled: 'bg-success/10 text-success',
   disabled: 'bg-muted text-muted-foreground',
-  active: 'bg-success/10 text-success',
   inactive: 'bg-muted text-muted-foreground',
   published: 'bg-success/10 text-success',
   draft: 'bg-muted text-muted-foreground',
