@@ -5,9 +5,8 @@ import { Badge } from '@/components/ui/badge'
 import { Checkbox } from '@/components/ui/checkbox'
 import { DataTableColumnHeader } from '@/components/ui/data-table/data-table-column-header'
 import { getStockLevelColor } from '@/lib/admin/status-colors'
-import type { Database, ProductType } from '@/lib/supabase/types'
-
-type Product = Database['public']['Tables']['products']['Row']
+import type { ProductType } from '@/lib/supabase/types'
+import type { Product } from './actions'
 
 const TYPE_LABELS: Record<ProductType, string> = {
   dairy: 'Dairy',
@@ -23,14 +22,14 @@ export const inventoryColumns: ColumnDef<Product>[] = [
     header: ({ table }) => (
       <Checkbox
         checked={table.getIsAllPageRowsSelected()}
-        onChange={(e) => table.toggleAllPageRowsSelected(Boolean(e.currentTarget.checked))}
+        onCheckedChange={(checked) => table.toggleAllPageRowsSelected(Boolean(checked))}
         aria-label="Select all"
       />
     ),
     cell: ({ row }) => (
       <Checkbox
         checked={row.getIsSelected()}
-        onChange={(e) => row.toggleSelected(Boolean(e.currentTarget.checked))}
+        onCheckedChange={(checked) => row.toggleSelected(Boolean(checked))}
         aria-label="Select row"
       />
     ),

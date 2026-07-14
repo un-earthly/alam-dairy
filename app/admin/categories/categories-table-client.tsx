@@ -6,10 +6,7 @@ import { Plus } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { DataTable, DataTableToolbar, useDataTable, useInfiniteQuery } from '@/components/ui/data-table'
 import { categoryColumns } from './columns'
-import { fetchCategoriesPage } from './actions'
-import type { Database } from '@/lib/supabase/types'
-
-type Category = Database['public']['Tables']['categories']['Row']
+import { fetchCategoriesPage, type Category } from './actions'
 
 interface CategoriesTableClientProps {
   initialCategories: Category[]

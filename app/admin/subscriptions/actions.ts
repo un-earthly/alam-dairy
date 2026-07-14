@@ -1,6 +1,7 @@
 'use server'
 
 import { createClient } from '@/lib/supabase/server'
+import type { SubscriptionStatus } from '@/lib/supabase/types'
 
 interface SubscriptionRow {
   id: string
@@ -39,7 +40,7 @@ export async function fetchSubscriptionsPage({
   )
 
   if (status && status !== 'all') {
-    query = query.eq('status', status)
+    query = query.eq('status', status as SubscriptionStatus)
   }
 
   query = query.order('created_at', { ascending: false }).range(cursor, cursor + pageSize - 1)

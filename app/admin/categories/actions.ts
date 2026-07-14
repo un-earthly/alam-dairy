@@ -3,7 +3,10 @@
 import { createClient } from '@/lib/supabase/server'
 import type { Database } from '@/lib/supabase/types'
 
-type Category = Database['public']['Tables']['categories']['Row']
+export type Category = Pick<
+  Database['public']['Tables']['categories']['Row'],
+  'id' | 'name_en' | 'parent_id' | 'is_active' | 'sort_order'
+>
 
 export interface PageData<T> {
   rows: T[]

@@ -26,14 +26,14 @@ export const productColumns: ColumnDef<Product>[] = [
     header: ({ table }) => (
       <Checkbox
         checked={table.getIsAllPageRowsSelected()}
-        onChange={(e) => table.toggleAllPageRowsSelected(Boolean(e.currentTarget.checked))}
+        onCheckedChange={(checked) => table.toggleAllPageRowsSelected(Boolean(checked))}
         aria-label="Select all"
       />
     ),
     cell: ({ row }) => (
       <Checkbox
         checked={row.getIsSelected()}
-        onChange={(e) => row.toggleSelected(Boolean(e.currentTarget.checked))}
+        onCheckedChange={(checked) => row.toggleSelected(Boolean(checked))}
         aria-label="Select row"
       />
     ),

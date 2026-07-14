@@ -7,9 +7,7 @@ import { Button } from '@/components/ui/button'
 import { Checkbox } from '@/components/ui/checkbox'
 import { Pencil } from 'lucide-react'
 import { DataTableColumnHeader } from '@/components/ui/data-table/data-table-column-header'
-import type { Database } from '@/lib/supabase/types'
-
-type Category = Database['public']['Tables']['categories']['Row']
+import type { Category } from './actions'
 
 export const categoryColumns: ColumnDef<(Category & { parentName?: string })>[] = [
   {
@@ -17,14 +15,14 @@ export const categoryColumns: ColumnDef<(Category & { parentName?: string })>[] 
     header: ({ table }) => (
       <Checkbox
         checked={table.getIsAllPageRowsSelected()}
-        onChange={(e) => table.toggleAllPageRowsSelected(Boolean(e.currentTarget.checked))}
+        onCheckedChange={(checked) => table.toggleAllPageRowsSelected(Boolean(checked))}
         aria-label="Select all"
       />
     ),
     cell: ({ row }) => (
       <Checkbox
         checked={row.getIsSelected()}
-        onChange={(e) => row.toggleSelected(Boolean(e.currentTarget.checked))}
+        onCheckedChange={(checked) => row.toggleSelected(Boolean(checked))}
         aria-label="Select row"
       />
     ),

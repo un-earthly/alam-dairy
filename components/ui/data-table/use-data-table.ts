@@ -52,7 +52,7 @@ export function useDataTable<TData>({
   const [sorting, setSorting] = useState<SortingState>([])
   const [columnFilters, setColumnFilters] = useState<ColumnFiltersState>([])
   const [columnVisibility, setColumnVisibility] = useState<VisibilityState>({})
-  const [rowSelection, setRowSelection] = useState({})
+  const [rowSelection, setRowSelection] = useState<Record<string, boolean>>({})
   const [searchValue, setSearchValue] = useState('')
   const [paginationState, setPaginationState] = useState({
     pageIndex: 0,

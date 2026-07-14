@@ -3,10 +3,7 @@
 import React, { useState } from 'react'
 import { DataTable, DataTableToolbar, useDataTable, useInfiniteQuery } from '@/components/ui/data-table'
 import { customerColumns } from './columns'
-import { fetchCustomersPage } from './actions'
-import type { Database } from '@/lib/supabase/types'
-
-type Profile = Database['public']['Tables']['profiles']['Row']
+import { fetchCustomersPage, type Profile } from './actions'
 
 interface CustomersTableClientProps {
   initialCustomers: Profile[]

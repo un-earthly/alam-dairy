@@ -1,7 +1,7 @@
 'use server'
 
 import { createClient } from '@/lib/supabase/server'
-import type { Database } from '@/lib/supabase/types'
+import type { Database, ProductType } from '@/lib/supabase/types'
 
 type Product = Database['public']['Tables']['products']['Row']
 
@@ -42,7 +42,7 @@ export async function fetchProductsPage({
 
   // Apply type filter
   if (type && type !== 'all') {
-    query = query.eq('type', type)
+    query = query.eq('type', type as ProductType)
   }
 
   // Apply status filter

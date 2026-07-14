@@ -35,44 +35,46 @@ export function DataTableFacetedFilter({
 }: DataTableFacetedFilterProps) {
   return (
     <Popover>
-      <PopoverTrigger asChild>
-        <Button variant="outline" size="sm" className="h-8 border-dashed gap-1.5">
-          {title}
-          {selectedValues.size > 0 && (
-            <>
-              <X className="ml-1 h-3 w-3" />
-              <Badge
-                variant="secondary"
-                className="rounded-sm px-1 font-normal lg:hidden"
-              >
-                {selectedValues.size}
-              </Badge>
-              <div className="hidden space-x-1 lg:flex">
-                {selectedValues.size > 2 ? (
-                  <Badge
-                    variant="secondary"
-                    className="rounded-sm px-1 font-normal"
-                  >
-                    {selectedValues.size} selected
-                  </Badge>
-                ) : (
-                  options
-                    .filter((option) => selectedValues.has(option.value))
-                    .map((option) => (
-                      <Badge
-                        variant="secondary"
-                        key={option.value}
-                        className="rounded-sm px-1 font-normal"
-                      >
-                        {option.label}
-                      </Badge>
-                    ))
-                )}
-              </div>
-            </>
-          )}
-        </Button>
-      </PopoverTrigger>
+      <PopoverTrigger
+        render={
+          <Button variant="outline" size="sm" className="h-8 border-dashed gap-1.5">
+            {title}
+            {selectedValues.size > 0 && (
+              <>
+                <X className="ml-1 h-3 w-3" />
+                <Badge
+                  variant="secondary"
+                  className="rounded-sm px-1 font-normal lg:hidden"
+                >
+                  {selectedValues.size}
+                </Badge>
+                <div className="hidden space-x-1 lg:flex">
+                  {selectedValues.size > 2 ? (
+                    <Badge
+                      variant="secondary"
+                      className="rounded-sm px-1 font-normal"
+                    >
+                      {selectedValues.size} selected
+                    </Badge>
+                  ) : (
+                    options
+                      .filter((option) => selectedValues.has(option.value))
+                      .map((option) => (
+                        <Badge
+                          variant="secondary"
+                          key={option.value}
+                          className="rounded-sm px-1 font-normal"
+                        >
+                          {option.label}
+                        </Badge>
+                      ))
+                  )}
+                </div>
+              </>
+            )}
+          </Button>
+        }
+      />
       <PopoverContent className="w-[200px] p-0">
         <div className="max-h-[300px] overflow-auto">
           {options.map((option) => (
@@ -82,7 +84,7 @@ export function DataTableFacetedFilter({
             >
               <Checkbox
                 checked={selectedValues.has(option.value)}
-                onChange={() => onSelectedChange(option.value)}
+                onCheckedChange={() => onSelectedChange(option.value)}
               />
               {option.icon && <span>{option.icon}</span>}
               <span className="flex-1">{option.label}</span>

@@ -24,7 +24,7 @@ export async function fetchBrandsPage({
 
   let query = supabase
     .from('brands')
-    .select('id, name, logo_url, is_active', { count: 'exact' })
+    .select('id, slug, name, logo_url, is_active, created_at', { count: 'exact' })
 
   if (search?.trim()) {
     const searchTerm = `%${search.trim().toLowerCase()}%`

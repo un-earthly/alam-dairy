@@ -4,6 +4,7 @@ import React, { useState, useMemo, useCallback } from 'react'
 import { useRouter } from 'next/navigation'
 import { Loader2, Star, Trash2 } from 'lucide-react'
 import { Button } from '@/components/ui/button'
+import type { Row } from '@tanstack/react-table'
 import {
   DataTable,
   DataTableToolbar,
@@ -79,7 +80,7 @@ export default function ProductsTableClient({
   })
 
   // Sync selected rows from table
-  const rows = table.getRowModel().rows
+  const rows: Row<Product>[] = table.getRowModel().rows
   const selectedRowIds = new Set(
     rows.filter((r) => r.getIsSelected()).map((r) => r.original.id)
   )

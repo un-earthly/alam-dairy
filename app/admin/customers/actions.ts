@@ -3,7 +3,10 @@
 import { createClient } from '@/lib/supabase/server'
 import type { Database } from '@/lib/supabase/types'
 
-type Profile = Database['public']['Tables']['profiles']['Row']
+export type Profile = Pick<
+  Database['public']['Tables']['profiles']['Row'],
+  'id' | 'full_name' | 'phone' | 'email' | 'role' | 'is_farmer' | 'created_at'
+>
 
 export interface PageData<T> {
   rows: T[]

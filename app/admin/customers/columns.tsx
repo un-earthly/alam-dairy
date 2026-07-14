@@ -4,9 +4,7 @@ import { ColumnDef } from '@tanstack/react-table'
 import { Badge } from '@/components/ui/badge'
 import { Checkbox } from '@/components/ui/checkbox'
 import { DataTableColumnHeader } from '@/components/ui/data-table/data-table-column-header'
-import type { Database } from '@/lib/supabase/types'
-
-type Profile = Database['public']['Tables']['profiles']['Row']
+import type { Profile } from './actions'
 
 export const customerColumns: ColumnDef<Profile>[] = [
   {
@@ -14,14 +12,14 @@ export const customerColumns: ColumnDef<Profile>[] = [
     header: ({ table }) => (
       <Checkbox
         checked={table.getIsAllPageRowsSelected()}
-        onChange={(e) => table.toggleAllPageRowsSelected(Boolean(e.currentTarget.checked))}
+        onCheckedChange={(checked) => table.toggleAllPageRowsSelected(Boolean(checked))}
         aria-label="Select all"
       />
     ),
     cell: ({ row }) => (
       <Checkbox
         checked={row.getIsSelected()}
-        onChange={(e) => row.toggleSelected(Boolean(e.currentTarget.checked))}
+        onCheckedChange={(checked) => row.toggleSelected(Boolean(checked))}
         aria-label="Select row"
       />
     ),

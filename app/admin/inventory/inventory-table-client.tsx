@@ -3,10 +3,7 @@
 import React from 'react'
 import { DataTable, useDataTable, useInfiniteQuery } from '@/components/ui/data-table'
 import { inventoryColumns } from './columns'
-import { fetchInventoryPage } from './actions'
-import type { Database } from '@/lib/supabase/types'
-
-type Product = Database['public']['Tables']['products']['Row']
+import { fetchInventoryPage, type Product } from './actions'
 
 interface InventoryTableClientProps {
   initialProducts: Product[]
